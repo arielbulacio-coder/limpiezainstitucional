@@ -11,7 +11,7 @@ import './index.css';
 function App() {
   return (
     <ThemeProvider>
-      <HashRouter basename="/limpiezainstitucional">
+      <HashRouter>
         <div className="app-main">
           <ThemeToggle />
           <Routes>
