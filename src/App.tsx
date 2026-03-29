@@ -1,17 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
-import './index.css';
 import Landing from './pages/Landing';
 import Dashboard from './pages/Dashboard';
 import ClassDetail from './pages/ClassDetail';
 import Quiz from './pages/Quiz';
 import Glossary from './pages/Glossary';
+import './index.css';
 
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter basename="/limpiezainstitucional">
         <div className="app-main">
           <ThemeToggle />
           <Routes>
@@ -22,7 +22,7 @@ function App() {
             <Route path="/glossary" element={<Glossary />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
