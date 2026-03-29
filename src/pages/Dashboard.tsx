@@ -1,7 +1,30 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { CLASSES } from '../data/courseData';
-import { ChevronRight, Clock } from 'lucide-react';
+import { 
+  ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
+  AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap 
+} from 'lucide-react';
+
+const IconRenderer = ({ icon }: { icon: string }) => {
+  const icons: Record<string, React.ReactNode> = {
+    'shield': <Shield size={24} />,
+    'brush': <Brush size={24} />,
+    'flask': <FlaskConical size={24} />,
+    'scale': <Scale size={24} />,
+    'book': <Book size={24} />,
+    'utensils': <Utensils size={24} />,
+    'alert-triangle': <AlertTriangle size={24} />,
+    'droplets': <Droplets size={24} />,
+    'list-checks': <ListChecks size={24} />,
+    'activity': <Activity size={24} />,
+    'users': <Users size={24} />,
+    'recycle': <Recycle size={24} />,
+    'microscope': <Microscope size={24} />,
+    'graduation-cap': <GraduationCap size={24} />
+  };
+  return icons[icon] || <Book size={24} />;
+};
 
 const Dashboard = () => {
   return (
@@ -21,11 +44,11 @@ const Dashboard = () => {
           >
             <Link to={`/class/${cls.id}`} className="card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.5rem', textDecoration: 'none', color: 'inherit' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                <div style={{ background: 'var(--bg-deep)', padding: '0.75rem', borderRadius: '0.75rem', width: '3.5rem', textAlign: 'center', fontWeight: 'bold', color: 'var(--primary)', border: '1px solid var(--border)' }}>
-                   {cls.id}
+                <div style={{ background: 'var(--bg-deep)', padding: '0.75rem', borderRadius: '0.75rem', width: '3.5rem', height: '3.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', border: '1px solid var(--border)' }}>
+                   <IconRenderer icon={cls.icon} />
                 </div>
                 <div>
-                   <h3 style={{ fontSize: '1.1rem', marginBottom: '0.2rem' }}>{cls.title}</h3>
+                   <h3 style={{ fontSize: '1.1rem', marginBottom: '0.2rem' }}>{cls.id}. {cls.title}</h3>
                    <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)' }}>{cls.description}</p>
                 </div>
               </div>
