@@ -51,7 +51,7 @@ const getQuestionsForClass = (classId: number): Question[] => {
     ]
   };
 
-  const getThemeForClass = (cid: number, idx: number) => {
+  const getThemeForClass = (cid: number, _idx: number) => {
     // Generate themes for question fallback
     return {
       question: `[Examen Módulo ${cid}] Sobre el procedimiento técnico detallado en el manual:`,
