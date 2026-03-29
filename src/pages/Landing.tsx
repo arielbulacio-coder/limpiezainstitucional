@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BookOpen, GraduationCap, ShieldCheck, Clock, User } from 'lucide-react';
+import { BookOpen, GraduationCap, ShieldCheck, Clock } from 'lucide-react';
 import { COURSE_INFO } from '../data/courseData';
 
 const Landing = () => {
@@ -40,8 +40,11 @@ const Landing = () => {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           className="card"
+          style={{ textAlign: 'center' }}
         >
-          <User className="text-gradient" size={40} style={{ marginBottom: '1rem' }} />
+          <div style={{ width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto 1.5rem', border: '3px solid var(--primary)' }}>
+            <img src="/images/instructora.jpg" alt="Maricel Gauna" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
           <h3>Instructora</h3>
           <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>{COURSE_INFO.instructor}</p>
           <p style={{ color: 'var(--text-dim)' }}>Instructora de Formación Profesional.</p>
