@@ -4,7 +4,7 @@ import { CLASSES } from '../data/courseData';
 import { 
   ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
   AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
-  Home
+  Home, BookText
 } from 'lucide-react';
 
 const IconRenderer = ({ icon }: { icon: string }) => {
@@ -35,9 +35,14 @@ const Dashboard = () => {
           <h1 className="text-gradient">Planificación Modular</h1>
           <p style={{ color: 'var(--text-dim)' }}>Selecciona una clase para ingresar. Necesitarás la palabra clave.</p>
         </div>
-        <Link to="/" className="btn glass" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>
-          <Home size={18} /> Inicio
-        </Link>
+        <div style={{ display: 'flex', gap: '0.75rem' }}>
+          <Link to="/glossary" className="btn glass primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>
+            <BookText size={18} /> Glosario
+          </Link>
+          <Link to="/" className="btn glass" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>
+            <Home size={18} /> Inicio
+          </Link>
+        </div>
       </header>
 
       <div className="grid">

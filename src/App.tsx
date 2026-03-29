@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import Dashboard from './pages/Dashboard';
 import ClassDetail from './pages/ClassDetail';
 import Quiz from './pages/Quiz';
+import Glossary from './pages/Glossary';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/class/:id" element={<ClassDetail />} />
             <Route path="/quiz/:id" element={<Quiz />} />
+            <Route path="/glossary" element={<Glossary />} />
           </Routes>
         </div>
       </BrowserRouter>
