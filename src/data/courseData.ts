@@ -52,8 +52,6 @@ const generateMockQuestions = (classId: number): Question[] => {
     }
   ];
 
-  // For brevity and to fulfill the 20 questions requirement, I will generate a consistent set for each class 
-  // with thematic variations based on the class ID.
   const questions: Question[] = [];
   for (let i = 0; i < 20; i++) {
     const base = baseQuestions[i % baseQuestions.length];
@@ -74,7 +72,13 @@ export const CLASSES: ClassData[] = [
     description: "Desafío de Bioseguridad en el Ámbito Escolar y marco introductorio.",
     keyword: "INICIO",
     duration: "7.1h",
-    content: "Contenido sobre protocolos de desinfección eficiente y normativa legal básica.",
+    content: `La bioseguridad es un conjunto de medidas preventivas destinadas a proteger la salud y la seguridad del personal y de la comunidad educativa frente a riesgos biológicos, físicos y químicos.
+
+Puntos clave:
+- El auxiliar debe intervenir para garantizar un entorno seguro.
+- La problemática central es el diseño de protocolos eficientes que cumplan la normativa legal.
+- Es vital proteger la salud sin comprometer la seguridad propia.
+- Comprender el flujo de circulación y los puntos críticos del establecimiento.`,
     questions: generateMockQuestions(1)
   },
   {
@@ -83,16 +87,25 @@ export const CLASSES: ClassData[] = [
     description: "Diferencia entre limpieza, desinfección, esterilización y fumigación.",
     keyword: "LIMPIEZA",
     duration: "7.1h",
-    content: "Estudio de las técnicas básicas para mantener superficies libres de patógenos.",
+    content: `- Limpieza: Eliminación de suciedad visible (polvo, manchas, grasa) mediante procedimientos mecánicos o manuales.
+- Desinfección: Proceso químico o físico que elimina microorganismos patógenos (virus, bacterias) en superficies inertes.
+- Esterilización: Destrucción total de toda forma de vida microbiana (generalmente en ambientes médicos).
+- Fumigación: Control de plagas y vectores mediante sustancias gaseosas o aerosoles.`,
     questions: generateMockQuestions(2)
   },
   {
     id: 3,
     title: "Sustancias Químicas",
-    description: "Manejo seguro, rótulos de etiquetas y almacenamiento.",
+    description: "Manejo seguro, rótulos de etiquetas y materiales.",
     keyword: "QUIMICA",
     duration: "7.1h",
-    content: "Prevención de accidentes por mezcla de productos y lectura de fichas de seguridad.",
+    content: `El manejo de químicos requiere precaución extrema para evitar intoxicaciones o quemaduras.
+
+Protocolo de gestión:
+1. Lectura de etiquetas: Siempre verificar símbolos de toxicidad e inflamabilidad.
+2. NUNCA mezclar lavandina con detergente o ácidos (produce gases tóxicos).
+3. Dosificación: Usar la cantidad exacta indicada por el fabricante para evitar residuos peligrosos y optimizar recursos.
+4. Almacenamiento: Rotular cada envase y guardar fuera del alcance de niños en lugares ventilados.`,
     questions: generateMockQuestions(3)
   },
   {
@@ -101,7 +114,13 @@ export const CLASSES: ClassData[] = [
     description: "Análisis de la Ley 24.557 y el rol de las ART.",
     keyword: "LEY24557",
     duration: "7.1h",
-    content: "Derechos y obligaciones del trabajador frente a accidentes laborales.",
+    content: `La Ley 24.557 tiene como objetivo prevenir los riesgos en el trabajo y reparar los daños derivados de accidentes y enfermedades profesionales.
+
+Conceptos fundamentales:
+- Accidente de trabajo: Acontecimiento súbito y violento ocurrido por el hecho o en ocasión del trabajo.
+- Accidente in itinere: Ocurrido en el trayecto entre el domicilio y el lugar de trabajo.
+- ART: Aseguradoras de Riesgos del Trabajo que brindan prestaciones médicas y dinerarias.
+- Obligación del auxiliar: Utilizar los EPP suministrados y cumplir con las normas de seguridad.`,
     questions: generateMockQuestions(4)
   },
   {
@@ -110,7 +129,13 @@ export const CLASSES: ClassData[] = [
     description: "Res. 299/11 y el artículo 95 sobre responsabilidades.",
     keyword: "REGLAMENTO",
     duration: "7.1h",
-    content: "Marco normativo específico para el personal auxiliar en escuelas.",
+    content: `La Resolución 299/11 establece el Reglamento General para Instituciones Educativas en Buenos Aires.
+
+Artículo 95 - Deberes del Personal Auxiliar:
+- Mantener en perfectas condiciones de higiene y orden el sector asignado.
+- Colaborar en la vigilancia y cuidado de los alumnos cuando sea necesario por razones de seguridad.
+- Ser responsable de los elementos de limpieza y herramientas bajo su custodia.
+- Cumplir con los horarios y normativas de la Dirección.`,
     questions: generateMockQuestions(5)
   },
   {
@@ -119,7 +144,13 @@ export const CLASSES: ClassData[] = [
     description: "Enfermedades Transmitidas por Alimentos y manejo de comedores.",
     keyword: "ALIMENTOS",
     duration: "7.1h",
-    content: "Pautas de higiene para evitar la contaminación cruzada.",
+    content: `Las ETA son enfermedades causadas por la ingestión de alimentos o agua contaminados.
+
+Buenas Prácticas de Manufactura (BPM) para el Auxiliar:
+- Lavado de manos exhaustivo antes de manipular alimentos o utensilios.
+- Evitar la Contaminación Cruzada: No usar el mismo trapo o tabla para diferentes tipos de alimentos o superficies sin desinfectar.
+- Control de temperatura: Asegurar que los alimentos no permanezcan en la 'zona de peligro' (5°C a 60°C) por mucho tiempo.
+- Limpieza profunda de heladeras y alacenas.`,
     questions: generateMockQuestions(6)
   },
   {
@@ -128,7 +159,13 @@ export const CLASSES: ClassData[] = [
     description: "Identificación y mitigación de riesgos en el entorno laboral.",
     keyword: "SEGURIDAD",
     duration: "7.1h",
-    content: "Uso de EPP (Elementos de Protección Personal).",
+    content: `El entorno escolar presenta diversos riesgos que deben ser mitigados de forma proactiva.
+
+Tipos de Riesgos:
+- Físicos: Caídas por pisos mojados (uso de cartelería 'Cuidado Piso Mojado'), cortes o golpes.
+- Eléctricos: Manejo de enceradoras o aspiradoras con cables dañados.
+- Químicos: Inhalación de vapores o contacto con piel/ojos.
+- Ergonómicos: Sobreesfuerzo por levantamiento incorrecto de tachos de residuos.`,
     questions: generateMockQuestions(7)
   },
   {
@@ -137,7 +174,11 @@ export const CLASSES: ClassData[] = [
     description: "Protocolos específicos para aulas y áreas comunes.",
     keyword: "TECNICAS",
     duration: "7.1h",
-    content: "Frecuencia de limpieza y selección de agentes químicos según el área.",
+    content: `Metodología de Limpieza Doble Balde (Técnica de los dos baldes):
+- Balde con solución detergente y balde con agua de enjuague.
+- Limpieza de arriba hacia abajo (techos -> paredes -> superficies -> pisos).
+- Limpieza de adentro hacia afuera de cada aula.
+- Frecuencia: Diaria en aulas, varias veces al día en baños y comedores.`,
     questions: generateMockQuestions(8)
   },
   {
@@ -146,7 +187,15 @@ export const CLASSES: ClassData[] = [
     description: "Diseño y ejecución de protocolos estandarizados.",
     keyword: "PLANES",
     duration: "7.1h",
-    content: "Elaboración de cronogramas y hojas de ruta.",
+    content: `Un Plan de Limpieza y Desinfección (L+D) debe ser escrito y conocido por todo el personal.
+
+Componentes del Plan:
+1. Sector: ¿Qué se limpia?
+2. Frecuencia: ¿Cuándo y cada cuánto?
+3. Responsable: ¿Quién lo hace?
+4. Producto: ¿Qué químicos se utilizan?
+5. Procedimiento: ¿Cómo se hace (paso a paso)?
+6. Registro: Planilla diaria de control firmada.`,
     questions: generateMockQuestions(9)
   },
   {
@@ -155,7 +204,13 @@ export const CLASSES: ClassData[] = [
     description: "Prevención de lesiones musculoesqueléticas.",
     keyword: "POSTURA",
     duration: "7.1h",
-    content: "Cómo levantar peso y realizar tareas sin comprometer la salud física.",
+    content: `La ergonomía busca adaptar el trabajo al hombre para prevenir lesiones crónicas.
+
+Recomendaciones postureles:
+- Al trapear: Mantener la espalda recta y no girar el tronco, usar el movimiento de las piernas.
+- Al levantar carga: Doblar las rodillas, mantener la espalda recta y acercar el objeto al cuerpo.
+- Pausas activas: Realizar pequeños estiramientos cada 2 horas de labor constante.
+- Uso de calzado adecuado: Suela antideslizante y buen soporte plantar.`,
     questions: generateMockQuestions(10)
   },
   {
@@ -164,7 +219,11 @@ export const CLASSES: ClassData[] = [
     description: "Profundización en el concepto de Trabajo Decente.",
     keyword: "DERECHOS",
     duration: "7.1h",
-    content: "La relación laboral y la protección social.",
+    content: `El Trabajo Decente es esencial para el desarrollo personal y profesional.
+
+Marco Ético y Legal:
+- Derechos: Cobro de haberes en término, aportes jubilatorios, cobertura de salud (Obra Social), licencias por enfermedad o descanso.
+- Obligaciones: Honestidad, cuidado de los recursos públicos, trato respetuoso a directivos, docentes y alumnos, cumplimiento de órdenes directas vinculadas a la tarea.`,
     questions: generateMockQuestions(11)
   },
   {
@@ -173,7 +232,13 @@ export const CLASSES: ClassData[] = [
     description: "Clasificación y disposición final de desechos.",
     keyword: "RESIDUOS",
     duration: "7.1h",
-    content: "Diferenciación entre residuos comunes y patogénicos.",
+    content: `La correcta separación de residuos en origen facilita el reciclado y evita focos infecciosos.
+
+Clasificación en Escuelas:
+- Bolsa Verde: Secos y reciclables (cartón, papel, plástico limpio).
+- Bolsa Negra: Húmedos y restos no reciclables.
+- Residuos Especiales: Pilas o tubos fluorescentes (gestión diferenciada).
+- Precaución: Nunca comprimir las bolsas con las manos para evitar pinchazos con agujas o cortes con vidrios.`,
     questions: generateMockQuestions(12)
   },
   {
@@ -182,7 +247,12 @@ export const CLASSES: ClassData[] = [
     description: "Simulacros y ejercicios en condiciones reales.",
     keyword: "PRACTICA",
     duration: "7.1h",
-    content: "Aplicación de todo lo aprendido en escenarios simulados.",
+    content: `La formación no solo es teórica, sino procedimental.
+
+Ejercicios de aplicación:
+- Simulación de derrame químico: Cómo proceder al cercado y limpieza segura.
+- Preparación de disoluciones de lavandina (ppm - partes por millón).
+- Auditoría cruzada: Un compañero revisa la limpieza de un área simulada utilizando un check-list de bioseguridad.`,
     questions: generateMockQuestions(13)
   },
   {
@@ -191,7 +261,13 @@ export const CLASSES: ClassData[] = [
     description: "Integración de conceptos técnicos y legales.",
     keyword: "EXAMEN",
     duration: "7.7h",
-    content: "Repaso integral y cierre de la formación.",
+    content: `El examen final integra todos los saberes aprendidos durante las 100 horas cátedra.
+
+Requisitos de aprobación:
+- Demostrar precisión en la identificación de símbolos de peligrosidad.
+- Capacidad para elaborar un plan de limpieza estandarizado coherente.
+- Aplicación de normas de bioseguridad sin errores críticos.
+- Conocimiento sólido del marco legal Ley 24557 y Estatuto/Reglamento.`,
     questions: generateMockQuestions(14)
   }
 ];
