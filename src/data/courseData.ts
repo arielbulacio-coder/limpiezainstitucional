@@ -49,80 +49,96 @@ const getQuestionsForClass = (classId: number): Question[] => {
       { id: 19, question: "Un riesgo químico puede ser causado por:", options: ["Pisos mal encerados", "Inhalación de mezclas de lavandina con amoníaco", "Cables pelados", "Uso de trapos de diferentes colores"], correctAnswerIndex: 1 },
       { id: 20, question: "El objetivo del CFP es formar auxiliares que sean:", options: ["Solo limpiadores de superficies", "Agentes profesionales de salud e higiene institucional", "Ayudantes de cocina sin capacitación", "Personal de seguridad de accesos"], correctAnswerIndex: 1 }
     ],
-    2: [
-      { id: 1, question: "¿Por qué la limpieza es el paso fundamental antes de la desinfección?", options: ["Porque hace que el piso brille", "Porque la suciedad orgánica inactiva los desinfectantes químicos", "Porque ahorra tiempo de espera", "Porque es una norma estética"], correctAnswerIndex: 1 },
-      { id: 2, question: "El uso de detergentes en la limpieza institucional busca:", options: ["Matar virus directamente", "Romper la tensión superficial y remover la grasa y suciedad", "Solo dar buen aroma al ambiente", "Fijar los microbios al piso"], correctAnswerIndex: 1 },
-      { id: 3, question: "¿En qué consiste la técnica del 'Doble Balde'?", options: ["Usar dos baldes con el mismo producto", "Un balde con solución limpiadora y otro con agua limpia de enjuague", "Limpiar el aula con dos personas al mismo tiempo", "Usar baldes de diferentes colores según el día de la semana"], correctAnswerIndex: 1 },
-      { id: 4, question: "La 'Desinfección de Alto Nivel' elimina:", options: ["Solo el polvo visible", "Casi todos los microorganismos excepto esporas resistentes", "Solo los malos olores", "Todos los seres vivos incluyendo humanos"], correctAnswerIndex: 1 },
-      { id: 5, question: "¿Qué ventaja tiene el amonio cuaternario sobre la lavandina?", options: ["Es más barato", "Tiene mayor poder residual y es menos corrosivo para ciertos materiales", "Huele mejor", "Se puede beber"], correctAnswerIndex: 1 },
-      { id: 6, question: "El 'Tiempo de Contacto' en desinfectantes se refiere a:", options: ["El tiempo que tardo en pasar el trapo", "El tiempo que la superficie debe permanecer húmeda con el producto para ser efectivo", "La duración total del turno de trabajo", "El tiempo que el bidón permanece abierto"], correctAnswerIndex: 1 },
-      { id: 7, question: "La esterilización se diferencia de la desinfección porque:", options: ["Es más rápida", "Elimina TODA forma de vida microbiana, incluyendo esporas", "Solo se usa en cocinas", "No usa químicos"], correctAnswerIndex: 1 },
-      { id: 8, question: "¿Cuándo es obligatorio realizar una fumigación?", options: ["Todos los días", "Ante la presencia detectada de plagas o vectores, bajo protocolo oficial", "Solo cuando lo piden los padres", "Cada vez que se limpia el patio"], correctAnswerIndex: 1 },
-      { id: 9, question: "El barrido húmedo se prefiere al barrido seco porque:", options: ["Es más silencioso", "Evita la Aero-dispersión de microbios mediante el polvo", "Usa menos agua", "Es una técnica más moderna"], correctAnswerIndex: 1 },
-      { id: 10, question: "¿Qué sucede si no se enjuaga el detergente antes de desinfectar con cloro?", options: ["Se limpia mejor", "El detergente puede neutralizar la acción del cloro", "Se gasta más agua innecesariamente", "El piso queda pegajoso pero desinfectado"], correctAnswerIndex: 1 },
-      { id: 11, question: "Un desinfectante debe estar aprobado por:", options: ["La municipalidad local", "ANMAT", "El sindicato", "Cualquier veterinaria"], correctAnswerIndex: 1 },
-      { id: 12, question: "La acción mecánica en la limpieza implica:", options: ["Usar robots", "El frotado o fricción manual/maquinaria sobre la superficie", "Dejar el balde en el medio del aula", "Vibraciones del edificio"], correctAnswerIndex: 1 },
-      { id: 13, question: "¿Qué es la 'Aero-dispersión'?", options: ["Volar en aviones", "Transporte de partículas y gérmenes a través del aire al sacudir o barrer", "Uso de aerosoles aromáticos", "Ventilar la escuela"], correctAnswerIndex: 1 },
-      { id: 14, question: "La desinfección en sanitarios debe ser:", options: ["Opcional si se ven limpios", "Profunda y con mayor concentración desinfectante", "Solo una vez por semana", "Realizada solo con agua caliente"], correctAnswerIndex: 1 },
-      { id: 15, question: "Un biocida es ideal si:", options: ["Es muy tóxico para humanos", "Tiene amplio espectro y es seguro para el operario", "Mancha la ropa permanentemente", "Es inflamable"], correctAnswerIndex: 1 },
-      { id: 16, question: "El enjuague es crítico para:", options: ["Mojar el piso", "Remover los restos de suciedad y químico limpiador suspendidos", "Hacer espuma", "Enfriar la superficie"], correctAnswerIndex: 1 },
-      { id: 17, question: "En la jerarquía de procesos, ¿cuál es el más riguroso?", options: ["Limpieza", "Sanitización", "Desinfección", "Esterilización"], correctAnswerIndex: 3 },
-      { id: 18, question: "La dilución de los productos debe ser:", options: ["A ojo segun el color", "Exacta segun las especificaciones del fabricante", "Siempre la mitad de lo indicado", "Agregando un chorrito extra por las dudas"], correctAnswerIndex: 1 },
-      { id: 19, question: "¿Qué tipo de energía NO se usa en la limpieza?", options: ["Química", "Térmica", "Mecánica", "Nuclear"], correctAnswerIndex: 3 },
-      { id: 20, question: "La preparación de las soluciones desinfectantes debe ser:", options: ["Semanal", "Diaria (preferentemente en el momento de uso)", "Solo cuando se acaba el bidón", "Mensual"], correctAnswerIndex: 1 }
-    ],
     3: [
-      { id: 1, question: "¿Cuál es el riesgo principal de mezclar hipoclorito de sodio (lavandina) con detergente?", options: ["El piso queda opaco", "Se libera gas cloro que puede causar edema pulmonar", "Se gasta más producto", "La mezcla es inofensiva"], correctAnswerIndex: 1 },
-      { id: 2, question: "La mezcla de lavandina con amoníaco produce:", options: ["Detergente potenciado", "Cloraminas gaseosos altamente irritantes", "Agua destilada", "Un perfume cítrico"], correctAnswerIndex: 1 },
-      { id: 3, question: "¿Por qué el cloro (lavandina) debe guardarse a la sombra?", options: ["Para que no se caliente", "Porque es fotosensible y se inactiva con la luz solar", "Porque el envase se derrite", "No importa donde se guarde"], correctAnswerIndex: 1 },
-      { id: 4, question: "Un pictograma de una llama en el envase significa:", options: ["Producto caliente", "Producto Inflamable", "Producto para limpieza de hornos", "Símbolo de la marca"], correctAnswerIndex: 1 },
-      { id: 5, question: "¿Qué debe hacerse inmediatamente si se trasvasa un producto químico?", options: ["Guardarlo en un lugar alto", "Rotular e identificar el nuevo envase con datos precisos", "Dejarlo abierto para que respire", "Nada, se reconoce por el olor"], correctAnswerIndex: 1 },
-      { id: 6, question: "La'Hoja de Seguridad' (MSDS) sirve para:", options: ["Anotar el stock", "Brindar información crítica sobre riesgos y primeros auxilios", "Anotar el horario del auxiliar", "Llevar el control de gastos"], correctAnswerIndex: 1 },
-      { id: 7, question: "¿Cuál es el EPP adecuado para manejar ácidos concentrados?", options: ["Zapatillas de tela", "Guantes de nitrilo, delantal de PVC y antiparras", "Guantes de lana", "Barbijo simple"], correctAnswerIndex: 1 },
-      { id: 8, question: "En caso de salpicadura química en los ojos, se debe lavar con agua por:", options: ["1 minuto", "Al menos 20 minutos con agua corriente abundante", "Solo secar con papel", "Usar colirio inmediatamente"], correctAnswerIndex: 1 },
-      { id: 9, question: "¿Por qué NO se deben usar botellas de gaseosa para químicos?", options: ["Porque son frágiles", "Para prevenir ingestiones accidentales (especialmente niños)", "Porque el químico las rompe", "Porque es ilegal reciclar botellas"], correctAnswerIndex: 1 },
-      { id: 10, question: "La dilución recomendada de lavandina comercial para desinfección general es:", options: ["Pura sin diluir", "1% a 2% (ej. 10ml en 1 litro)", "Media botella por balde", "Una tapa por cada 10 litros"], correctAnswerIndex: 1 },
-      { id: 11, question: "¿Qué pictograma indica corrosividad?", options: ["Una calavera", "Un símbolo de goteo sobre una superficie y una mano", "Un signo de exclamación", "Un pez muerto"], correctAnswerIndex: 1 },
-      { id: 12, question: "¿Qué gas se libera al mezclar lavandina con vinagre?", options: ["Oxígeno", "Vapores de cloro tóxicos", "Nitrógeno", "Dioxido de carbono"], correctAnswerIndex: 1 },
-      { id: 13, question: "Un químico 'irritante' afecta principalmente:", options: ["Las uñas", "Las vías respiratorias y mucosas oculares", "La ropa", "El piso de madera"], correctAnswerIndex: 1 },
-      { id: 14, question: "La fecha de vencimiento en químicos es importante porque:", options: ["El producto cambia de color", "La concentración de los activos puede degradarse e inactivarse", "El envase vence", "A la empresa le gusta vender más"], correctAnswerIndex: 1 },
-      { id: 15, question: "¿Cuál es la forma correcta de oler un producto desconocido?", options: ["Acercar la nariz al pico", "Abanicar suavemente el vapor hacia la nariz", "NUNCA oler un químico desconocido", "Pedirle a otro que lo huela"], correctAnswerIndex: 2 },
-      { id: 16, question: "El almacenamiento de químicos debe ser:", options: ["Cerca de la comida por comodidad", "En lugares ventilados, lejos de alimentos y calor", "En el patio bajo el sol", "En el baño de los alumnos"], correctAnswerIndex: 1 },
-      { id: 17, question: "Un producto 'Biodegradable' es aquel que:", options: ["Se convierte en comida", "Se descompone por procesos naturales sin dañar el ambiente", "Dura para siempre", "Limpia solo la materia orgánica"], correctAnswerIndex: 1 },
-      { id: 18, question: "¿Qué debe hacerse ante un derrame químico de gran magnitud?", options: ["Manguerear con mucha agua", "Ventilar, señalizar y usar material absorbente inerte", "Esperar a que se evapore", "Limpiar con papel de diario"], correctAnswerIndex: 1 },
-      { id: 19, question: "Los 'Amonios Cuaternarios' son:", options: ["Un tipo de jabón", "Desinfectantes de última tecnología con bajo riesgo", "Veneno para ratas", "Aromatizantes"], correctAnswerIndex: 1 },
-      { id: 20, question: "Seguridad Química significa:", options: ["Tener llave en el depósito", "Conocer riesgos, dosificación y protección adecuada", "No usar ningún producto", "Limpiar solo con agua"], correctAnswerIndex: 1 }
+      { id: 1, question: "Al mezclar lavandina y detergente, ¿cuál es el resultado técnico?", options: ["Aumento del brillo en cerámicas", "Inactivación del poder desinfectante y liberación de gas tóxico", "Ahorro del 50% de insumos", "Limpieza de sarro inmediata"], correctAnswerIndex: 1 },
+      { id: 2, question: "El Gas Cloro es el resultado de la mezcla de:", options: ["Detergente y agua caliente", "Lavandina con ácidos (como limpia-sarros o vinagre)", "Jabón blanco y alcohol", "Amoníaco y agua destilada"], correctAnswerIndex: 1 },
+      { id: 3, question: "Un envase de lavandina amarilla sin tapa durante 3 horas causa:", options: ["Mejora la concentración por evaporación", "De-gradación del hipoclorito por contacto con aire y luz", "Aumento del pH del agua", "Nada, el cloro es estable siempre"], correctAnswerIndex: 1 },
+      { id: 4, question: "El rotulado de un envase trasvasado DEBE contener:", options: ["Solo el nombre del auxiliar", "Nombre del producto, fecha, concentración y advertencias", "El precio por litro", "La marca comercial original solamente"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿Qué indica un pictograma de un pez y un árbol?", options: ["Producto orgánico", "Peligro para el medio ambiente acuático", "Apto para limpieza de parques", "Producto biodegradable de marca"], correctAnswerIndex: 1 },
+      { id: 6, question: "Ante una ingestión accidental de un desinfectante concentrado, NUNCA se debe:", options: ["Llamar a toxicología", "Provocar el vómito sin indicación médica", "Ventilar el ambiente", "Afluir aire fresco"], correctAnswerIndex: 1 },
+      { id: 7, question: "Un producto 'Biodegradable' en instituciones significa:", options: ["Que se puede tirar en cualquier lado", "Que se descompone en elementos naturales mediante microorganismos", "Que está hecho de plantas comestibles", "Que no limpia superficies inorgánicas"], correctAnswerIndex: 1 },
+      { id: 8, question: "La concentración de 1000 ppm de cloro se logra mezclando:", options: ["1 parte de lavandina comercial en 50 de agua", "Media botella en un balde de 10 litros", "Detergente y lavandina por igual", "Solo con agua hirviendo"], correctAnswerIndex: 0 },
+      { id: 9, question: "Los Amonios Cuaternarios son preferibles en cocinas porque:", options: ["Son más aromáticos", "Son de baja toxicidad, alta estabilidad y no corroen el inox", "Son de color azul", "Son más espesos para pegar la grasa"], correctAnswerIndex: 1 },
+      { id: 10, question: "¿Cuál es el riesgo de inhalar vapores clorados en espacios cerrados?", options: ["Mareos leves", "Edema agudo de pulmón por quemadura química", "Mejora de la sinusitis", "Aumento de la energía"], correctAnswerIndex: 1 },
+      { id: 11, question: "El uso de guantes es obligatorio porque:", options: ["Mantiene las manos calientes", "Previene la dermatitis de contacto y absorción dérmica de químicos", "Es una norma estética de la escuela", "Evita que las manos huelan mal"], correctAnswerIndex: 1 },
+      { id: 12, question: "El almacenamiento de bidones pesados debe realizarse en:", options: ["Estanterías altas para ahorrar espacio", "Estantes bajos de fácil acceso para evitar caídas y esfuerzos lumbares", "Debajo de la bacha de la cocina", "En el pasillo cerca del aula"], correctAnswerIndex: 1 },
+      { id: 13, question: "¿Qué es el pH en un producto de limpieza?", options: ["El grado de limpieza manual", "La medida de acidez o alcalinidad del producto", "El peso por litro", "La marca del fabricante"], correctAnswerIndex: 1 },
+      { id: 14, question: "Un desinfectante neutro sirve para:", options: ["Solo para vidrios", "Superficies delicadas que no soportan acidez ni alcalinidad extrema", "Remover sarro pesado", "Desinfectar baños públicos"], correctAnswerIndex: 1 },
+      { id: 15, question: "La manipulación de polvos desinfectantes requiere:", options: ["Solo guantes", "Protección ocular y respiratoria para evitar irritación de mucosas", "Nada especial si no hay viento", "Uso de delantal de tela"], correctAnswerIndex: 1 },
+      { id: 16, question: "¿Cuál es el tiempo de validez de la lavandina una vez diluida en agua?", options: ["1 mes", "Máximo 24 horas (se degrada rápidamente)", "1 semana si se tapa bien", "Indefinidamente"], correctAnswerIndex: 1 },
+      { id: 17, question: "Un antiséptico es un químico que se usa en:", options: ["Pisos y paredes", "Tejidos vivos (piel, heridas)", "Tanques de agua", "Ropa de cama"], correctAnswerIndex: 1 },
+      { id: 18, question: "En la jerarquía de riesgos químicos, 'Sustitución' significa:", options: ["Usar menos cantidad", "Cambiar un producto peligroso por uno de menor riesgo", "Uso de guantes", "Limpiar con agua solamente"], correctAnswerIndex: 1 },
+      { id: 19, question: "¿Qué pictograma indica 'Grave peligro para la salud'?", options: ["Signo de exclamación", "Silueta humana con una estrella en el pecho", "Un pez", "Una llama"], correctAnswerIndex: 1 },
+      { id: 20, question: "El uso de calzado cerrado en el depósito de químicos es:", options: ["Opcional", "Obligatorio para prevenir lesiones por contacto con derrames", "Solo para invierno", "Prohibido"], correctAnswerIndex: 1 }
     ],
-    // I will use simplified but accurate generation for the rest to fit the response limits, 
-    // ensuring the complexity remains high with technical terms.
+    // Applying even more complexity to high-level modules
+    4: [
+      { id: 1, question: "¿Sobre qué base legal opera el sistema de Riesgos del Trabajo en Argentina?", options: ["Estatuto del Docente", "Ley 24.557 y sus modificatorias", "Ley de Contrato de Trabajo únicamente", "Resoluciones de la Municipalidad"], correctAnswerIndex: 1 },
+      { id: 2, question: "¿Qué se considera 'Enfermedad Profesional'?", options: ["Cualquier resfriado", "Afecciones causadas por agentes del listado oficial en el trabajo", "Cansancio al final del día", "Dolor de cabeza por el sol del patio"], correctAnswerIndex: 1 },
+      { id: 3, question: "El trayecto remunerado 'In Itinere' se invalida si:", options: ["El auxiliar camina despacio", "Existe un desvío por interés personal documentado", "Usa transporte público en vez de bicicleta", "Se cambia la ropa en la escuela"], correctAnswerIndex: 1 },
+      { id: 4, question: "Ante un accidente laboral, la denuncia al ART debe ser realizada por:", options: ["Solo el auxiliar", "El empleador de forma inmediata", "Los alumnos testigos", "La familia del damnificado días después"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿Cuál es el rol de la SRT (Superintendencia)?", options: ["Pagar los sueldos", "Controlar y supervisar a las ART y empleadores", "Gestionar el comedor escolar", "Vender seguros de vida"], correctAnswerIndex: 1 },
+      { id: 6, question: "Las prestaciones dinerarias durante la baja por accidente:", options: ["No existen", "Cubren el salario del trabajador mientras dure su incapacidad temporaria", "Solo cubren los remedios", "Son menores al sueldo habitual"], correctAnswerIndex: 1 },
+      { id: 7, question: "La capacitación en seguridad laboral es una obligación de:", options: ["Solo el trabajador", "El empleador, asistido por la ART", "Nadie, es opcional", "El Ministerio de Salud"], correctAnswerIndex: 1 },
+      { id: 8, question: "Un riesgo 'Oculto' en el trabajo es:", options: ["Un cable pelado a la vista", "Exposición a ruidos o químicos sin EPP durante años", "Un piso mojado señalizado", "Una puerta cerrada"], correctAnswerIndex: 1 },
+      { id: 9, question: "¿Qué es la Incapacidad Laboral Permanente?", options: ["Un descanso largo", "Daño que disminuye la capacidad de trabajo de por vida", "Cuando el auxiliar se jubila", "Nadie lo sabe"], correctAnswerIndex: 1 },
+      { id: 10, question: "El examen médico de ingreso sirve para:", options: ["Saber si el trabajador sabe limpiar", "Detectar patologías previas del trabajador", "Controlar la asistencia", "Evaluar la puntualidad"], correctAnswerIndex: 1 },
+      { id: 11, question: "¿Qué tipo de prestaciones brinda el sistema de ART?", options: ["Préstamos de dinero", "Especie (medicinas/kine) y Dinerarias (sueldos/indemnizaciones)", "Vacaciones pagas extras", "Regalos de fin de año"], correctAnswerIndex: 1 },
+      { id: 12, question: "En un accidente In Itinere, ¿cuándo se admite el desvío?", options: ["Para ir de compras", "Por razones de estudio, salud o cuidado de familiares (declarado)", "Si el auxiliar se encuentra a un amigo", "Nunca bajo ninguna razón"], correctAnswerIndex: 1 },
+      { id: 13, question: "La higiene laboral busca prevenir:", options: ["Conflictos entre compañeros", "La aparición de enfermedades profesionales", "El ausentismo injustificado", "El gasto excesivo de papel"], correctAnswerIndex: 1 },
+      { id: 14, question: "¿Cuál es la obligación del trabajador ante los EPP?", options: ["Llevarlos a casa", "Usarlos, cuidarlos y informar sus roturas de forma obligatoria", "Guardarlos con llave y no usarlos", "Solo usarlos cuando viene el inspector"], correctAnswerIndex: 1 },
+      { id: 15, question: "El Comité de Seguridad e Higiene sirve para:", options: ["Tomar café", "Fomentar la participación trabajadores-empleador en prevención", "Castigar a los que no limpian", "Firmar las asistencias"], correctAnswerIndex: 1 },
+      { id: 16, question: "Un riesgo de 'Seguridad' se diferencia de uno de 'Higiene' en:", options: ["Nada", "Seguridad causa accidentes agudos; Higiene causa enfermedades crónicas", "Uno es gratis y el otro pago", "Uno es para hombres y otro para mujeres"], correctAnswerIndex: 1 },
+      { id: 17, question: "¿Qué define el Decreto 658/96?", options: ["Las escalas salariales", "El Listado de Enfermedades Profesionales", "Los cargos de los directivos", "Las horas cátedra"], correctAnswerIndex: 1 },
+      { id: 18, question: "En caso de fallecimiento por accidente laboral, el sistema:", options: ["No hace nada", "Otorga una indemnización y pensión a los derechohabientes", "Paga solo el sepelio", "Solo avisa a la familia"], correctAnswerIndex: 1 },
+      { id: 19, question: "La higiene institucional es parte de la:", options: ["Limpieza doméstica", "Salud Pública Ocupacional", "Economía Escolar", "Política Local"], correctAnswerIndex: 1 },
+      { id: 20, question: "Prevención significa:", options: ["Limpiar después del problema", "Actuar antes de que ocurra el daño eliminando peligros", "Pagar el seguro", "Comprar más escobillones"], correctAnswerIndex: 1 }
+    ],
+    10: [
+      { id: 1, question: "La ergonomía en la limpieza institucional busca:", options: ["Más velocidad", "Adaptar la tarea, herramientas y equipos al cuerpo del trabajador", "Usar robots", "Llevar ropa de marca"], correctAnswerIndex: 1 },
+      { id: 2, question: "Al levantar un balde pesado desde el suelo, la posición de la espalda debe ser:", options: ["En forma de C (curvada)", "Mantener las curvaturas naturales (columna recta)", "Inclinándose totalmente hacia adelante", "Girando el tronco al mismo tiempo"], correctAnswerIndex: 1 },
+      { id: 3, question: "El esfuerzo físico para desplazar un mueble debe realizarse:", options: ["Con los brazos estirados", "Ubicando el cuerpo cerca del objeto y empujando con las piernas", "Solo con la fuerza de la cintura", "Tirando de forma brusca"], correctAnswerIndex: 1 },
+      { id: 4, question: "¿A qué altura debe estar el mango de la mopa con respecto al auxiliar?", options: ["A la cintura", "Entre el mentón y los hombros", "Por debajo de las rodillas", "A la altura de los ojos"], correctAnswerIndex: 1 },
+      { id: 5, question: "La bipedestación prolongada (estar parado) puede causar técnicamente:", options: ["Mejora de la circulación", "Insuficiencia venosa (várices) y fatiga muscular", "Dolor de muelas", "Más energía"], correctAnswerIndex: 1 },
+      { id: 6, question: "Un movimiento repetitivo de muñeca al escurrir trapos sin prensa causa:", options: ["Aumento de la fuerza", "Síndrome del Túnel Carpiano o Tendinitis", "Mano de seda", "Nada, es parte del oficio"], correctAnswerIndex: 1 },
+      { id: 7, question: "Al barrer, el auxiliar NO debe:", options: ["Usar mopa húmeda", "Girar el tronco sin mover los pies (torsión de columna)", "Elegir un buen escobillón", "Usar guantes"], correctAnswerIndex: 1 },
+      { id: 8, question: "El peso máximo recomendado de levantamiento manual para un hombre entrenado es:", options: ["100 kg", "25 kg (según guías de ergonomía)", "50 kg", "Lo que el trabajador aguante"], correctAnswerIndex: 1 },
+      { id: 9, question: "En ergonomía, la 'Pausa Activa' consiste en:", options: ["Dormir la siesta", "Realizar ejercicios de estiramiento y cambio de postura periódicos", "Fumar un cigarrillo", "Limpiar más rápido"], correctAnswerIndex: 1 },
+      { id: 10, question: "Un tacho de residuos escolar debe tener preferentemente:", options: ["Tapa a rosca", "Ruedas para evitar el acarreo manual pesado", "Bordes cortantes", "Ser de madera"], correctAnswerIndex: 1 },
+      { id: 11, question: "¿Qué zona de la columna es la más afectada por malas técnicas de carga?", options: ["Cervical", "Lumbar (L4-L5 / L5-S1)", "Dorsal", "Coccígea"], correctAnswerIndex: 1 },
+      { id: 12, question: "La carga dinámica es preferible a la carga estática porque:", options: ["Es más lenta", "Ayuda a la irrigación sanguínea al alternar contracción y relax", "Canse menos", "Es obligatoria por ley"], correctAnswerIndex: 1 },
+      { id: 13, question: "Los calzados con suela rígida y mala amortiguación causan:", options: ["Fascitis plantar y dolor de talón crónico", "Rapidez de paso", "Mejor postura", "Suavidad"], correctAnswerIndex: 0 },
+      { id: 14, question: "Al mover pupitres, ¿cuál es la mejor técnica?", options: ["Alzar uno en cada mano", "Empujar con el peso del cuerpo (no tirar hacia atrás)", "Tirar de espaldas", "Pedirle a los alumnos que los lleven"], correctAnswerIndex: 1 },
+      { id: 15, question: "Un 'Factor de Riesgo Ergonómico' es:", options: ["El sueldo bajo", "La postura forzada sostenida en el tiempo", "El clima frío", "La luz blanca"], correctAnswerIndex: 1 },
+      { id: 16, question: "Las herramientas de limpieza (mopas/baldes) deben ser:", options: ["Pesadas", "Livianas, durables y de diseño ergonómico", "Baratas y desechables", "Importadas"], correctAnswerIndex: 1 },
+      { id: 17, question: "¿Qué síntoma es alerta de lesión musculoesquelética?", options: ["Hambre", "Adormecimiento, hormigueo o dolor punsante localizado", "Sueño", "Risotada"], correctAnswerIndex: 1 },
+      { id: 18, question: "La visión del auxiliar al cargar debe ser:", options: ["Hacia el suelo", "Frente al camino, asegurando visibilidad libre de obstáculos", "Con ojos cerrados", "Mirando hacia atrás"], correctAnswerIndex: 1 },
+      { id: 19, question: "Usar un carrito de limpieza evita:", options: ["Que el auxiliar se pierda", "El transporte manual de baldes y previene riesgos lumbares", "La limpieza profunda", "El uso de guantes"], correctAnswerIndex: 1 },
+      { id: 20, question: "La ergonomía cognitiva en limpieza estudia:", options: ["La fuerza", "La carga mental, estrés y comprensión de manuales químicos", "La velocidad de los brazos", "El color de las paredes"], correctAnswerIndex: 1 }
+    ]
   };
 
   const getThemeForClass = (cid: number, idx: number) => {
     const data: Record<number, any> = {
-      4: [
-        { q: "¿Qué ampara la Ley 24.557?", a: "La prevención y reparación de accidentes de trabajo y enfermedades profesionales", d: ["Solo jubilaciones", "El sueldo docente", "La infraestructura escolar"] },
-        { q: "Un accidente 'In Itinere' es aquel que ocurre:", a: "En el trayecto directo hogar-trabajo sin desviaciones personales", d: ["En las vacaciones", "En el patio de la escuela", "Durante el fin de semana"] },
-        { q: "¿Cuál es la función principal de la ART?", a: "Brindar prestaciones médicas y dinerarias ante siniestros laborales", d: ["Pagar las vacaciones", "Hacer la limpieza", "Enseñar a los alumnos"] }
+      2: [
+        { q: "¿Por qué se prohíbe el barrido en seco?", a: "Para evitar la aero-dispersión de partículas contaminadas", d: ["Porque hace ruido", "Porque demora más tiempo", "Porque el polvo molesta al auxiliar"] },
+        { q: "La desinfección en zonas de alta fricción (picaportes) debe:", a: "Realizarse con paños impregnados en alcohol al 70%", d: ["Hacerse solo con agua", "Ser opcional si el colegio está vacío", "Solo con detergente neutro"] }
       ],
       5: [
-        { q: "El Art. 95 de la Res. 299/11 establece el deber de:", a: "Mantener la higiene permanente y cuidar el patrimonio escolar", d: ["Dar clases de apoyo", "Preparar el cronograma escolar", "Inspeccionar otras escuelas"] },
-        { q: "¿Qué debe hacer el auxiliar ante un niño lesionado en el recreo?", a: "Avisar inmediatamente al docente/directivo para llamar emergencias", d: ["Aplicar cremas o medicamentos", "Llevarlo a su casa", "Dejarlo que repose solo"] }
+        { q: "El Reglamento General de Instituciones Educativas organiza:", a: "La vida escolar y el rol jerárquico del auxiliar", d: ["Solo la cocina", "El plan de estudios", "La salud de los padres"] },
+        { q: "¿Qué responsabilidad tiene el auxiliar sobre el edificio?", a: "Garantizar la apertura, cierre y orden permanente del inmueble", d: ["Comprar mobiliario nuevo", "Atender el teléfono", "Enseñar a los porteros"] }
       ],
       6: [
-        { q: "¿Cuál es la temperatura de la 'Zona de Peligro' para alimentos?", a: "Entre 5°C y 60°C", d: ["Bajo cero", "Más de 100°C", "Solo los 0°C"] },
-        { q: "Para evitar la contaminación cruzada indirecta se debe:", a: "Usar tablas y cuchillos distintos para crudos y cocidos", d: ["Limpiar solo con agua", "Cocinar todo junto", "Usar el mismo trapo para todo"] }
-      ],
-      10: [
-        { q: "Para levantar una carga pesada se debe:", a: "Doblar rodillas, espalda recta y carga pegada al cuerpo", d: ["Curvar la cintura", "Hacer fuerza con los brazos extendidos", "Girar el tronco rápidamente"] },
-        { q: "Al trapear, el movimiento correcto es:", a: "En 'S' u '8', moviendo las piernas sin rotar el tronco", d: ["Giro brusco de cintura", "Encorvado hacia adelante", "Saltando"] }
+        { q: "La 'Marcha de la Contaminación' en cocina significa:", a: "Pasar de zonas sucias a limpias sin desinfectar", d: ["Caminar rápido en la cocina", "El vencimiento de los alimentos", "No usar delantal"] },
+        { q: "El enfriamiento rápido de alimentos cocidos busca:", a: "Cruzar la zona de peligro térmica lo antes posible", d: ["Que se puedan comer rápido", "Ahorrar gas", "Que el plato no queme"] }
       ],
       12: [
-        { q: "¿Qué tipo de residuos van en el tacho verde?", a: "Reciclables secos (papel, cartón, plástico limpio)", d: ["Restos de comida", "Papel higiénico usado", "Vidrios rotos peligrosos"] },
-        { q: "¿Qué precaución se debe tener con las bolsas de residuos?", a: "No comprimirlas con manos/pies y no llenarlas más de 3/4", d: ["Arrastrarlas por el piso", "Llenarlas hasta que pesen mucho", "Dejarlas abiertas"] }
+        { q: "¿Qué color de bolsa se usa para residuos reciclables?", a: "Bolsa Verde", d: ["Bolsa Roja", "Bolsa Negra", "Bolsa Blanca"] },
+        { q: "Un residuo patogénico se caracteriza por:", a: "Ser capaz de transmitir enfermedades infecciosas", d: ["Tener feo olor", "Ser muy pesado", "Ser de color rojo"] }
       ]
     };
 
-    const currentData = data[cid] || data[4]; // Fallback to 4 for others
+    const currentData = data[cid] || data[2]; 
     const theme = currentData[idx % currentData.length];
     return {
       question: `[Módulo ${cid}] ${theme.q}`,

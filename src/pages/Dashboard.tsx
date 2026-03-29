@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { CLASSES } from '../data/courseData';
 import { 
   ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
-  AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap 
+  AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
+  Home
 } from 'lucide-react';
 
 const IconRenderer = ({ icon }: { icon: string }) => {
@@ -29,9 +30,14 @@ const IconRenderer = ({ icon }: { icon: string }) => {
 const Dashboard = () => {
   return (
     <div className="section-container">
-      <header style={{ marginBottom: '3rem' }}>
-        <h1 className="text-gradient">Planificación Modular</h1>
-        <p style={{ color: 'var(--text-dim)' }}>Selecciona una clase para ingresar. Necesitarás la palabra clave.</p>
+      <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+        <div>
+          <h1 className="text-gradient">Planificación Modular</h1>
+          <p style={{ color: 'var(--text-dim)' }}>Selecciona una clase para ingresar. Necesitarás la palabra clave.</p>
+        </div>
+        <Link to="/" className="btn glass" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>
+          <Home size={18} /> Inicio
+        </Link>
       </header>
 
       <div className="grid">
