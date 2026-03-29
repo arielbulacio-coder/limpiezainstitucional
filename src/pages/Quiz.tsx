@@ -77,8 +77,14 @@ const Quiz = () => {
                 };
 
                 if (showResults) {
-                   if (isCorrect) optionStyle.background = 'rgba(16, 185, 129, 0.1)';
-                   if (isSelected && !isCorrect) optionStyle.background = 'rgba(239, 68, 68, 0.1)';
+                   if (isCorrect) {
+                     optionStyle.background = 'rgba(16, 185, 129, 0.15)';
+                     optionStyle.borderColor = 'var(--success)';
+                   }
+                   if (isSelected && !isCorrect) {
+                     optionStyle.background = 'rgba(239, 68, 68, 0.15)';
+                     optionStyle.borderColor = 'var(--error)';
+                   }
                 }
 
                 return (
@@ -87,7 +93,11 @@ const Quiz = () => {
                     style={optionStyle}
                     onClick={() => handleSelect(q.id, oIndex)}
                   >
-                    <span>{option}</span>
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                       <span style={{ fontWeight: isSelected || (showResults && isCorrect) ? 'bold' : 'normal' }}>{option}</span>
+                       {showResults && isCorrect && <span style={{ fontSize: '0.7rem', color: 'var(--success)', marginTop: '0.2rem' }}>✓ Respuesta Correcta</span>}
+                       {showResults && isSelected && !isCorrect && <span style={{ fontSize: '0.7rem', color: 'var(--error)', marginTop: '0.2rem' }}>✗ Tu elección</span>}
+                    </div>
                     {showResults && isCorrect && <CheckCircle size={18} color="var(--success)" />}
                     {showResults && isSelected && !isCorrect && <XCircle size={18} color="var(--error)" />}
                   </div>
