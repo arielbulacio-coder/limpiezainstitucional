@@ -110,7 +110,7 @@ const ClassDetail = () => {
                    </div>
                    <p style={{ marginBottom: '1.5rem' }}>Duración: {cls.duration}</p>
                    <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '2rem' }}>
-                     Al finalizar la lectura, debe completar el cuestionario autoevaluable de 20 preguntas con un puntaje mínimo del 60%.
+                     Al finalizar la lectura, debe completar el cuestionario autoevaluable de 20 preguntas con un puntaje mínimo del 70%.
                    </p>
                    <Link to={`/quiz/${cls.id}`} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                       Comenzar Evaluación <ArrowRight size={20} />
