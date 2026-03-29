@@ -44,7 +44,7 @@ const Landing = () => {
           <User className="text-gradient" size={40} style={{ marginBottom: '1rem' }} />
           <h3>Instructora</h3>
           <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>{COURSE_INFO.instructor}</p>
-          <p style={{ color: 'var(--text-dim)' }}>Especialista en Bioseguridad e Higiene Institucional.</p>
+          <p style={{ color: 'var(--text-dim)' }}>Instructora de Formación Profesional.</p>
         </motion.div>
 
         <motion.div 

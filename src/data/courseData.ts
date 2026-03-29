@@ -17,7 +17,7 @@ export interface ClassData {
 
 export const COURSE_INFO = {
   title: "Curso de Formación Profesional: Limpieza Institucional",
-  instructor: "Maricl Gauna",
+  instructor: "Maricel Gauna",
   hours: "100 Horas Cátedra",
   institution: "Capacitación Profesional",
   description: "Este curso brinda conocimientos básicos sobre el manejo de sustancias químicas, técnicas de higiene y normas de bioseguridad para optimizar la labor del auxiliar en instituciones educativas."
