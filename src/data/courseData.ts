@@ -48,6 +48,90 @@ const getQuestionsForClass = (classId: number): Question[] => {
       { id: 18, question: "¿Qué se debe considerar 'fluido potencialmente infectante'?", options: ["Solo la sangre visible", "Todo fluido corporal independientemente de la persona", "Solo el agua de lluvia contaminada", "Ningún fluido es peligroso después de secarse"], correctAnswerIndex: 1 },
       { id: 19, question: "Un riesgo químico puede ser causado por:", options: ["Pisos mal encerados", "Inhalación de mezclas de lavandina con amoníaco", "Cables pelados", "Uso de trapos de diferentes colores"], correctAnswerIndex: 1 },
       { id: 20, question: "El objetivo del CFP es formar auxiliares que sean:", options: ["Solo limpiadores de superficies", "Agentes profesionales de salud e higiene institucional", "Ayudantes de cocina sin capacitación", "Personal de seguridad de accesos"], correctAnswerIndex: 1 }
+    ],
+    2: [
+      { id: 1, question: "El 'Círculo de Sinner' establece que para limpiar se deben equilibrar:", options: ["Agua, jabón, trapo y balde", "Acción Mecánica, Acción Química, Tiempo y Temperatura", "Precio, marca, cantidad y aroma", "Escoba, mopa, rejilla y esponja"], correctAnswerIndex: 1 },
+      { id: 2, question: "¿Cuál es la principal diferencia entre sanitización y desinfección?", options: ["No hay diferencia, son sinónimos", "La sanitización reduce gérmenes a nivel seguro, la desinfección destruye la mayoría de los patógenos", "La desinfección solo se hace con agua caliente", "La sanitización es solo para los baños"], correctAnswerIndex: 1 },
+      { id: 3, question: "La técnica del 'Doble Balde' se utiliza primordialmente para:", options: ["Cargar más agua en menos tiempo", "Evitar la contaminación cruzada manteniendo el detergente limpio", "Mezclar lavandina con detergente", "Limpiar techos y paredes"], correctAnswerIndex: 1 },
+      { id: 4, question: "En instituciones educativas, el barrido seco (escoba tradicional):", options: ["Es el más recomendado por su rapidez", "Está prohibido porque levanta polvo y alérgenos", "Solo se debe usar en los patios", "Es obligatorio para el aula de computación"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿Qué factor del Círculo de Sinner compensamos si usamos agua fría (baja temperatura)?", options: ["Reducimos el tiempo de fregado", "Aumentamos la acción mecánica o química", "No se puede compensar", "Usamos menos detergente"], correctAnswerIndex: 1 }
+    ],
+    3: [
+      { id: 1, question: "Mezclar lavandina con ácidos (como vinagre o limpia-sarro) libera:", options: ["Un aroma agradable a flores", "Gas Cloro, altamente irritante y tóxico", "Dióxido de carbono inofensivo", "Agua pura"], correctAnswerIndex: 1 },
+      { id: 2, question: "La mezcla de lavandina con amoníaco produce:", options: ["Cloraminas que causan asfixia e irritación", "Una solución desinfectante super potente", "Un pegamento industrial", "Explosión inmediata"], correctAnswerIndex: 1 },
+      { id: 3, question: "¿Cuál es el riesgo de mezclar lavandina con detergente común?", options: ["Se mancha el piso irrevocablemente", "Muchos detergentes anulan el poder desinfectante del cloro", "Se dobla la capacidad de limpieza", "No hay ningún riesgo"], correctAnswerIndex: 1 },
+      { id: 4, question: "Los productos químicos deben almacenarse:", options: ["Directamente en el suelo para mayor estabilidad", "En estantes por debajo de la altura de los hombros", "Cerca de la comida de los niños", "En envases de gaseosas reutilizados"], correctAnswerIndex: 1 },
+      { id: 5, question: "Ante una salpicadura de químico en los ojos, la primera acción es:", options: ["Ponerse gotas de colirio común", "Lavar con agua corriente por 20 minutos", "Cerrar los ojos fuerte y esperar", "Neutralizar con un trapo seco"], correctAnswerIndex: 1 }
+    ],
+    4: [
+      { id: 1, question: "La Ley 24.557 de Riesgos del Trabajo tiene como objetivo:", options: ["Establecer los sueldos", "Prevenir accidentes y reparar daños por enfermedades profesionales", "Regular el horario de clases", "Diseñar los uniformes"], correctAnswerIndex: 1 },
+      { id: 2, question: "El 'Accidente In Itinere' es aquel que ocurre:", options: ["En el patio de la escuela", "En el trayecto directo entre el domicilio y el trabajo", "Durante el fin de semana", "En el comedor escolar"], correctAnswerIndex: 1 },
+      { id: 3, question: "Una interrupción del trayecto por interés personal en el 'in itinere':", options: ["No afecta la cobertura", "Invalida la cobertura de la ART", "Es permitida si es corta", "Solo se permite en transporte público"], correctAnswerIndex: 1 },
+      { id: 4, question: "Las várices y hernias de disco pueden considerarse:", options: ["Accidentes de trabajo súbitos", "Enfermedades Profesionales si están en el listado oficial", "Lesiones deportivas", "Culpa exclusiva del trabajador"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿Cuál es una obligación del trabajador según la LRT?", options: ["Pagar su propio seguro", "Usar los Elementos de Protección Personal (EPP) provistos", "Elegir su propia clínica de atención", "No realizar denuncias de accidentes"], correctAnswerIndex: 1 }
+    ],
+    5: [
+      { id: 1, question: "Bajo la Res. 299/11, el auxiliar es un agente de:", options: ["Una empresa de limpieza privada", "La Dirección General de Cultura y Educación (DGCyE)", "El sindicato únicamente", "La municipalidad local"], correctAnswerIndex: 1 },
+      { id: 2, question: "El Art. 95 define que el auxiliar debe:", options: ["Cocinar para los docentes", "Mantener la pulcritud del edificio y mobiliario", "Sustituir a los maestros ausentes", "Cobrar las cuotas de la cooperadora"], correctAnswerIndex: 1 },
+      { id: 3, question: "Respecto a la medicación de alumnos, el auxiliar:", options: ["Puede dar aspirinas con permiso del padre", "Tiene prohibido suministrar cualquier fármaco", "Solo puede dar remedios caseros", "Debe administrar la insulina si es necesario"], correctAnswerIndex: 1 },
+      { id: 4, question: "Es responsabilidad del auxiliar controlar:", options: ["El boletín de calificaciones", "La apertura y cierre de accesos y servicios (gas/agua)", "El stock de la biblioteca", "La asistencia de los profesores"], correctAnswerIndex: 1 },
+      { id: 5, question: "El trato del auxiliar con la comunidad educativa debe ser de:", options: ["Informalidad absoluta", "Reserva profesional, decoro ético y respeto", "Distancia y frialdad", "Compañerismo para compartir chismes"], correctAnswerIndex: 1 }
+    ],
+    6: [
+      { id: 1, question: "La Clave 1 de Inocuidad de la OMS es 'Mantener la limpieza'. Esto incluye:", options: ["Lavar solo si el niño lo pide", "Higiene de manos y desinfección de superficies que tocan alimentos", "Limpiar el comedor una vez por semana", "Usar desinfectantes fuertes cerca de la comida"], correctAnswerIndex: 1 },
+      { id: 2, question: "Para evitar la contaminación cruzada en la cocina escolar, se debe:", options: ["Usar el mismo cuchillo para carne y verduras", "Separar alimentos crudos de cocidos", "Guardar todo en la heladera sin tapar", "Cocinar solo una vez al mes"], correctAnswerIndex: 1 },
+      { id: 3, question: "En la gestión de la copa de leche, el uso de cofia es obligatorio para:", options: ["Verse más profesional", "Evitar que el cabello caiga en los alimentos", "Cumplir con el uniforme", "Protegerse del frío"], correctAnswerIndex: 1 },
+      { id: 4, question: "La 'Zona de Peligro' para la reproducción bacteriana en alimentos está entre:", options: ["-10°C y 0°C", "5°C y 60°C", "70°C y 100°C", "Solo en temperaturas bajo cero"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿A qué temperatura interna debe llegar el centro del alimento (ej: carne) para ser seguro?", options: ["40°C", "71°C o más", "Solo debe estar tibia", "No importa la temperatura"], correctAnswerIndex: 1 }
+    ],
+    7: [
+      { id: 1, question: "¿Cuál es el accidente más frecuente en las escuelas según el manual?", options: ["Explosiones de gas", "Caídas al mismo nivel por pisos mojados", "Incendios forestales", "Inundaciones catastróficas"], correctAnswerIndex: 1 },
+      { id: 2, question: "La señalética de seguridad de color AMARILLO indica:", options: ["Prohibición", "Advertencia (ej: piso resbaladizo)", "Obligación", "Información de Salida"], correctAnswerIndex: 1 },
+      { id: 3, question: "Para que haya fuego se necesitan estos tres elementos (Triángulo del Fuego):", options: ["Agua, jabón y trapo", "Combustible, Comburente (Oxígeno) y Calor", "Electricidad, Gas y Madera", "Fósforos, Aire y Miedo"], correctAnswerIndex: 1 },
+      { id: 4, question: "El extintor más común en escuelas es el ABC (polvo químico). Esto significa que apaga:", options: ["Solo líquidos inflamables", "Sólidos, líquidos y fuego eléctrico", "Solo papeles y maderas", "Fuegos químicos peligrosos"], correctAnswerIndex: 1 },
+      { id: 5, question: "La técnica correcta para usar un matafuego es apuntar a:", options: ["Las llamas más altas", "La base del fuego haciendo zigzag", "El aire para sofocar el humo", "La cara de los presentes"], correctAnswerIndex: 1 }
+    ],
+    8: [
+      { id: 1, question: "Un 'Área Crítica' en la escuela, que requiere desinfección frecuente, es:", options: ["El patio de juegos", "Baños y comedores", "La sala de profesores", "El estacionamiento"], correctAnswerIndex: 1 },
+      { id: 2, question: "Para desinfectar un inodoro se recomienda usar:", options: ["Solo detergente neutro", "Solución de hipoclorito (lavandina) a 1000 ppm", "Alcohol puro al 96%", "Aromatizante de ambientes"], correctAnswerIndex: 1 },
+      { id: 3, question: "El flujo correcto de limpieza es siempre:", options: ["De abajo hacia arriba", "Desde lo más limpio hacia lo más sucio", "Desde el pasillo hacia el aula", "Al azar según el tiempo disponible"], correctAnswerIndex: 1 },
+      { id: 4, question: "En un laboratorio escolar, las computadoras y equipos electrónicos se limpian con:", options: ["Agua y jabón", "Alcohol al 70% aplicado en un paño seco", "Lavandina diluida", "No se deben limpiar nunca"], correctAnswerIndex: 1 },
+      { id: 5, question: "Un 'Punto de Alta Carga' bacteriana en un baño es:", options: ["El espejo", "La grifería y el picaporte", "La rejilla de ventilación", "El techo"], correctAnswerIndex: 1 }
+    ],
+    9: [
+      { id: 1, question: "El Plan Diario de Limpieza del auxiliar debe priorizar:", options: ["Los vidrios de las ventanas", "Baños, aulas y cocina", "La poda del jardín", "El orden de la biblioteca"], correctAnswerIndex: 1 },
+      { id: 2, question: "¿Por qué el abuso de detergente es una mala práctica?", options: ["Porque deja olor a rico", "Dificulta el enjuague y desperdicia recursos del Estado", "Porque el piso queda demasiado brillante", "Para que los alumnos no resbalen"], correctAnswerIndex: 1 },
+      { id: 3, question: "La firma en una planilla de registros (Checklist) sirve como:", options: ["Un adorno administrativo", "Prueba legal del cumplimiento de la función", "Un saludo a la dirección", "Parte del boletín escolar"], correctAnswerIndex: 1 },
+      { id: 4, question: "Una tarea de limpieza SEMANAL podría ser:", options: ["Higiene del baño", "Limpieza de vidrios y techos internos", "Barrido del aula", "Vaciado de tachos de residuos"], correctAnswerIndex: 1 },
+      { id: 5, question: "Ante un brote de gastroenteritis, el auxiliar debe:", options: ["Pedir licencia inmediata", "Intensificar los registros y frecuencia de desinfección", "No hacer nada distinto", "Cerrar la cocina sin avisar"], correctAnswerIndex: 1 }
+    ],
+    10: [
+      { id: 1, question: "¿Por qué es importante doblar las rodillas al levantar un peso del suelo?", options: ["Para no ensuciarse la ropa", "Para que la fuerza la hagan las piernas y no la zona lumbar", "Para ir más rápido", "No es importante doblar las rodillas"], correctAnswerIndex: 1 },
+      { id: 2, question: "La postura correcta para barrer o trapear implica:", options: ["Encorvar la espalda lo más posible", "Mantener la espalda recta y usar un mango de longitud adecuada", "Girar solo la cintura bruscamente", "Hacerlo sentado"], correctAnswerIndex: 1 },
+      { id: 3, question: "Al cargar un bidón pesado, este debe mantenerse:", options: ["Lejos del cuerpo, con los brazos estirados", "Pegado al pecho (centro de gravedad)", "Sobre la cabeza", "Arrastrándolo con un pie"], correctAnswerIndex: 1 },
+      { id: 4, question: "Un riesgo ergonómico no atendido puede derivar en:", options: ["Mejor rendimiento físico", "Hernias de disco y lesiones lumbares crónicas", "Aumento de sueldo", "Cambio de turno"], correctAnswerIndex: 1 },
+      { id: 5, question: "La biomecánica de la columna enseña que el mayor esfuerzo debe recaer en:", options: ["Los brazos", "Las articulaciones de las piernas (grandes grupos musculares)", "Los discos intervertebrales", "El cuello"], correctAnswerIndex: 1 }
+    ],
+    11: [
+      { id: 1, question: "El concepto de 'Trabajo Decente' de la OIT implica:", options: ["Trabajar gratis para aprender", "Condiciones de libertad, igualdad, seguridad y dignidad humana", "Trabajar 15 horas por día", "No tener vacaciones"], correctAnswerIndex: 1 },
+      { id: 2, question: "La ética profesional del auxiliar exige:", options: ["Comentar los problemas de los alumnos con los vecinos", "Reserva profesional sobre datos sensibles y trato respetuoso", "Cobrar por favores especiales", "Llevarse insumos para uso personal"], correctAnswerIndex: 1 },
+      { id: 3, question: "En un entorno escolar, el auxiliar debe:", options: ["Ignorar a los alumnos", "Ser un ejemplo de ciudadanía y honestidad", "Poner apodos a los compañeros", "Intervenir en peleas físicamente"], correctAnswerIndex: 1 },
+      { id: 4, question: "La equidad de género en la limpieza institucional significa:", options: ["Que solo las mujeres limpian", "Que la tarea no tiene género y se reparte equitativamente", "Que los hombres solo hacen mantenimiento eléctrico", "Que el sueldo depende del género"], correctAnswerIndex: 1 },
+      { id: 5, question: "Un pilar ético del egresado es:", options: ["Cumplir con el menor esfuerzo posible", "Cuidar los bienes públicos como propios", "Llegar siempre tarde", "Criticar a la instructora"], correctAnswerIndex: 1 }
+    ],
+    12: [
+      { id: 1, question: "En el sistema GIRSU, la BOLSA VERDE se utiliza para:", options: ["Restos de comida y basura húmeda", "Reciclables limpios y secos (plástico, cartón, metal)", "Residuos patogénicos", "Pilas y baterías"], correctAnswerIndex: 1 },
+      { id: 2, question: "Para evitar accidentes con el personal de recolección, nunca se debe:", options: ["Separar la basura", "Comprimir las bolsas de residuos con los pies (riesgo de cortes)", "Atar las bolsas", "Sacar la basura de noche"], correctAnswerIndex: 1 },
+      { id: 3, question: "¿Qué porcentaje aproximado de residuos escolares se puede reducir mediante el compost?", options: ["5%", "Hasta un 40%", "90%", "0%"], correctAnswerIndex: 1 },
+      { id: 4, question: "Los residuos de riesgo sanitario (toallitas, pañales) deben ir en:", options: ["Bolsa verde de reciclables", "Bolsas resistentes y bien atadas (residuo común/negra)", "Un tacho abierto en el patio", "Directamente a la cloaca"], correctAnswerIndex: 1 },
+      { id: 5, question: "El auxiliar puede liderar el compromiso ambiental escolar mediante:", options: ["El uso de aerosoles contaminantes", "La clasificación en origen y proyectos de reciclaje/compost", "Quemar la basura en el patio", "No usar agua para limpiar"], correctAnswerIndex: 1 }
+    ],
+    13: [
+      { id: 1, question: "Ante una inundación en la escuela, la primera medida de seguridad es:", options: ["Ponerse a secar con la mopa", "Corte inmediato de la energía eléctrica", "Abrir todas las canillas", "Continuar trabajando normalmente"], correctAnswerIndex: 1 },
+      { id: 2, question: "Después de una inundación, la desinfección recomendada es con lavandina a:", options: ["100 ppm", "2000 ppm (concentración alta)", "Agua tibia sola", "Detergente de pino"], correctAnswerIndex: 1 },
+      { id: 3, question: "En caso de un brote infectocontagioso en el aula, el auxiliar intensifica:", options: ["La limpieza de techos", "La desinfección de puntos de contacto frecuente (picaportes, teclados)", "El encerado de pisos", "La pintura de las paredes"], correctAnswerIndex: 1 },
+      { id: 4, question: "Durante un simulacro de evacuación, el rol del auxiliar incluye:", options: ["Ser el último en salir sin avisar", "Asegurarse de que baños y depósitos estén vacíos", "Esconderse en la cocina", "No participar"], correctAnswerIndex: 1 },
+      { id: 5, question: "Ante un derrame de químico peligroso, se debe:", options: ["Tapar con un trapo y seguir", "Ventilar y usar el absorbente inerte según protocolo de bioseguridad", "Lavar con mucha agua y detergente sin guantes", "Oler el vapor para identificarlo"], correctAnswerIndex: 1 }
     ]
   };
 
