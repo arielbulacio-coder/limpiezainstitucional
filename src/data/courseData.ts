@@ -369,7 +369,7 @@ export const CLASSES: ClassData[] = [
     keyword: "INICIO",
     duration: "7.1h",
     icon: "shield",
-    image: "/src/assets/images/m1.png",
+    image: "/images/m1.png",
     content: `GESTIÓN INTEGRAL DE LA BIOSEGURIDAD PROFESIONAL
 
 Bajo la supervisión de la Instructora Maricel Gauna, el Módulo I profundiza en la bioseguridad no solo como un conjunto de reglas, sino como una cultura institucional de prevención. 
@@ -402,7 +402,7 @@ Si ocurre un derrame (vómito u orina):
     keyword: "LIMPIEZA",
     duration: "7.1h",
     icon: "brush",
-    image: "/src/assets/images/m2.png",
+    image: "/images/m2.png",
     content: `METODOLOGÍA CIENTÍFICA DEL SANEAMIENTO
 
 En este módulo, analizamos por qué 'el brillo no es sinónimo de higiene'. 
@@ -433,7 +433,7 @@ En instituciones está terminantemente prohibido el barrido seco (escoba tradici
     keyword: "QUIMICA",
     duration: "7.1h",
     icon: "flask",
-    image: "/src/assets/images/m3.png",
+    image: "/images/m3.png",
     content: `EL RIESGO QUÍMICO EN EL ÁMBITO AUXILIAR
 
 Los productos de limpieza son químicos industriales. Ignorar su reactividad puede causar daños irreversibles.
@@ -465,7 +465,7 @@ NUNCA use envases de gaseosas o alimentos. Un niño puede ingerirlo pensando que
     keyword: "LEY24557",
     duration: "7.1h",
     icon: "scale",
-    image: "/src/assets/images/m4.png",
+    image: "/images/m4.png",
     content: `PROTECCIÓN LEGAL DEL TRABAJADOR AUXILIAR
 
 El sistema de Riesgos del Trabajo (LRT) protege al trabajador ante contingencias del oficio.
@@ -501,7 +501,7 @@ No todo dolor es EP. Solo se consideran aquellas incluidas en el listado del Dec
     keyword: "REGLAMENTO",
     duration: "7.1h",
     icon: "book",
-    image: "/src/assets/images/m5.png",
+    image: "/images/m5.png",
     content: `EL ROL DEL AUXILIAR SEGÚN LA RESOLUCIÓN 299/11
 
 Este reglamento es la 'ley orgánica' de la vida escolar en la Provincia de Buenos Aires.
@@ -528,7 +528,7 @@ El reglamento establece el régimen de asistencia, puntualidad y causales de jus
     keyword: "ALIMENTOS",
     duration: "7.1h",
     icon: "utensils",
-    image: "/src/assets/images/m6.png",
+    image: "/images/m6.png",
     content: `GESTIÓN DE LA HIGIENE ALIMENTARIA (MANIPULACIÓN)
 
 En escuelas con comedor o copa de leche, el rol del auxiliar es vital para prevenir brotes de intoxicación masiva.
