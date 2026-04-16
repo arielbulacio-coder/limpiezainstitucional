@@ -99,10 +99,18 @@ const ClassDetail = () => {
                 </div>
              </div>
              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div className="card" style={{ padding: '0', overflow: 'hidden', height: '300px' }}>
-                   <div style={{ width: '100%', height: '100%', background: 'linear-gradient(45deg, var(--bg-card), var(--bg-deep))', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                      <IconRenderer icon={cls.icon} size={120} opacity={0.6} />
-                   </div>
+                <div className="card" style={{ padding: '0', overflow: 'hidden', height: '300px', position: 'relative' }}>
+                   {cls.image ? (
+                     <img 
+                       src={cls.image} 
+                       alt={cls.title} 
+                       style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                     />
+                   ) : (
+                     <div style={{ width: '100%', height: '100%', background: 'linear-gradient(45deg, var(--bg-card), var(--bg-deep))', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+                        <IconRenderer icon={cls.icon} size={120} opacity={0.6} />
+                     </div>
+                   )}
                 </div>
                 <div className="card glass">
                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', marginBottom: '1rem' }}>
