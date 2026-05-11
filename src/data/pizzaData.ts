@@ -1,4 +1,4 @@
-import { Question, ClassData } from './foodData';
+import type { Question, ClassData } from './foodData';
 
 export const PIZZA_COURSE_INFO = {
   title: "Maestro Pizzero Rotisero",
