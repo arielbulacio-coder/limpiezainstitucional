@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CLASSES as LIMPIEZA_CLASSES, COURSE_INFO as LIMPIEZA_COURSE_INFO } from '../data/courseData';
 import { FOOD_CLASSES, FOOD_COURSE_INFO } from '../data/foodData';
+import { PIZZA_CLASSES, PIZZA_COURSE_INFO } from '../data/pizzaData';
 import { 
   Key, BookOpen, Clock, ChevronLeft, ArrowRight, Shield, Brush, FlaskConical, Scale, Book, 
   Utensils, AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap 
@@ -31,8 +32,8 @@ const IconRenderer = ({ icon, size = 48, opacity = 0.3 }: { icon: string, size?:
 const ClassDetail = () => {
   const { courseId, id } = useParams();
   const classId = parseInt(id || '1');
-  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : LIMPIEZA_CLASSES;
-  const COURSE_INFO = courseId === 'alimentos' ? FOOD_COURSE_INFO : LIMPIEZA_COURSE_INFO;
+  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : courseId === 'pizza' ? PIZZA_CLASSES : LIMPIEZA_CLASSES;
+  const COURSE_INFO = courseId === 'alimentos' ? FOOD_COURSE_INFO : courseId === 'pizza' ? PIZZA_COURSE_INFO : LIMPIEZA_COURSE_INFO;
   const cls = CLASSES.find(c => c.id === classId);
   
   const [keyword, setKeyword] = useState('');

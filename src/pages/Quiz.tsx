@@ -3,12 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CLASSES as LIMPIEZA_CLASSES } from '../data/courseData';
 import { FOOD_CLASSES } from '../data/foodData';
+import { PIZZA_CLASSES } from '../data/pizzaData';
 import { CheckCircle, XCircle, ChevronLeft, RefreshCw } from 'lucide-react';
 
 const Quiz = () => {
   const { courseId, id } = useParams();
   const classId = parseInt(id || '1');
-  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : LIMPIEZA_CLASSES;
+  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : courseId === 'pizza' ? PIZZA_CLASSES : LIMPIEZA_CLASSES;
   const cls = CLASSES.find(c => c.id === classId);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);

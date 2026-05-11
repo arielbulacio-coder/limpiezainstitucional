@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BookOpen, GraduationCap, ShieldCheck, Clock } from 'lucide-react';
+import { BookOpen, GraduationCap, ShieldCheck, Clock, Utensils, ChefHat } from 'lucide-react';
 import { COURSE_INFO } from '../data/courseData';
-import { Utensils } from 'lucide-react';
 import InstructorImg from '../assets/images/instructora.jpg';
 
 const Landing = () => {
@@ -18,7 +17,7 @@ const Landing = () => {
             Formación Profesional
           </h2>
           <h1 style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '1.5rem', lineHeight: '1.1' }}>
-            Limpieza Institucional
+            Gastronomía & Limpieza Institucional
           </h1>
           <p style={{ fontSize: '1.25rem', color: 'var(--text-dim)', maxWidth: '700px', margin: '0 auto' }}>
             {COURSE_INFO.description}
@@ -36,6 +35,9 @@ const Landing = () => {
           </Link>
           <Link to="/dashboard/alimentos" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--success)' }}>
              Manipulación de Alimentos <Utensils size={20} />
+          </Link>
+          <Link to="/dashboard/pizza" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--accent, #eab308)' }}>
+             Maestro Pizzero Rotisero <ChefHat size={20} />
           </Link>
         </motion.div>
       </header>
@@ -66,6 +68,9 @@ const Landing = () => {
           <hr style={{ margin: '1rem 0', borderColor: 'var(--border)' }} />
           <h3>Manipulación de Alimentos</h3>
           <p style={{ fontWeight: 'bold' }}>50 Horas Cátedra</p>
+          <hr style={{ margin: '1rem 0', borderColor: 'var(--border)' }} />
+          <h3>Maestro Pizzero Rotisero</h3>
+          <p style={{ fontWeight: 'bold' }}>60 Horas Cátedra</p>
         </motion.div>
       </div>
 

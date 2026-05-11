@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { CLASSES as LIMPIEZA_CLASSES } from '../data/courseData';
 import { FOOD_CLASSES } from '../data/foodData';
+import { PIZZA_CLASSES } from '../data/pizzaData';
 import { 
   ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
   AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
@@ -31,7 +32,7 @@ const IconRenderer = ({ icon }: { icon: string }) => {
 
 const Dashboard = () => {
   const { courseId } = useParams();
-  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : LIMPIEZA_CLASSES;
+  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : courseId === 'pizza' ? PIZZA_CLASSES : LIMPIEZA_CLASSES;
   return (
     <div className="section-container">
       <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
