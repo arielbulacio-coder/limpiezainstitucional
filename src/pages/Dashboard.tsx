@@ -39,6 +39,11 @@ const Dashboard = () => {
         <div>
           <h1 className="text-gradient">Planificación Modular</h1>
           <p style={{ color: 'var(--text-dim)' }}>Selecciona una clase para ingresar. Necesitarás la palabra clave.</p>
+          {courseId === 'pizza' && (
+            <Link to={`/recipes/${courseId}`} className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
+              <Book size={20} /> Ver Recetario Profesional
+            </Link>
+          )}
         </div>
         <div style={{ display: 'flex', gap: '0.75rem' }}>
           <Link to="/glossary" className="btn glass primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>
