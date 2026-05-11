@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { CLASSES } from '../data/courseData';
+import { useParams } from 'react-router-dom';
+import { CLASSES as LIMPIEZA_CLASSES } from '../data/courseData';
+import { FOOD_CLASSES } from '../data/foodData';
 import { 
   ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
   AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
@@ -28,6 +30,8 @@ const IconRenderer = ({ icon }: { icon: string }) => {
 };
 
 const Dashboard = () => {
+  const { courseId } = useParams();
+  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : LIMPIEZA_CLASSES;
   return (
     <div className="section-container">
       <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
@@ -53,7 +57,7 @@ const Dashboard = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: i * 0.05 }}
           >
-            <Link to={`/class/${cls.id}`} className="card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.5rem', textDecoration: 'none', color: 'inherit' }}>
+            <Link to={`/class/${courseId}/${cls.id}`} className="card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.5rem', textDecoration: 'none', color: 'inherit' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                 <div style={{ background: 'var(--bg-deep)', padding: '0.75rem', borderRadius: '0.75rem', width: '3.5rem', height: '3.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', border: '1px solid var(--border)' }}>
                    <IconRenderer icon={cls.icon} />

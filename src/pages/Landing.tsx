@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BookOpen, GraduationCap, ShieldCheck, Clock } from 'lucide-react';
 import { COURSE_INFO } from '../data/courseData';
+import { Utensils } from 'lucide-react';
 import InstructorImg from '../assets/images/instructora.jpg';
 
 const Landing = () => {
@@ -30,8 +31,11 @@ const Landing = () => {
           transition={{ delay: 0.5, duration: 1 }}
           style={{ marginTop: '3rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}
         >
-          <Link to="/dashboard" className="btn btn-primary">
-             Ver Clases <BookOpen size={20} />
+          <Link to="/dashboard/limpieza" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
+             Limpieza Institucional <ShieldCheck size={20} />
+          </Link>
+          <Link to="/dashboard/alimentos" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', background: 'var(--success)' }}>
+             Manipulación de Alimentos <Utensils size={20} />
           </Link>
         </motion.div>
       </header>
@@ -57,9 +61,11 @@ const Landing = () => {
           className="card"
         >
           <Clock className="text-gradient" size={40} style={{ marginBottom: '1rem' }} />
-          <h3>Detalles</h3>
-          <p style={{ fontWeight: 'bold' }}>Duración: {COURSE_INFO.hours}</p>
-          <p style={{ color: 'var(--text-dim)' }}>Frecuencia: 2 veces por semana (14 Clases)</p>
+          <h3>Limpieza Institucional</h3>
+          <p style={{ fontWeight: 'bold' }}>{COURSE_INFO.hours}</p>
+          <hr style={{ margin: '1rem 0', borderColor: 'var(--border)' }} />
+          <h3>Manipulación de Alimentos</h3>
+          <p style={{ fontWeight: 'bold' }}>50 Horas Cátedra</p>
         </motion.div>
       </div>
 

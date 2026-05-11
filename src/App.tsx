@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import Landing from './pages/Landing';
@@ -16,9 +16,10 @@ function App() {
           <ThemeToggle />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/class/:id" element={<ClassDetail />} />
-            <Route path="/quiz/:id" element={<Quiz />} />
+            <Route path="/dashboard" element={<Navigate to="/" replace />} />
+            <Route path="/dashboard/:courseId" element={<Dashboard />} />
+            <Route path="/class/:courseId/:id" element={<ClassDetail />} />
+            <Route path="/quiz/:courseId/:id" element={<Quiz />} />
             <Route path="/glossary" element={<Glossary />} />
           </Routes>
         </div>

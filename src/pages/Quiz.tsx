@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { CLASSES } from '../data/courseData';
+import { CLASSES as LIMPIEZA_CLASSES } from '../data/courseData';
+import { FOOD_CLASSES } from '../data/foodData';
 import { CheckCircle, XCircle, ChevronLeft, RefreshCw } from 'lucide-react';
 
 const Quiz = () => {
-  const { id } = useParams();
+  const { courseId, id } = useParams();
   const classId = parseInt(id || '1');
+  const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : LIMPIEZA_CLASSES;
   const cls = CLASSES.find(c => c.id === classId);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
@@ -34,7 +36,7 @@ const Quiz = () => {
 
   return (
     <div className="section-container">
-      <Link to={`/class/${cls.id}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-dim)', textDecoration: 'none', marginBottom: '2rem' }}>
+      <Link to={`/class/${courseId}/${cls.id}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-dim)', textDecoration: 'none', marginBottom: '2rem' }}>
         <ChevronLeft size={20} /> Volver a la clase
       </Link>
 
@@ -140,7 +142,7 @@ const Quiz = () => {
                 <button className="btn btn-primary" onClick={() => { setAnswers({}); setShowResults(false); }}>
                    Reintentar <RefreshCw size={18} />
                 </button>
-                <Link to="/dashboard" className="btn" style={{ border: '1px solid var(--border)' }}>
+                <Link to={`/dashboard/${courseId}`} className="btn" style={{ border: '1px solid var(--border)' }}>
                    Volver al Inicio
                 </Link>
              </div>
