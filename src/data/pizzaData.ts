@@ -157,19 +157,28 @@ export const PIZZA_CLASSES: ClassData[] = [
     duration: "10h",
     icon: "shield",
     image: "/images/pizza_m1.png",
-    content: `Módulo I: Bases de la Cocina y Seguridad Alimentaria
+    content: `MÓDULO I: BASES DE LA COCINA Y SEGURIDAD ALIMENTARIA
 
 1. MANIPULACIÓN SEGURA DE ALIMENTOS (BPM):
-Las Buenas Prácticas de Manufactura son esenciales para cualquier emprendedor. Garantizan que su producto no causará una ETA (Enfermedad de Transmisión Alimentaria). 
-- Higiene Personal: Uñas cortas, sin esmalte, cofia y uniforme exclusivo para la cocina.
-- Contaminación Cruzada: Es el mayor peligro en rotisería. Usar tablas separadas (o lavadas profundamente) entre crudos (pollo/carne) y cocidos o verduras.
+Las Buenas Prácticas de Manufactura (BPM) son fundamentales en cualquier entorno gastronómico, sea un emprendimiento pequeño o un gran restaurante. Garantizan que los productos elaborados sean inocuos, previniendo las Enfermedades de Transmisión Alimentaria (ETA), cuyo objetivo principal es proteger la salud del consumidor y el prestigio del negocio.
+- Higiene Personal: Es innegociable. El manipulador debe presentarse con manos limpias, uñas cortas, sin esmalte, sin joyas (anillos, pulseras, relojes) porque estas acumulan bacterias y pueden convertirse en un riesgo físico al caer en la comida. El uso de cofia es obligatorio para evitar la caída de cabello. El uniforme (chaqueta, delantal y pantalón) debe ponerse exclusivamente en el lugar de trabajo, no traerse puesto de la calle. Masticar chicle está prohibido porque proyecta saliva y puede caer al plato. Si se tiene una herida, debe cubrirse con apósito impermeable y usar guantes. Los guantes no eximen del lavado constante y deben cambiarse al cambiar de tarea.
+- Lavado de manos: Debe durar entre 40 a 60 segundos con agua caliente y jabón.
+- Contaminación Cruzada: Ocurre cuando se transfieren patógenos de alimentos crudos a cocidos o listos para consumo. Nunca se debe usar la misma tabla de madera para crudos y cocidos. Las tablas deben ser de plástico o teflón.
 
-2. HIGIENE Y ESPACIO DE TRABAJO:
-Diferencia entre Limpiar (remover suciedad visible con detergente) y Desinfectar (eliminar bacterias con alcohol 70% o solución clorada). Las mesadas deben sanitizarse constantemente.
+2. HIGIENE DEL ESPACIO DE TRABAJO:
+Diferencia entre Limpiar y Desinfectar: Limpiar es remover suciedad con detergente y agua; Desinfectar es reducir microbios con químicos (ej. alcohol al 70%). El orden de sanitización para mesadas de acero es: Limpiar con detergente, Enjuagar y luego Desinfectar. Los químicos de limpieza siempre deben guardarse en un área separada y rotulada, lejos de alimentos para evitar peligros químicos. Los peligros físicos son objetos extraños en la comida (pelos, vidrio, plástico).
 
-3. CONSERVACIÓN DE MATERIAS PRIMAS:
-- Regla PEPS: Primero en Entrar, Primero en Salir. Garantiza la rotación de stock.
-- Cadena de Frío: Las carnes deben descongelarse en la heladera, NUNCA a temperatura ambiente. La zona de peligro bacteriano es de 5°C a 60°C.`,
+3. USO Y CONSERVACIÓN DE MATERIAS PRIMAS:
+- Almacenamiento: Se rige por el sistema PEPS (Primero en Entrar, Primero en Salir) para evitar vencimientos. En la heladera, las carnes crudas siempre van en el estante inferior para que sus jugos no goteen sobre otros productos listos.
+- Zona de Peligro Microbiano: Las bacterias se multiplican entre los 5°C y los 60°C. 
+- Descongelamiento seguro: Pasando del freezer a la heladera con 24hs de anticipación.
+- Termómetro: Garantiza que el centro del alimento (especialmente pollo o cerdo) alcance >71°C. Si algo huele mal (o se duda), se descarta inmediatamente.`,
+    recipe: {
+      title: "Mise en Place y Sanitización del Puesto de Trabajo",
+      ingredients: "- Solución de detergente\n- Agua caliente\n- Solución desinfectante (Alcohol 70% o solución clorada)\n- Tablas de corte plásticas (por colores)\n- Materia prima (vegetales y carnes)",
+      instructions: "1. Vestimenta: Colóquese el uniforme limpio en el vestuario. Lave sus manos vigorosamente por 40 a 60 segundos.\n2. Limpieza de Estación: Lave la mesada de acero inoxidable con detergente, enjuague y luego rocíe alcohol al 70%. Deje evaporar.\n3. Recepción (PEPS): Pese e inspeccione los vegetales. Si algo tiene mal olor, descártelo.\n4. Separación: Coloque la tabla verde para vegetales y la roja para carnes en extremos separados de la mesada para evitar contaminación cruzada.\n5. Pre-preparación (Mise en Place): Pese y agrupe todos los ingredientes antes de encender el fuego. Al terminar, lave, enjuague y desinfecte nuevamente los utensilios.",
+      image: "/images/pizza_recipe_m1.png"
+    },
     questions: getQuestionsForPizzaClass(1)
   },
   {
@@ -180,19 +189,29 @@ Diferencia entre Limpiar (remover suciedad visible con detergente) y Desinfectar
     duration: "10h",
     icon: "book",
     image: "/images/pizza_m2.png",
-    content: `Módulo II: Pizzas y Panadería Salada
+    content: `MÓDULO II: PIZZAS Y PANADERÍA SALADA
 
-1. HARINAS, GLUTEN Y LEVADURAS:
-El gluten es la red proteica que retiene los gases de la fermentación y da elasticidad a la masa.
-- Se recomienda harina de fuerza (000 o 0000 específica) según el tiempo de leudado.
-- La levadura produce gas carbónico (alveolatura) y alcohol (sabor). NUNCA mezclarla de forma directa con la sal, que la inactiva por ósmosis.
+1. LA CIENCIA DE LAS MASAS Y EL GLUTEN:
+El pilar de una buena pizza es la harina de trigo. Su proteína fundamental es el Gluten, que al hidratarse y amasarse, desarrolla una red elástica que atrapa el gas carbónico (CO2) generado por la levadura.
+- Harinas recomendadas: Para pizzas clásicas, usar harina de fuerza (000 o 0000 según estilo y fuerza de la harina). La "Prueba del velo" comprueba que la red de gluten se ha desarrollado correctamente (se estira hasta quedar casi transparente sin romperse).
+- La Levadura: (Saccharomyces cerevisiae) fermenta los azúcares y produce gas carbónico y alcohol. Se activa con agua tibia (25°C - 35°C). Nunca se debe mezclar la sal pura directamente con la levadura fresca, ya que la sal mata o inhibe la levadura por deshidratación osmótica. A diferencia de la levadura comercial, la Masa Madre es un cultivo simbiótico de levaduras salvajes y bacterias lácticas, requiriendo procesos mucho más largos.
 
 2. AMASADO Y FERMENTACIÓN:
-La técnica moderna pizzera exige fermentaciones largas y en frío (24-72hs en heladera). Esto desarrolla un perfil de sabor complejo (pizza napolitana o porteña aireada) y una digestibilidad muy superior al leudado rápido.
+- Amasado: Su función técnica es desarrollar la red de gluten integrando agua y harina.
+- Fermentación en Frío: Introducir la masa en la heladera durante 24-72h aporta una mejor digestibilidad, un aroma más complejo y una textura muy alveolar (agujeros). 
+- Desgasificado (ponchar): Antes del bollo final, permite redistribuir la levadura y homogeneizar la temperatura. El gramaje de los bollos debe ser estandarizado usando balanza para costeo preciso.
+- Mise en Place en panadería: Significa pesar todos los ingredientes con precisión antes de empezar.
 
-3. FOCACCIAS Y TARTAS:
-- Focaccias: Alta hidratación (70-80% agua) y buen aceite de oliva para lograr cortezas crujientes y migas agujereadas.
-- Tartas (Quiche): La masa brisée requiere un 'Sablage' o arenado de harina y manteca fría, amasando lo mínimo para que no quede dura (no desarrollar gluten). Hornear a blanco antes de rellenar.`,
+3. COCCIÓN Y ESTILOS:
+- Pizza a la Piedra: Se cuece directamente sobre la base refractaria del horno, resultando fina y crujiente. En un horno eléctrico casero (250°C), es útil precalentar una piedra refractaria o placa de hierro pesada. La mozzarella puede quemarse si el horno de leña está muy fuerte (400°C) porque allí la cocción de la napolitana dura sólo 90 segundos.
+- Focaccias: Tienen hidratación muy alta (superior al 70%) para lograr agujeros grandes (alvéolos).
+- Tartas (Quiches): Usan masa Brisée (quebrada). Se amasa lo mínimo posible usando manteca fría (sablage) para NO desarrollar gluten (que la haría dura). Se cocina 'a blanco' (precocción) antes de rellenar para que quede crocante. Se liga con un aparejo de huevos y crema de leche. La salsa clásica de pizza suele ser tomate perita crudo triturado con orégano, ajo y oliva.`,
+    recipe: {
+      title: "Pizza Estilo Napolitano con Fermentación en Frío (Biga/Directa)",
+      ingredients: "- 1 kg de Harina 000 (alta fuerza)\n- 650 cc de Agua mineral (65% hidratación)\n- 3 g de Levadura fresca (o 1g seca)\n- 25 g de Sal fina\n- 20 cc de Aceite de Oliva Extra Virgen",
+      instructions: "1. Autólisis y Amasado: Disuelva la levadura en el agua. Incorpore la harina y mezcle levemente. Deje reposar 20 minutos. Agregue la sal y el aceite, y amase mediante pliegues hasta lograr una masa lisa (prueba del velo).\n2. Primera Fermentación: Deje la masa en bloque a temperatura ambiente por 1 hora. Luego, realice un desgasificado suave y guárdela en frío (heladera) tapada durante 24-48 hs.\n3. Bolleado (Estandarización): Retire la masa del frío, divídala en bollos de 250 g exactos usando balanza digital. Deje reposar los bollos 3-4 horas a temperatura ambiente.\n4. Estirado: Con los dedos (sin paloote para no quitar el aire de los bordes). Coloque salsa de tomate perita triturado en frío.\n5. Cocción: Introduzca en horno precalentado a máxima temperatura (si es posible con piedra refractaria) hasta que los bordes inflen y doren. Agregue la mozzarella fresca en los últimos minutos.",
+      image: "/images/pizza_recipe_m2.png"
+    },
     questions: getQuestionsForPizzaClass(2)
   },
   {
@@ -203,19 +222,26 @@ La técnica moderna pizzera exige fermentaciones largas y en frío (24-72hs en h
     duration: "10h",
     icon: "utensils",
     image: "/images/pizza_m3.png",
-    content: `Módulo III: Pastas, Salsas y Ensaladas
+    content: `MÓDULO III: PASTAS, SALSAS Y ENSALADAS
 
-1. PASTA FRESCA:
-La fórmula base (1 huevo cada 100g de harina). Para más estructura 'al dente', usar sémola de trigo duro. Es vital dejar reposar el bollo 30 min para relajar el gluten. 
-Hervir en abundante agua salada (1L de agua x 100g de pasta), no ponerle aceite.
+1. PASTA FRESCA AL HUEVO:
+La proporción clásica es 100g de harina 0000 por cada huevo entero. Incorporar sémola de trigo duro mejora la estructura, dando textura 'al dente' y rugosidad para atrapar mejor la salsa. Luego de amasar, la masa debe reposar envuelta 30 min para relajar el gluten e hidratar parejo.
+Para pastas rellenas (ej. sorrentinos), el relleno debe estar frío, seco y compacto; un relleno caliente o líquido ablanda y rompe la masa en la cocción.
+El hervido: La regla de oro italiana es 1L de agua por cada 100g de pasta y unos 10g de sal cuando rompe hervor. NO se debe añadir aceite al agua (es un mito; no evita que se peguen y resbala la salsa). El punto 'al dente' significa que la pasta ofrece una leve resistencia central al morder. "Mantecatura" es emulsionar la salsa y la pasta en la sartén con un cucharón del agua del hervido. El bajo costo de harina/huevo contra el precio del plato artesanal da una altísima rentabilidad.
 
-2. SALSAS MADRE Y DERIVADAS:
-- Salsa Blanca (Bechamel): Base de un 'Roux' (partes iguales de manteca y harina) al que se le agrega leche tibia. Derivada famosa: Salsa Mornay (+ queso).
-- Fileto: Aceite de oliva, ajo, albahaca y buen tomate. Cocciones cortas para frescura.
-- Pesto: Emulsión en frío; evitar calentarlo para que la albahaca no se oxide.
+2. SALSAS CLÁSICAS:
+- Salsas Madres (ej: Bechamel/Salsa Blanca). Nace del 'Roux': cocinar partes iguales de materia grasa (manteca/aceite) y harina. Para no tener grumos, el líquido a incorporar al Roux debe estar frío o a temperatura ambiente, batiendo constantemente. Si a la Bechamel le agregamos Gruyère o Parmesano, derivamos en una Salsa Mornay.
+- Salsas de Tomate: La Filetto clásica lleva ajo, albahaca y aceite de oliva.
+- Emulsiones en frío: Para el Pesto Genovés, el verde intenso se logra evitando oxidar la albahaca (blanqueo muy rápido o procesado frío con aceite).
 
-3. ENSALADAS Y CORTES:
-Los vegetales deben estar bien secos antes de aliñar, o el agua diluirá la vinagreta. Cortes clásicos como Juliana (tiras finas) profesionalizan la presentación. En rotisería, aliñar las hojas solo al momento de servir para evitar la marchitez por la sal (ósmosis).`,
+3. ENSALADAS Y VEGETALES:
+Las hojas verdes para ensalada deben ser lavadas y secadas (centrifugadas) al máximo para estar crujientes. Una Vinagreta Básica lleva 3 partes de aceite por 1 de ácido (vinagre o jugo de limón). Para exhibir en rotisería, NO aliñar las ensaladas con antelación, el ácido "quema" la hoja por ósmosis produciendo marchitez. Se aliñan en el momento. El corte de los vegetales para ensaladas profesionaliza el plato (ej: Juliana son tiras finas de 2mm x 5cm). Blanquear verduras (ej. brócoli) es hervir brevemente y enfriar rápido en agua helada para fijar color y textura.`,
+    recipe: {
+      title: "Sorrentinos Artesanales de Jamón y Queso con Salsa Bechamel",
+      ingredients: "Masa:\n- 400 g Harina 0000\n- 100 g Sémola fina\n- 5 Huevos enteros\n\nRelleno:\n- 300 g Queso mozzarella (bien escurrido)\n- 200 g Jamón cocido\n- Nuez moscada y pimienta\n\nSalsa Bechamel:\n- 50 g Manteca y 50 g Harina (Roux)\n- 500 cc Leche tibia o a temperatura ambiente\n- Sal y Nuez Moscada",
+      instructions: "1. Masa: Forme una corona con las harinas, añada los huevos en el centro. Amase hasta lograr una textura lisa. Envuelva en film y deje reposar 30 minutos (Relajación de gluten).\n2. Relleno: Procese el jamón y ralle la mozzarella. Es clave que el relleno esté FRÍO y COMPACTO para no humedecer la masa.\n3. Armado: Estire la masa fina con máquina. Coloque sobre un molde sorrentinero espolvoreado con sémola. Rellene y cubra con otra capa de masa. Pase el rodillo para cortar.\n4. Salsa Bechamel: En una olla derrita la manteca, agregue la harina y cocine 2 minutos (Roux rubio). Vierta la leche gradualmente batiendo con fuerza para evitar grumos. Condimente.\n5. Cocción: Hierva en 1 litro de agua salada por cada 100g de pasta. Al flotar, retírelos, sartenéelos brevemente con la Bechamel (Mantecatura) y sirva inmediatamente.",
+      image: "/images/pizza_recipe_m3.png"
+    },
     questions: getQuestionsForPizzaClass(3)
   },
   {
@@ -226,18 +252,29 @@ Los vegetales deben estar bien secos antes de aliñar, o el agua diluirá la vin
     duration: "10h",
     icon: "flask",
     image: "/images/pizza_m4.png",
-    content: `Módulo IV: Rotisería (Carnes y Platos Complejos)
+    content: `MÓDULO IV: ROTISERÍA (CARNES Y PLATOS COMPLEJOS)
 
-1. TÉCNICAS DE COCCIÓN EN CARNES:
-- Sellado: Dorar a fuego fuerte para lograr la Reacción de Maillard (sabor a asado, umami).
-- Braseado / Slow Cook: Cocciones lentas y húmedas ideales para cortes económicos (bondiola, osobuco). Deshace el colágeno en gelatina, tiernizando cortes duros.
-- Laqueado: Pincelar piezas (ej. pollo) en horno con líquidos azucarados/salsa de soja, buscando color y brillo extremo.
+1. TÉCNICAS DE COCCIÓN DE CARNES:
+- Sellado: Dorar la pieza en sartén fuerte. Busca la Reacción de Maillard (dorado exterior) que aporta complejidad aromática. (Mito: No "cierra los poros").
+- Braseado / Slow Cook (Cocción lenta): Dorar la carne y luego cocinarla en olla tapada con medio líquido (vino, caldo) a baja temperatura. Destruye el colágeno de cortes duros y económicos (bondiola, vacío) convirtiéndolo en gelatina tierna, aumentando así la rentabilidad (Food Cost) del plato.
+- Laqueado: Se pinta la pieza asada repetidas veces con una salsa dulce/salada para generar una costra brillante caramelizada.
+Para evitar la pechuga seca al horno, se puede someter previamente a una salmuera o marinado. Las marinadas con ácido ayudan a tiernizar fibras. La temperatura interna del pollo debe superar los 74°C obligatoriamente.
 
-2. TEMPERATURAS DE INOCUIDAD:
-Cualquier plato a base de pollo o carne picada DEBE alcanzar los 74°C en el centro para destruir patógenos letales como Salmonella y E. Coli.
+2. APROVECHAMIENTO: FONDOS Y RENDIMIENTO:
+En rotisería es vital usar subproductos. Huesos tostados en horno y luego hervidos con vegetales generan un "Fondo Oscuro", base para espesar salsas, lo que incrementa ganancias bajando desperdicios. Para ligar el jugo de un braseado se usa un "Slurry" (almidón disuelto en frío) o un toque de manteca fría.
+En los costos, la merma es la pérdida natural de peso (evaporación de agua y fundición de grasa) que sufre la carne al cocinarse. El plato se costea siempre considerando el peso final (rendimiento real porción) que considera la merma.
 
-3. FONDOS, SALSAS Y GUARNICIONES:
-El aprovechamiento de carcasas de pollo o huesos para armar 'Fondos Oscuros' permite maximizar la rentabilidad del negocio gastronómico. La guarnición (ej. puré cremoso montado con manteca) debe contrastar en textura con la proteína.`,
+3. GUARNICIONES Y ACOMPAÑAMIENTOS:
+La guarnición acompaña y contrasta la carne en sabor, textura o color. Un buen puré de papas liso se logra pisando la papa en caliente y agregando leche y manteca también calientes; nunca usar licuadora porque libera exceso de almidón dejándolo chicloso. Para glasear vegetales baby se los hierve en caldo con azúcar y manteca hasta reducir brillantemente. Papas fritas de rotisería: requieren doble fritura, ventilación y NUNCA taparlas herméticas (el vapor las ablanda).
+
+4. EXHIBICIÓN Y CLÁSICOS DEL MOSTRADOR:
+Vitrina caliente: Mantener por arriba de 60°C. Empanadas de carne deben pintarse con doradura (huevo/leche) para el brillo. El picadillo (relleno) debe enfriarse totalmente en heladera antes del repulgue, para que la grasa cuaje y no humedezca/rompa la masa. Un arrollado de pollo requiere ser presionado y envuelto firme en papel aluminio/film térmico para mantener su forma cilíndrica.`,
+    recipe: {
+      title: "Bondiola de Cerdo Braseada a la Cerveza Negra con Puré Rústico",
+      ingredients: "- 1.5 kg Bondiola de cerdo\n- 500 cc Cerveza negra\n- 1 Cebolla, 1 Zanahoria, 2 dientes de ajo\n- Caldo de carne (Fondo Oscuro)\n- Especias (Pimentón, tomillo, miel)\n- 1 kg Papas\n- 50 g Manteca, 100 cc Leche",
+      instructions: "1. Sellado (Reacción de Maillard): En una olla de hierro con un poco de aceite a fuego muy fuerte, dore la bondiola entera por todas sus caras hasta que forme una costra marrón. Retire y reserve.\n2. Mirepoix y Desglasado: En la misma olla dore los vegetales picados burdamente. Vierta la cerveza negra para despegar los jugos caramelizados del fondo (desglasar).\n3. Braseado (Cocción Lenta): Vuelva a introducir la bondiola. Agregue el caldo hasta cubrirla por la mitad. Añada especias y miel. Tape herméticamente (con papel aluminio si es necesario) y cocine a horno bajo (160°C) durante 3 a 4 horas.\n4. Guarnición y Slurry: Hierva las papas con piel (puré rústico), píselas en caliente con leche y manteca tibias. Al finalizar la carne (se debe deshacer con tenedor), reduzca los jugos de cocción y líguelos con una cucharadita de almidón disuelto en agua fría (slurry) para lograr una salsa brillante.\n5. Emplatado y Costeo: Sirva generosamente. Recuerde que la bondiola tendrá entre 30% a 40% de merma, por lo que el costo del plato debe basarse en el peso cocido final.",
+      image: "/images/pizza_recipe_m4.png"
+    },
     questions: getQuestionsForPizzaClass(4)
   },
   {
@@ -248,19 +285,32 @@ El aprovechamiento de carcasas de pollo o huesos para armar 'Fondos Oscuros' per
     duration: "10h",
     icon: "activity",
     image: "/images/pizza_m5.png",
-    content: `Módulo V: Postres y Cocina Dulce
+    content: `MÓDULO V: PASTELERÍA Y POSTRES DE ROTISERÍA
 
-1. LA QUÍMICA DE LA PASTELERÍA:
-La exactitud en el pesaje es obligatoria. No se cocina 'al ojo'. 
-- Punto Letra / Cinta: Batir huevos y azúcar hasta blanquear, base para bizcochuelos aireados sin polvo de hornear.
+1. PASTELERÍA COMO QUÍMICA EXACTA:
+La precisión en la pastelería es vital; una balanza no es opcional, ya que alteraciones en los pesos rompen la estructura química del postre. 
+- Punto Letra / Cinta: Al batir huevos y azúcar (para bizcochuelos o genoise sin polvo leudante) la mezcla blanquea, incorpora aire mecánico y al levantar el batidor se puede "escribir" un dibujo que permanece sobre la superficie.
+- Baño María: Cocinar ingredientes delicados (ej. derretir chocolate o cocer flan) sobre el vapor de agua en ebullición suave, garantizando un calor delicado y homogéneo.
 
-2. CLÁSICOS DE ROTISERÍA (FLAN, TIRAMISÚ, CHEESECAKE):
-- Flan: Se cuaja por la coagulación de proteínas del huevo a calor suave. Siempre cocción a Baño María para que no hierva y quede liso sin "agujeros".
-- Tiramisú: Postre ensamblado. Almíbar de café para humedecer vainillas, crema a base de queso mascarpone auténtico.
-- Cheesecake: Horneada baja temperatura, evitar sobrecocción para que no se agriete arriba.
+2. POSTRES CLÁSICOS DE VITRINA:
+- El Flan: Obtiene su estructura mediante la coagulación suave de las proteínas del huevo (nunca debe hervir el agua, o el flan quedará lleno de burbujas/agujeros). El caramelo seco se hace fundiendo azúcar sola en cacerola limpia a fuego lento sin revolver inicialmente (evita cristalizar).
+- Tiramisú: Sus bizcochos vainilla se sumergen fugazmente en almíbar de café expreso para no deshacerse. La crema genuina exige Queso Mascarpone.
+- Cheesecake estilo New York: Base de galletitas molidas con manteca. Para evitar grietas en la superficie, se debe cocinar a temperatura baja y moderada, y dejar enfriar lentamente apagando el horno y dejando la puerta entreabierta.
 
-3. MERENGUE Y TERMINACIONES:
-El merengue italiano (claras con almíbar a 118°C) es el único seguro a nivel bacteriológico para exhibir en postres fríos. Presentaciones limpias y glaseados brillantes añaden gran valor percibido.`,
+3. MERENGUES, CREMAS Y GELATINAS:
+- Merengue Italiano: El único 100% seguro contra salmonella. Se bate vertiendo en forma de hilo un almíbar a "punto bolita blanda" (118-121°C) sobre las claras. Este punto se comprueba si al volcar una gota de almíbar en agua fría se puede armar una bolita maleable con los dedos.
+- Crema de leche (Chantilly): Debe estar muy fría (4°C ideal) para retener el aire al batirla; si nos pasamos, la grasa se separa y se convierte en manteca.
+- Crema Pastelera: Se espesa gracias al almidón de maíz o harina. Al enfriarse, debe cubrirse con film directamente en contacto con la crema ("a piel") para evitar que forme costra en la superficie.
+- Gelatina sin sabor: Debe activarse hidratándola en agua fría (5 partes de agua por 1 de polvo) y luego disolverla al calor antes de usar.
+
+4. PRESENTACIÓN Y TEXTURAS:
+En los postres "Verrine" (vasitos), contrastar texturas (suave crema, crocante crumble, ácido gelée frutal) aumenta enormemente el valor percibido. Un "Glaseado Espejo" otorga un brillo sumamente profesional y protege el producto en la heladera. El "Coulis" es una salsa dulce fina hecha licuando y tamizando frutos (ej: frutos rojos). El balance ideal implica contrarrestar el dulzor empalagoso con toques ácidos, amargos (cacao) o salados (caramelo salado).`,
+    recipe: {
+      title: "Tiramisú Clásico de Vitrina",
+      ingredients: "- 500 g Queso Mascarpone (o mezcla queso crema firme/crema batida si es rotisería económica)\n- 5 Yemas y 150 g Azúcar (para el aparato bomba)\n- 2 Paquetes de Vainillas o bizcochos de soletilla\n- 300 cc Café Expreso fuerte y frío\n- 30 cc Licor de Amaretto o licor de café\n- Cacao amargo en polvo (para espolvorear)",
+      instructions: "1. Almíbar de Café: Mezcle el café frío con el licor en una fuente plana. Reserve.\n2. Aparato Bomba (Pasteurización de Yemas): Para evitar riesgos de ETA, haga un almíbar con el azúcar a 118°C (Punto bolita blanda). Viértalo en forma de hilo sobre las yemas mientras bate a máxima velocidad hasta que la preparación enfríe y blanquee.\n3. Crema Mascarpone: Incorpore suavemente el queso mascarpone a temperatura ambiente a la mezcla de yemas, realizando movimientos envolventes para no bajar el volumen.\n4. Armado: Moje RÁPIDAMENTE las vainillas en el café (si se mojan mucho se deshacen) y forme una capa en la base de la fuente o vasito. Cubra con una capa de la crema de mascarpone. Repita la operación formando otra capa de vainillas y otra de crema.\n5. Presentación: Alise la superficie, lleve a la heladera (frio intenso) por al menos 4 a 6 horas para asentar la estructura. Espolvoree una abundante y tamizada capa de cacao amargo justo antes de exhibir/servir para que no se humedezca.",
+      image: "/images/pizza_recipe_m5.png"
+    },
     questions: getQuestionsForPizzaClass(5)
   },
   {
@@ -271,19 +321,33 @@ El merengue italiano (claras con almíbar a 118°C) es el único seguro a nivel 
     duration: "10h",
     icon: "list-checks",
     image: "/images/pizza_m6.png",
-    content: `Módulo VI: Gestión, Costos y Emprendimiento
+    content: `MÓDULO VI: GESTIÓN, COSTOS Y EMPRENDIMIENTO RENTABLE
 
-1. EL CÁLCULO DEL "FOOD COST":
-Para ser rentable, el costo de materia prima (Food Cost) de un plato o pizza no debe exceder el 30%-35% del precio de venta final. El gramaje de los ingredientes (ej: la mozzarella) debe estar estandarizado (usar balanza siempre).
+1. EL CÁLCULO DE COSTOS EN GASTRONOMÍA:
+La habilidad técnica no es suficiente si los números no cierran. Un emprendedor exitoso combina técnica, inocuidad y control de números.
+- Food Cost (Costo de Materia Prima): Es el costo exacto de los ingredientes utilizados por porción. Para que el negocio sea sano, el Food Cost ideal NUNCA debe superar el 30% a 35% del precio final de venta.
+- Estandarización de Recetas: Es imposible costear usando "tazas", "puñados" o al "ojo". El emprendedor debe usar obligatoriamente una balanza digital. (Ej: en pizzería, la mozzarella de buena calidad es el ingrediente más costoso, pesarlo rigurosamente por cada pizza dicta si la noche arrojó ganancias o pérdidas).
+- Merma y Rendimiento: Las cáscaras, la merma por cocción o huesos no se ignoran; se calculan e incluyen en el costo real de los ingredientes que terminan en el plato.
 
-2. COSTOS FIJOS Y PUNTO DE EQUILIBRIO:
-No olvide el alquiler, gas, luz y su propio sueldo. El Punto de Equilibrio indica cuántas pizzas/platos debe vender al mes solo para pagar gastos antes de ver ganancia pura.
+2. GESTIÓN FINANCIERA DEL LOCAL:
+- Costos Fijos: Aquellos que se pagan obligatoriamente haya o no haya ventas (Alquiler, luz comercial, gas, el sueldo del propio dueño/empleado).
+- Punto de Equilibrio (Break-even): La cantidad exacta de pizzas/platos que debe vender al mes para lograr pagar los costos variables (harina, cajas) y fijos. Recién a partir de esa venta se genera ganancia.
+- Packaging: La caja de pizza no es un regalo. Es parte del costo directo (variable) del plato y una poderosa herramienta de marketing. El Margen de Contribución es la diferencia entre el precio de venta y este costo variable.
 
-3. DISEÑO DE MENÚ EFICIENTE (MENU ENGINEERING):
-Apostar a un menú corto, focalizado en productos "Estrella" (alta rentabilidad y alta popularidad). Evite cartas kilométricas que generan grandes mermas y desperdicios de mercadería.
+3. LOGÍSTICA DE COMPRAS (Mise en Place y Stock):
+La cámara de frío y almacén se rige por el sistema FIFO/PEPS (lo primero en entrar es lo primero en salir). Para no quebrar stock ni comprar de más (generando podredumbre), se usan planillas con "Puntos Críticos de Pedido". Usar productos frescos de temporada no solo aporta sabor excepcional sino que minimiza brutalmente el Food Cost.
+En cuanto al tiempo, "Mise en place es dinero"; un chef desorganizado hace que se incurra en horas extras, demoras y mala atención, aumentando los costos indirectos.
 
-4. MARKETING Y ATENCIÓN AL CLIENTE:
-Una excelente foto de su producto ("Food Porn") en redes, buen packaging (caja térmica de calidad) y respuestas amables a quejas fidelizan al cliente y profesionalizan un emprendimiento doméstico o rotisería.`,
+4. DISEÑO DEL MENÚ (Menu Engineering) Y MARKETING:
+- El Menú: Emprendimientos exitosos comienzan con un menú CORTO, enfocado y cruzando los mismos ingredientes en distintos platos para evitar mermas. Los "Platos Estrella" son aquellos muy rentables y de alta popularidad.
+- Locales e Inocuidad: En un emprendimiento hogareño (Dark Kitchen), debe destinarse un sector físico aislado para producir, respetando exigencias bromatológicas (azulejos lavables, bacha independiente).
+- Ventas: Las fotos oscuras venden poco. El esfuerzo en fotos "Food Porn" profesionales para Instagram es mandatorio. Ante una queja, el emprendedor profesional escucha activamente, se disculpa, compensa rápidamente y fideliza a ese cliente, jamás discutiendo en redes.`,
+    recipe: {
+      title: "Costeo y Ficha Técnica de una Pizza Muzzarella",
+      ingredients: "Lista de ingredientes pesados en báscula digital:\n- 250 g Masa base estandarizada\n- 80 g Salsa Filetto en frío\n- 250 g Queso Mozzarella cilíndrica de calidad\n- 10 g Aceitunas\n- 5 cc Aceite de Oliva y Orégano\n- 1 Caja de Cartón corrugado",
+      instructions: "1. Ficha Técnica: Ingrese el peso exacto de cada ingrediente en una planilla de Excel. \n2. Food Cost Bruto: Calcule cuánto le cuesta cada fracción de producto. Ejemplo: si el Kilo de Mozzarella cuesta $5000, los 250g de su pizza cuestan $1250.\n3. Rendimiento: Sume el costo total de todos los ingredientes más el envase (Caja térmica). Supongamos que el Food Cost total de la pizza más la caja es de $2000.\n4. Precio de Venta (Pricing): Siguiendo la regla de oro, si el Food Cost es $2000 y debe representar solo el 30% del precio final, el cálculo es $2000 / 0.30 = $6666. \n5. Análisis: Ese precio de $6666 le permite que los $4666 restantes paguen la luz, el gas, su salario como maestro pizzero, el alquiler y finalmente dejen un margen de ganancia real para que el negocio crezca. Verifique este precio contra la competencia local; si está fuera de mercado, modifique los gramajes o cambie de proveedores, NUNCA sacrifique inocuidad.",
+      image: "/images/pizza_recipe_m6.png"
+    },
     questions: getQuestionsForPizzaClass(6)
   }
 ];

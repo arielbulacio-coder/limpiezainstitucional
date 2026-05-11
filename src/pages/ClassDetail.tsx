@@ -101,6 +101,24 @@ const ClassDetail = () => {
                 <div style={{ color: 'var(--text-main)', whiteSpace: 'pre-wrap', fontSize: '1.05rem', lineHeight: '1.7' }}>
                    {cls.content}
                 </div>
+                {cls.recipe && (
+                  <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--border)' }}>
+                     <h3 style={{ color: 'var(--accent, #eab308)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <Utensils size={24} /> Receta Práctica: {cls.recipe.title}
+                     </h3>
+                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
+                        <img src={cls.recipe.image} alt={cls.recipe.title} style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '0.75rem' }} />
+                        <div style={{ background: 'var(--bg-deep)', padding: '1.5rem', borderRadius: '0.75rem' }}>
+                           <h4 style={{ marginBottom: '0.5rem' }}>Ingredientes</h4>
+                           <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem' }}>{cls.recipe.ingredients}</div>
+                        </div>
+                     </div>
+                     <div style={{ background: 'var(--bg-deep)', padding: '1.5rem', borderRadius: '0.75rem' }}>
+                        <h4 style={{ marginBottom: '0.5rem' }}>Paso a Paso</h4>
+                        <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem' }}>{cls.recipe.instructions}</div>
+                     </div>
+                  </div>
+                )}
              </div>
              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div className="card" style={{ padding: '0', overflow: 'hidden', height: '300px', position: 'relative' }}>

@@ -15,6 +15,12 @@ export interface ClassData {
   questions: Question[];
   image?: string;
   icon: string;
+  recipe?: {
+    title: string;
+    ingredients: string;
+    instructions: string;
+    image: string;
+  };
 }
 
 export const COURSE_INFO = {
