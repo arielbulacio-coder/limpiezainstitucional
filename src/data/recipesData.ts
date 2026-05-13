@@ -8,7 +8,7 @@ export interface Recipe {
   icon: string;
 }
 
-export const PIZZA_RECIPES: Recipe[] = [
+export const GASTRONOMIA_RECIPES: Recipe[] = [
   // BASES Y GESTIÓN
   {
     id: 1,
@@ -34,6 +34,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Masa Madre Básica (Cultivo Natural)",
     ingredients: "- 100 g Harina Integral o de Centeno\n- 100 cc Agua mineral sin cloro\n- Frasco de vidrio limpio",
     instructions: "1. Día 1: Mezclar la harina y el agua en el frasco. Tapar sin ajustar y dejar a temperatura ambiente (25°C).\n2. Día 2: Observar si hay pequeñas burbujas. No hacer nada.\n3. Día 3: Descartar la mitad de la mezcla. Agregar 50g de harina y 50cc de agua (Alimentar). Mezclar.\n4. Día 4 al 7: Repetir el proceso de descartar y alimentar cada 24hs. La masa madre estará lista cuando duplique su volumen a las 4-6 horas de ser alimentada y tenga olor ácido frutal agradable.\n5. Mantenimiento: Guardar en heladera y alimentar una vez por semana.",
+    image: "/images/recipe_masa_madre.png",
     icon: "flask"
   },
   {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { PIZZA_RECIPES } from '../data/recipesData';
+import { GASTRONOMIA_RECIPES } from '../data/recipesData';
 import { ChevronLeft, Utensils, Shield, Book, FlaskConical, Activity, ListChecks } from 'lucide-react';
 
 const IconRenderer = ({ icon, size = 48, opacity = 0.3 }: { icon: string, size?: number, opacity?: number }) => {
@@ -21,7 +21,7 @@ const Recipes = () => {
 
   // Currently we only have recipes for 'pizza'. 
   // You could expand this later to load FOOD_RECIPES etc.
-  const recipes = courseId === 'pizza' ? PIZZA_RECIPES : [];
+  const recipes = (courseId === 'pizza' || courseId === 'alimentos') ? GASTRONOMIA_RECIPES : [];
 
   // Group recipes by category
   const groupedRecipes = recipes.reduce((acc, recipe) => {
