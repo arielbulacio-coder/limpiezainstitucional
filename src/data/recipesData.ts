@@ -133,6 +133,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Pizza de Molde Estilo Porteño (Media Masa)",
     ingredients: "- 1 kg Harina 0000\n- 600 cc Agua tibia\n- 25 g Levadura fresca\n- 20 g Sal fina\n- 50 cc Aceite de Girasol\n- 350 g Mozzarella por pizza",
     instructions: "1. Esponja: Diluir la levadura en 100 cc de agua tibia con una cucharada de harina y dejar espumar 15 min.\n2. Masa: Hacer una corona con harina y sal. Verter la esponja, agua y aceite en el centro. Amasar 10 min.\n3. Leudado: Dividir en 3 bollos de 550g. Dejar leudar al doble de volumen.\n4. Estirado: Aceitar generosamente los moldes. Estirar copiando la forma. Dejar puntear 20 min en el molde.\n5. Cocción: Pintar con salsa, precocinar 8 min a 220°C. Retirar, añadir mozzarella y hornear hasta gratinar.",
+    image: "/images/recipe_pizza_molde.png",
     icon: "book"
   },
   {
@@ -141,6 +142,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Focaccia Genovesa de Alta Hidratación",
     ingredients: "- 500 g Harina de fuerza (000)\n- 400 cc Agua (80% hidratación)\n- 15 g Sal fina, 5 g Levadura fresca\n- Abundante Aceite de Oliva, Sal gruesa, Romero",
     instructions: "1. Mezcla: Mezclar agua, levadura y harina. No amasar. Reposar 30 min.\n2. Pliegues: Agregar sal. Cada 30 min, estirar la masa y plegarla sobre sí misma 4 veces. Repetir 3 veces.\n3. Fermentación: Pasar a tupper aceitado y dejar en heladera 24 horas.\n4. Moldeado: Volcar sobre asadera muy aceitada. Dejar a temperatura ambiente 2-3 horas hasta llenar el molde de burbujas.\n5. Horneado: Presionar formando hoyuelos. Espolvorear sal gruesa y romero. Hornear a 230°C por 20-25 min.",
+    image: "/images/recipe_focaccia.png",
     icon: "book"
   },
   {
@@ -198,6 +200,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Chipá (Pan de Queso Tradicional)",
     ingredients: "- 500 g Fécula de Mandioca\n- 250 g Queso Mar del Plata\n- 250 g Queso Sardo o Reggianito\n- 100 g Manteca pomada, 3 Huevos\n- 100 cc Leche, Pizca de sal",
     instructions: "1. Mezcla seca: Mezclar la fécula con los quesos rallados y sal.\n2. Mezcla húmeda: Agregar manteca, huevos y leche en el centro.\n3. Amasado: Mezclar con las manos. La fécula no tiene gluten; amasar hasta formar un bollo homogéneo y tierno.\n4. Formado: Hacer bolitas del tamaño de una nuez.\n5. Cocción: Horno Fuerte (200°C) por 12-15 min. Dorados por fuera, chiclosos por dentro.",
+    image: "/images/recipe_chipa.png",
     icon: "book"
   },
   {
@@ -230,6 +233,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Empanadas Árabes (Fatay o Sfija)",
     ingredients: "- Masa: 500g Harina, 250cc Agua, 15g Levadura, Aceite, Sal.\n- Relleno: 500g Carne picada MAGRA (cruda), 500g Cebolla picada, 2 Tomates picados.\n- Jugo de 3 Limones, Baharat (especias árabes) o Comino, Ají molido.",
     instructions: "1. Relleno en frío: Poner la carne cruda en un bol grande. Agregar la cebolla y el tomate picados crudos.\n2. Maceración (Cocción ácida): Agregar el jugo de limón abundante, las especias y la sal. Mezclar con las manos. Dejar reposar 8 HORAS en heladera.\n3. Escurrido: Antes de armar, colocar el relleno en un colador y presionar fuerte para sacarle todo el jugo líquido (vital para que no rompa la masa).\n4. Armado: Sobre discos de masa leudada (levadura), poner relleno en el centro y doblar en forma de triángulo dejando el centro semiabierto.\n5. Cocción: Horno máximo 15-20 minutos.",
+    image: "/images/recipe_empanadas_arabes.png",
     icon: "book"
   },
   {
@@ -298,6 +302,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Lasaña a la Boloñesa y Salsa Blanca",
     ingredients: "Masa: 500g pasta fresca.\nRagú Boloñesa: 500g carne picada, zanahoria, cebolla, puré tomate, vino.\nBechamel: 50g manteca, 50g harina, 700cc leche.\nQueso: 300g Mozzarella y Parmesano.",
     instructions: "1. Boloñesa: Dore carne, agregue vegetales, desglase con vino, sume tomate y cocine lento 2hs.\n2. Bechamel: Roux de manteca y harina (2 min). Agregue leche tibia batiendo hasta espesar.\n3. Montaje: Base de bechamel, masa, boloñesa, masa, bechamel, queso. Repita 4 pisos.\n4. Gratinado: Hornee a 200°C por 30-40 min hasta dorar. Reposar 15 min antes de cortar.",
+    image: "/images/recipe_lasagna.png",
     icon: "utensils"
   },
   {
@@ -306,6 +311,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Ravioles de Ricota, Nuez y Espinaca",
     ingredients: "Masa: 300g Harina, 3 Huevos.\nRelleno: 400g Ricota, 1 atado Espinaca, Nueces picadas, Nuez moscada, Parmesano.",
     instructions: "1. Relleno: Espinaca MUY exprimida. Mezclar todo. Enfriar.\n2. Masa: Estirar fina.\n3. Armado: Porciones de relleno. Pincelar agua. Cubrir, sacar aire y cortar.\n4. Cocción: Hervir 3-4 minutos en agua salada.",
+    image: "/images/recipe_ravioles.png",
     icon: "utensils"
   },
   {
@@ -378,6 +384,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Canelones Clásicos de Verdura y Carne",
     ingredients: "- Masa: 12 a 15 Panqueques/Crepes\n- Relleno: 1 atado Acelga cocida picada, 250 g Carne picada cocida, 1 Cebolla salteada, 250 g Ricota seca.\n- Cobertura: Salsa Tuco, Salsa Blanca y Queso Parmesano.",
     instructions: "1. Relleno: Mezclar la verdura hiper exprimida con la carne, la cebolla, ricota y condimentos (Nuez moscada clave). Debe ser una pasta compacta.\n2. Armado: Colocar dos o tres cucharadas de relleno en un extremo del panqueque y enrollar firmemente formando un cilindro.\n3. Base: En una asadera para horno, esparcir una base mixta de salsa tuco y salsa blanca.\n4. Acomodado: Colocar los canelones uno al lado del otro sin aplastarlos.\n5. Cobertura y Gratinado: Bañar generosamente con más salsa mixta (Rosini). Espolvorear abundante queso y gratinar en horno fuerte 20 minutos.",
+    image: "/images/recipe_canelones.png",
     icon: "utensils"
   },
   {
@@ -429,6 +436,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Pollo Arrollado Clásico de Rotisería",
     ingredients: "- 1 Pollo entero deshuesado\n- 200g Queso, 200g Jamón\n- Morrón asado, Aceitunas, Huevos duros",
     instructions: "1. Preparación: Abra el pollo deshuesado, condimente con sal, pimienta y provenzal.\n2. Relleno: Coloque sobre papel aluminio. Agregue capas de jamón, queso, morrón, aceitunas y huevos.\n3. Enrollado: Enrolle compactando muy bien. Ate con hilo. Envuelva en aluminio.\n4. Cocción: Hornee o hierva a 180°C por 1.5 horas.\n5. Prensado: Enfríe en heladera con un peso encima para que no se desarme.",
+    image: "/images/recipe_pollo_arrollado.png",
     icon: "flask"
   },
   {
@@ -453,6 +461,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Milanesa Napolitana Suprema",
     ingredients: "- 4 Milanesas cocidas\n- 300 cc Salsa Filetto\n- Jamón Cocido y Mozzarella",
     instructions: "1. Base: Coloque las milanesas en asadera.\n2. Cubierta: Pinte con salsa caliente. Coloque jamón.\n3. Queso: Cubra con mozzarella rallada.\n4. Gratinado: Horno a máxima potencia hasta derretir el queso.\n5. Sirva con orégano y papas fritas.",
+    image: "/images/recipe_milanesa_napolitana.png",
     icon: "flask"
   },
   {
@@ -477,6 +486,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Vitel Toné Clásico",
     ingredients: "- 1 Peceto\n- Caldo de verduras\n- Atún, Anchoas, Yemas duras, Mayonesa, Crema.",
     instructions: "1. Carne: Hierva peceto en caldo por 1.5 hs. ENFRÍE EN EL CALDO.\n2. Salsa: Procese atún, anchoas, yemas y caldo. Emulsione con mayonesa.\n3. Feteado: Corte peceto muy fino.\n4. Emplatado: Capas de carne y salsa. Decore con alcaparras.",
+    image: "/images/recipe_vitel_tone.png",
     icon: "flask"
   },
   {
@@ -568,6 +578,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Lemon Pie con Merengue Italiano",
     ingredients: "Sablée. Curd Limón. Merengue Italiano.",
     instructions: "1. Base: Fondee molde y cocine a blanco.\n2. Curd: Hierva jugo y agua con almidón y yemas hasta espesar. Vuelque en tarta.\n3. Merengue: Almíbar a 118°C sobre claras a nieve.\n4. Decoración: Manga pastelera y soplete.",
+    image: "/images/recipe_lemon_pie.png",
     icon: "activity"
   },
   {
@@ -576,6 +587,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Chocotorta Clásica",
     ingredients: "Galletitas Chocolate, Dulce de Leche, Queso Crema, Café.",
     instructions: "1. Relleno: Mezclar DDL y Queso crema en partes iguales.\n2. Mojado: Remojar galletas en café unos segundos.\n3. Armado: Capa galletas, capa crema. Repetir.\n4. Frío: Heladera mínimo 6hs para consistencia.",
+    image: "/images/recipe_chocotorta.png",
     icon: "activity"
   },
   {

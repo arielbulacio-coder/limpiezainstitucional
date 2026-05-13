@@ -68,7 +68,7 @@ const Recipes = () => {
                     <div style={{ height: '100%', minHeight: '250px', background: 'var(--bg-deep)', position: 'relative' }}>
                       {recipe.image ? (
                         <img 
-                          src={recipe.image} 
+                          src={recipe.image.startsWith('http') ? recipe.image : `${import.meta.env.BASE_URL}${recipe.image.startsWith('/') ? recipe.image.slice(1) : recipe.image}`} 
                           alt={recipe.title} 
                           style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }} 
                         />

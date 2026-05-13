@@ -106,7 +106,7 @@ const ClassDetail = () => {
                 <div className="card" style={{ padding: '0', overflow: 'hidden', height: '300px', position: 'relative' }}>
                    {cls.image ? (
                      <img 
-                       src={cls.image} 
+                       src={cls.image.startsWith('http') ? cls.image : `${import.meta.env.BASE_URL}${cls.image.startsWith('/') ? cls.image.slice(1) : cls.image}`} 
                        alt={cls.title} 
                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                      />
