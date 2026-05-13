@@ -165,6 +165,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Fugazzeta Rellena de Cuartetas",
     ingredients: "- 2 Bollos de masa de pizza (uno de 400g, otro de 300g)\n- 500 g Mozzarella o Cuartirolo\n- 700 g Cebolla en pluma\n- Aceite, Orégano, Sal gruesa, Parmesano",
     instructions: "1. Cebollas: Cortar la cebolla en pluma y blanquearla apenas. Escurrir bien.\n2. Base: Estirar el bollo grande en una asadera aceitada. Cubrir con la mozzarella (dejar borde de 2cm).\n3. Tapa: Estirar el bollo chico y cubrir el queso. Sellar los bordes.\n4. Cobertura: Distribuir la cebolla escurrida sobre la tapa. Rociar con abundante aceite, sal gruesa y parmesano.\n5. Horneado: Hornear a 200°C por 30-35 minutos. El queso debe derretirse y la cebolla dorarse intensamente.",
+    image: "/images/recipe_fugazzeta.png",
     icon: "book"
   },
   {
@@ -288,6 +289,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Ñoquis de Papa Soufflé (Gnocchi)",
     ingredients: "- 1 kg Papas (viejas/negras)\n- 250 g Harina 0000\n- 1 Huevo\n- Nuez moscada, sal y pimienta",
     instructions: "1. Cocción en seco: Hornee las papas enteras con piel o hiérvalas enteras para que no absorban agua.\n2. Puré: Pele en caliente y pise hasta puré liso. Entibiar.\n3. Masa: Condimente, agregue huevo y harina. Una cortando con espátula, sin amasar en exceso.\n4. Corte: Haga cilindros y corte los ñoquis. Pase por tenedor o ñoquera.\n5. Hervido: Échelos en agua hirviendo con sal. Cuando flotan, retirarlos directo a la salsa.",
+    image: "/images/recipe_gnocchi.png",
     icon: "utensils"
   },
   {
@@ -590,6 +592,7 @@ export const PIZZA_RECIPES: Recipe[] = [
     title: "Alfajores de Maicena Tradicionales",
     ingredients: "Manteca, Azúcar, Yemas, Almidón, Harina, Polvo hornear, DDL.",
     instructions: "1. Cremado: Manteca y azúcar, más yemas.\n2. Secos: Unir almidón y harina sin amasar.\n3. Corte: Reposar masa, estirar y cortar círculos.\n4. Cocción: Horno 170°C por 10 min. No dorar.\n5. Armado: Rellenar con DDL y rodar por coco.",
+    image: "/images/recipe_alfajores.png",
     icon: "activity"
   },
   {

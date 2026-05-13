@@ -156,7 +156,7 @@ export const FOOD_CLASSES: ClassData[] = [
     description: "Rol social, derechos y deberes del manipulador, CAA.",
     keyword: "ETICA",
     duration: "10h",
-    icon: "scale",
+    icon: "gavel",
     image: "/images/food_m1.png",
     content: `MARCO REGULATORIO Y ÉTICA DEL MANIPULADOR
 
@@ -181,7 +181,7 @@ El incumplimiento puede derivar en brotes de ETA (Enfermedades de Transmisión A
     description: "Definición, clasificación y composición nutricional.",
     keyword: "FUNDAMENTOS",
     duration: "10h",
-    icon: "book",
+    icon: "apple",
     image: "/images/food_m2.png",
     content: `FUNDAMENTOS DE LOS ALIMENTOS
 
