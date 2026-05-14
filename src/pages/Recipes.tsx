@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GASTRONOMIA_RECIPES } from '../data/recipesData';
-import { ChevronLeft, Utensils, Shield, Book, FlaskConical, Activity, ListChecks, Search, Filter } from 'lucide-react';
+import { ChevronLeft, Utensils, Shield, Book, FlaskConical, Activity, ListChecks, Search } from 'lucide-react';
 
 const IconRenderer = ({ icon, size = 48, opacity = 0.3 }: { icon: string, size?: number, opacity?: number }) => {
   const icons: Record<string, React.ReactNode> = {

@@ -134,7 +134,7 @@ const getQuestionsForFoodClass = (classId: number): Question[] => {
       { id: 9, question: "La Salazón y el Azucarado conservan porque:", options: ["Enfrían el alimento", "Reducen el agua libre (Aw) disponible para bacterias", "Matan por sabor", "Aumentan la acidez"], correctAnswerIndex: 1 },
       { id: 10, question: "El envasado al vacío retira el:", options: ["Agua", "Oxígeno (impidiendo bacterias aerobias)", "Sabor", "Precio"], correctAnswerIndex: 1 },
       { id: 11, question: "Un aditivo alimentario debe estar siempre:", options: ["Prohibido", "Autorizado por el CAA y declarado en el rótulo", "En gran cantidad", "Oculto"], correctAnswerIndex: 1 },
-12: { id: 12, question: "La congelación (-18°C) detiene:", options: ["Solo el color", "Toda actividad microbiana (pero no mata necesariamente)", "El sabor", "El peso"], correctAnswerIndex: 1 },
+      { id: 12, question: "La congelación (-18°C) detiene:", options: ["Solo el color", "Toda actividad microbiana (pero no mata necesariamente)", "El sabor", "El peso"], correctAnswerIndex: 1 },
       { id: 13, question: "Los conservantes químicos sirven para:", options: ["Mejorar la nutrición", "Retrasar el deterioro causado por microorganismos", "Hacer el alimento más barato", "Engañar al cliente"], correctAnswerIndex: 1 },
       { id: 14, question: "Un alimento 'Liofilizado' es aquel que ha sido:", options: ["Frito", "Deshidratado por congelación y vacío", "Hervido", "Ahumado"], correctAnswerIndex: 1 },
       { id: 15, question: "La fermentación (yogurt, chucrut) conserva por aumento de:", options: ["Azúcar", "Acidez (baja de pH)", "Grasas", "Agua"], correctAnswerIndex: 1 },
