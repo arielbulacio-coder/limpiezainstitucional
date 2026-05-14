@@ -43,6 +43,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Fondo Oscuro de Res (Caldo Base)",
     ingredients: "- 2 kg Huesos de vaca (caracú, asado)\n- 2 Cebollas, 2 Zanahorias, 1 tallo Apio\n- 1 cda Extracto de tomate\n- 5 Litros Agua fría\n- Bouquet Garni (Tomillo, Laurel, Perejil)",
     instructions: "1. Tostado: Colocar los huesos en una asadera y hornear a 220°C por 45 min hasta que estén bien oscuros y dorados (Reacción de Maillard).\n2. Mirepoix: Agregar los vegetales cortados groseramente y el extracto de tomate a la placa. Hornear 15 min más.\n3. Desglasado: Pasar todo a una olla grande. Verter un poco de agua en la asadera caliente para despegar los jugos pegados y sumar a la olla.\n4. Hervido Lento: Cubrir con el agua FRÍA. Llevar a hervor suave. Espumar (retirar impurezas de la superficie) constantemente.\n5. Reducción: Cocinar a fuego mínimo por 4 a 6 horas. Colar muy fino y enfriar. Usar como base para salsas de rotisería.",
+    image: "/images/recipe_fondo_oscuro.png",
     icon: "flask"
   },
   {
@@ -51,6 +52,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Técnicas de Corte Vegetal Clásicas",
     ingredients: "- Zanahorias, Cebollas, Morrones, Papas\n- Cuchillo Chef (Cuchillo de medio golpe)\n- Tabla de corte verde",
     instructions: "1. Postura: Agarrar el cuchillo por el mango, colocando el índice y el pulgar en la hoja para mayor control. La mano que sostiene el vegetal debe tener forma de 'garra', escondiendo las yemas de los dedos.\n2. Juliana: Cortar los vegetales en tiras finas de aprox 2 mm x 5 cm. Ideal para salteados y ensaladas.\n3. Brunoise: A partir de la Juliana, cortar transversalmente para lograr cubitos minúsculos (1 a 2 mm). Perfecto para salsas y aderezos.\n4. Mirepoix: Cortes irregulares de 1.5 cm. Se usan para saborizar fondos o braseados que luego se colarán o licuarán.\n5. Bastón: Tiras de 6 mm x 6 cm. El corte clásico de las papas fritas.",
+    image: "/images/recipe_cortes_vegetales.png",
     icon: "book"
   },
   {
@@ -67,6 +69,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Chimichurri Tradicional de Rotisería",
     ingredients: "- 3 cdas Orégano seco, 1 cda Ají molido\n- 1 cda Perejil deshidratado o fresco picado\n- 2 Dientes de ajo picados muy finos\n- 100 cc Agua tibia, 50 cc Vinagre\n- 150 cc Aceite (mitad oliva, mitad neutro)\n- Sal gruesa y Pimienta",
     instructions: "1. Hidratación: En un bol o frasco, colocar las especias secas (orégano, ají molido, perejil si es seco). Verter el agua tibia y el vinagre. Dejar hidratar 10 minutos.\n2. Condimentos: Sumar el ajo picado muy fino, la sal gruesa y la pimienta.\n3. Integración: Por último, agregar los aceites y mezclar vigorosamente.\n4. Conservación: Guardar en frasco de vidrio esterilizado en la heladera. \n5. Uso: Aunque puede usarse al instante, el sabor mejora drásticamente tras 2-3 días de maceración.",
+    image: "/images/recipe_chimichurri.png",
     icon: "book"
   },
   {
@@ -99,6 +102,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Conserva de Berenjenas al Escabeche",
     ingredients: "- 1 kg Berenjenas (cortadas en tiras)\n- 500 cc Vinagre blanco, 500 cc Agua\n- Sal gruesa\n- Aceite (mitad oliva, mitad neutro)\n- Ajo, Laurel, Orégano, Ají molido",
     instructions: "1. Deshidratación: Colocar las tiras de berenjena en un colador, espolvorear con sal gruesa y dejar reposar 2 horas para que suelten el agua amarga.\n2. Enjuague: Lavarlas bien bajo el grifo y escurrirlas.\n3. Blanqueo: Hervir la mezcla de agua y vinagre. Sumergir las berenjenas por 3 a 5 minutos (deben quedar tiernas pero no deshechas). Escurrir y enfriar.\n4. Condimentación: Mezclar las berenjenas frías con láminas de ajo, orégano, ají molido y hojas de laurel.\n5. Envasado: Llenar frascos esterilizados y cubrir por completo con el aceite. Mantener en heladera. Son mejores a los 3-4 días de elaboradas.",
+    image: "/images/recipe_berenjenas_escabeche.png",
     icon: "flask"
   },
   {
@@ -152,6 +156,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Tarta Quiche Lorraine Clásica",
     ingredients: "Masa: 250g Harina 0000, 125g Manteca fría, 1 Huevo, agua helada.\nRelleno: 200g Panceta en lardons, 150g Gruyère rallado, 3 Huevos, 200cc Crema de leche, Nuez moscada.",
     instructions: "1. Sablage: Frotar manteca fría con harina hasta hacer un arenado. Unir con huevo y agua helada sin amasar. Enfriar 30 min.\n2. Precocción: Forrar tartera, pinchar base, poner peso y hornear 15 min a 180°C.\n3. Aparejo: Saltear la panceta. Batir huevos, crema, especias.\n4. Horneado: Esparcir panceta y queso sobre la base. Volcar el líquido. Hornear 35 min a 180°C.",
+    image: "/images/recipe_quiche_lorraine.png",
     icon: "book"
   },
   {
@@ -160,6 +165,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Calzone Relleno Napolitano",
     ingredients: "- 1 Bollo de masa de pizza (250g-300g)\n- 150 g Ricota fresca escurrida\n- 100 g Mozzarella feteada\n- 50 g Salame o Jamón picado\n- Pimienta negra, Parmesano",
     instructions: "1. Estirado: Estirar el bollo de pizza de forma circular, dejando los bordes un poco más gruesos.\n2. Relleno: En la mitad inferior del círculo, colocar la ricota mezclada con pimienta y parmesano. Sumar el salame y la mozzarella.\n3. Cierre: Doblar la mitad superior de la masa sobre el relleno formando una empanada gigante. Sellar los bordes firmemente para que no se escape el queso.\n4. Horneado: Pintar la superficie con una fina capa de salsa de tomate o aceite de oliva. Hornear a 250°C durante 12-15 minutos.",
+    image: "/images/recipe_calzone_napolitano.png",
     icon: "book"
   },
   {
@@ -177,6 +183,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Pan de Campo de Masa Madre",
     ingredients: "- 500 g Harina 000\n- 350 cc Agua\n- 100 g Masa Madre activa\n- 12 g Sal fina",
     instructions: "1. Mezcla y Autólisis: Integrar harina, agua y masa madre. Reposar 40 min.\n2. Sal y Pliegues: Incorporar sal. Realizar pliegues (Stretch & Fold) cada 45 min por 3 horas.\n3. Forma: Bollar suavemente. Colocar en un banetón enharinado.\n4. Fermentación: Retardar en heladera por 12 a 24 horas.\n5. Cocción: Volcar el pan, hacer cortes. Hornear en olla de hierro tapada a 250°C por 20 min, destapar y bajar a 220°C por 20 min más.",
+    image: "/images/recipe_pan_campo.png",
     icon: "book"
   },
   {
@@ -243,6 +250,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Scones de Queso y Hierbas",
     ingredients: "- 250 g Harina 0000\n- 15 g Polvo de hornear\n- 100 g Queso duro (Reggianito) y 50 g Queso Pategrás\n- 60 g Manteca fría\n- 1 Huevo, 80 cc Leche\n- Orégano o Tomillo fresco, Pizca de Sal",
     instructions: "1. Secos: En un bol, tamizar harina, polvo de hornear y sal.\n2. Arenado: Incorporar la manteca bien fría en cubos pequeños y frotar con las yemas de los dedos hasta lograr textura de arena gruesa.\n3. Saborizado: Añadir los quesos rallados y las hierbas.\n4. Unión: Mezclar el huevo con la leche y volcar a los secos. Unir sin amasar (muy importante para que queden hojaldrados y no duros).\n5. Corte y Cocción: Estirar de 2 cm de alto, cortar círculos. Pintar con huevo y hornear a 200°C por 12-15 min.",
+    image: "/images/recipe_scones_queso.png",
     icon: "book"
   },
   {
@@ -286,6 +294,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Fideos al Pesto Genovés Auténtico",
     ingredients: "- 500 g Fideos secos o frescos\n- 1 atado Albahaca, 50 g Parmesano\n- 30 g Nueces, 1 ajo, 100 cc Aceite de Oliva",
     instructions: "1. Procesado en Frío: En mortero o procesadora, muela ajo, nueces y sal gruesa.\n2. Emulsión: Agregue hojas de albahaca muy secas, procese en pulsos cortos. Agregue oliva en hilo.\n3. Queso: Incorpore parmesano con cuchara (no procesar).\n4. Hervido: Hierva la pasta. Reserve un pocillo de agua de cocción.\n5. Mantecatura: Mezcle pasta y pesto en un BOL fuera del fuego con un poco del agua reservada para emulsionar.",
+    image: "/images/recipe_pesto_genoves.png",
     icon: "utensils"
   },
   {
@@ -321,6 +330,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Malfatti de Espinaca y Ricota",
     ingredients: "500g Ricota, 2 atados Espinaca cocida picada, 1 Huevo, 50g Parmesano, 100g Harina.",
     instructions: "1. Preparación: Ricota y espinaca super secas.\n2. Mezcla: Unir todo.\n3. Aglutinado: Harina de a poco, masa tierna pegajosa.\n4. Formado: Bolitas tamaño nuez.\n5. Cocción: Hervir hasta que floten, bañar en salsa rosa y gratinar al horno.",
+    image: "/images/recipe_malfatti.png",
     icon: "utensils"
   },
   {
@@ -329,6 +339,7 @@ export const GASTRONOMIA_RECIPES: Recipe[] = [
     title: "Ensalada Caesar Clásica",
     ingredients: "Romana, Pollo grillado, Crutones, Parmesano.\nAderezo: Yema, Anchoas, Mostaza, Limón, Aceite, Ajo.",
     instructions: "1. Aderezo: Procesar yema, ajo, anchoas, mostaza. Emulsionar con aceite en hilo.\n2. Preparación: Lavar y secar romana.\n3. Armado: Mezclar lechuga con aderezo. Poner pollo, crutones y queso encima.",
+    image: "/images/recipe_ensalada_caesar.png",
     icon: "utensils"
   },
   {
