@@ -28,7 +28,8 @@ export const FOOD_COURSE_INFO = {
   instructor: "Maricel Gauna", // Or any instructor if not specified
   hours: "50 Horas Cátedra",
   institution: "Capacitación Profesional",
-  description: "Este curso brinda conocimientos sobre la higiene, trazabilidad y manipulación de alimentos para garantizar la salud pública y prevenir Enfermedades de Transmisión Alimentaria (ETA)."
+  description: "Este curso brinda conocimientos sobre la higiene, trazabilidad y manipulación de alimentos para garantizar la salud pública y prevenir Enfermedades de Transmisión Alimentaria (ETA).",
+  manualUrl: "https://www.argentina.gob.ar/sites/default/files/anmat_manual_ma_2025_final.pdf"
 };
 
 const getQuestionsForFoodClass = (classId: number): Question[] => {

@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { CLASSES as LIMPIEZA_CLASSES } from '../data/courseData';
-import { FOOD_CLASSES } from '../data/foodData';
-import { PIZZA_CLASSES } from '../data/pizzaData';
+import { CLASSES as LIMPIEZA_CLASSES, COURSE_INFO as LIMPIEZA_COURSE_INFO } from '../data/courseData';
+import { FOOD_CLASSES, FOOD_COURSE_INFO } from '../data/foodData';
+import { PIZZA_CLASSES, PIZZA_COURSE_INFO } from '../data/pizzaData';
 import { 
   ChevronRight, Clock, Shield, Brush, FlaskConical, Scale, Book, Utensils, 
   AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
-  Home, BookText
+  Home, BookText, FileDown
 } from 'lucide-react';
 
 const IconRenderer = ({ icon }: { icon: string }) => {
@@ -33,17 +33,31 @@ const IconRenderer = ({ icon }: { icon: string }) => {
 const Dashboard = () => {
   const { courseId } = useParams();
   const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : courseId === 'pizza' ? PIZZA_CLASSES : LIMPIEZA_CLASSES;
+  const COURSE_INFO = courseId === 'alimentos' ? FOOD_COURSE_INFO : courseId === 'pizza' ? PIZZA_COURSE_INFO : (LIMPIEZA_COURSE_INFO as any);
   return (
     <div className="section-container">
       <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
         <div>
           <h1 className="text-gradient">Planificación Modular</h1>
           <p style={{ color: 'var(--text-dim)' }}>Selecciona una clase para ingresar. Necesitarás la palabra clave.</p>
-          {(courseId === 'pizza' || courseId === 'alimentos') && (
-            <Link to={`/recipes/${courseId}`} className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
-              <Book size={20} /> Ver Recetario de Gastronomía
-            </Link>
-          )}
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+            {(courseId === 'pizza' || courseId === 'alimentos') && (
+              <Link to={`/recipes/${courseId}`} className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Book size={20} /> Ver Recetario
+              </Link>
+            )}
+            {COURSE_INFO.manualUrl && (
+              <a 
+                href={COURSE_INFO.manualUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary" 
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'var(--primary-dark, #2563eb)' }}
+              >
+                <FileDown size={20} /> Descargar Manual PDF
+              </a>
+            )}
+          </div>
         </div>
         <div style={{ display: 'flex', gap: '0.75rem' }}>
           <Link to="/glossary" className="btn glass primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1rem' }}>

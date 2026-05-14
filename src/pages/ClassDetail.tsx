@@ -6,7 +6,8 @@ import { FOOD_CLASSES, FOOD_COURSE_INFO } from '../data/foodData';
 import { PIZZA_CLASSES, PIZZA_COURSE_INFO } from '../data/pizzaData';
 import { 
   Key, BookOpen, Clock, ChevronLeft, ArrowRight, Shield, Brush, FlaskConical, Scale, Book, 
-  Utensils, AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap 
+  Utensils, AlertTriangle, Droplets, ListChecks, Activity, Users, Recycle, Microscope, GraduationCap,
+  FileDown
 } from 'lucide-react';
 
 const IconRenderer = ({ icon, size = 48, opacity = 0.3 }: { icon: string, size?: number, opacity?: number }) => {
@@ -33,7 +34,7 @@ const ClassDetail = () => {
   const { courseId, id } = useParams();
   const classId = parseInt(id || '1');
   const CLASSES = courseId === 'alimentos' ? FOOD_CLASSES : courseId === 'pizza' ? PIZZA_CLASSES : LIMPIEZA_CLASSES;
-  const COURSE_INFO = courseId === 'alimentos' ? FOOD_COURSE_INFO : courseId === 'pizza' ? PIZZA_COURSE_INFO : LIMPIEZA_COURSE_INFO;
+  const COURSE_INFO = courseId === 'alimentos' ? FOOD_COURSE_INFO : courseId === 'pizza' ? PIZZA_COURSE_INFO : (LIMPIEZA_COURSE_INFO as any);
   const cls = CLASSES.find(c => c.id === classId);
   
   const [keyword, setKeyword] = useState('');
@@ -124,9 +125,21 @@ const ClassDetail = () => {
                    <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '2rem' }}>
                      Al finalizar la lectura, debe completar el cuestionario autoevaluable de 20 preguntas con un puntaje mínimo del 70%.
                    </p>
-                   <Link to={`/quiz/${courseId}/${cls.id}`} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+                   <Link to={`/quiz/${courseId}/${cls.id}`} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginBottom: '1rem' }}>
                       Comenzar Evaluación <ArrowRight size={20} />
                    </Link>
+                   
+                   {COURSE_INFO.manualUrl && (
+                     <a 
+                       href={COURSE_INFO.manualUrl} 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="btn glass primary" 
+                       style={{ width: '100%', justifyContent: 'center', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                     >
+                       <FileDown size={18} /> Manual PDF Oficial
+                     </a>
+                   )}
                 </div>
              </div>
           </div>
