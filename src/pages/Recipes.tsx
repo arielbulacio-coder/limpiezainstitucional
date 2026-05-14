@@ -83,7 +83,16 @@ const Recipes = () => {
               placeholder="Buscar receta por nombre o ingrediente..." 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              style={{ paddingLeft: '3rem', width: '100%' }}
+              style={{ 
+                paddingLeft: '3rem', 
+                width: '100%',
+                background: 'var(--bg-deep)',
+                border: '1px solid var(--border)',
+                borderRadius: '0.75rem',
+                color: 'var(--text-main)',
+                fontSize: '1rem',
+                height: '3rem'
+              }}
             />
           </div>
           <div style={{ display: 'flex', gap: '0.5rem', overflowX: 'auto', padding: '0.5rem 0' }}>
