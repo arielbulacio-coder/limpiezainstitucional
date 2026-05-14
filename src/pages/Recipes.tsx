@@ -135,13 +135,11 @@ const Recipes = () => {
 
       {/* Search and Filter Section */}
       <div className="card glass" style={{ 
-        padding: '1.5rem', 
-        marginBottom: '3rem', 
-        position: 'sticky', 
-        top: '0.5rem', 
-        zIndex: 100,
-        boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
-        border: '1px solid var(--primary)'
+        padding: '1rem 1.5rem', 
+        marginBottom: '2rem', 
+        zIndex: 10,
+        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+        border: '1px solid var(--border)'
       }}>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
           <div style={{ position: 'relative', flex: 1, minWidth: '250px' }}>
