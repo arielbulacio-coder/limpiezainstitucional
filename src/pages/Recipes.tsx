@@ -16,21 +16,81 @@ const IconRenderer = ({ icon, size = 48, opacity = 0.3 }: { icon: string, size?:
   return icons[icon] || <Book size={size} opacity={opacity} />;
 };
 
+const RecipeCard = ({ recipe }: { recipe: any }) => (
+  <motion.div 
+    layout
+    className="card" 
+    style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+  >
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '0' }}>
+      
+      {/* Image / Icon Side */}
+      <div style={{ height: '100%', minHeight: '250px', background: 'var(--bg-deep)', position: 'relative' }}>
+        {recipe.image ? (
+          <img 
+            src={recipe.image.startsWith('http') ? recipe.image : `${import.meta.env.BASE_URL}${recipe.image.startsWith('/') ? recipe.image.slice(1) : recipe.image}`} 
+            alt={recipe.title} 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }} 
+          />
+        ) : (
+          <div style={{ display: 'flex', height: '100%', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+            <IconRenderer icon={recipe.icon} size={100} opacity={0.3} />
+          </div>
+        )}
+      </div>
+
+      {/* Content Side */}
+      <div style={{ padding: '2rem' }}>
+        <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: 'var(--accent)' }}>{recipe.title}</h3>
+        
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h4 style={{ color: 'var(--text-dim)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Ingredientes</h4>
+          <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem', color: 'var(--text-main)' }}>
+            {recipe.ingredients}
+          </div>
+        </div>
+
+        <div>
+          <h4 style={{ color: 'var(--text-dim)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Paso a Paso</h4>
+          <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem', color: 'var(--text-main)' }}>
+            {recipe.instructions}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </motion.div>
+);
+
 const Recipes = () => {
   const { courseId } = useParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const allRecipes = useMemo(() => {
-    return (courseId === 'pizza' || courseId === 'alimentos') ? GASTRONOMIA_RECIPES : [];
+    const cid = courseId?.toLowerCase() || '';
+    const isGastro = cid.includes('pizza') || cid.includes('alimento') || cid.includes('pizzero') || cid.includes('roticero');
+    return isGastro ? GASTRONOMIA_RECIPES : [];
   }, [courseId]);
 
   const filteredRecipes = useMemo(() => {
+    const query = searchQuery.toLowerCase().trim();
+    if (!query) return allRecipes.filter(r => !selectedCategory || r.category === selectedCategory);
+
+    const queryWords = query.split(/\s+/);
+    
     return allRecipes.filter(recipe => {
-      const matchesSearch = recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                           recipe.ingredients.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = !selectedCategory || recipe.category === selectedCategory;
-      return matchesSearch && matchesCategory;
+      if (!matchesCategory) return false;
+
+      // Especial logic for course terms
+      let searchableText = `${recipe.title} ${recipe.ingredients} ${recipe.instructions} ${recipe.category}`.toLowerCase();
+      
+      // If course is pizza, add synonyms
+      if (recipe.category.includes('Pizzas')) searchableText += ' pizzero';
+      if (recipe.category.includes('Rotisería')) searchableText += ' rotisero';
+
+      return queryWords.every(word => searchableText.includes(word));
     });
   }, [allRecipes, searchQuery, selectedCategory]);
 
@@ -74,13 +134,21 @@ const Recipes = () => {
       </div>
 
       {/* Search and Filter Section */}
-      <div className="card glass" style={{ padding: '1.5rem', marginBottom: '3rem', position: 'sticky', top: '1rem', zIndex: 10 }}>
+      <div className="card glass" style={{ 
+        padding: '1.5rem', 
+        marginBottom: '3rem', 
+        position: 'sticky', 
+        top: '0.5rem', 
+        zIndex: 100,
+        boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
+        border: '1px solid var(--primary)'
+      }}>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
           <div style={{ position: 'relative', flex: 1, minWidth: '250px' }}>
-            <Search size={20} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
+            <Search size={20} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--primary)' }} />
             <input 
               type="text" 
-              placeholder="Buscar receta por nombre o ingrediente..." 
+              placeholder="Buscar receta (ej: pizzero, masa, salsa...)" 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               style={{ 
@@ -125,9 +193,35 @@ const Recipes = () => {
               animate={{ opacity: 1 }} 
               style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-dim)' }}
             >
-              <p>No se encontraron recetas que coincidan con tu búsqueda.</p>
+              <div style={{ marginBottom: '1.5rem', color: 'var(--primary)', opacity: 0.5 }}>
+                <Search size={64} style={{ margin: '0 auto' }} />
+              </div>
+              <p style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>No se encontraron recetas que coincidan con tu búsqueda.</p>
+              <p style={{ marginBottom: '2rem' }}>Intenta con términos más generales o cambia de categoría.</p>
+              <button 
+                onClick={() => { setSearchQuery(''); setSelectedCategory(null); }}
+                className="btn glass primary"
+              >
+                Limpiar filtros y búsqueda
+              </button>
             </motion.div>
+          ) : searchQuery.trim() ? (
+            /* Flat list view when searching */
+            <div style={{ marginBottom: '4rem' }}>
+              <div style={{ marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <h2 style={{ fontSize: '1.2rem', color: 'var(--primary)' }}>
+                  Resultados de búsqueda ({filteredRecipes.length})
+                </h2>
+                <div style={{ height: '1px', background: 'var(--border)', flex: 1 }}></div>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                {filteredRecipes.map(recipe => (
+                  <RecipeCard key={recipe.id} recipe={recipe} />
+                ))}
+              </div>
+            </div>
           ) : (
+            /* Categorized view when not searching */
             Object.entries(groupedRecipes).map(([category, catRecipes]) => (
               <motion.div 
                 key={category} 
@@ -140,57 +234,14 @@ const Recipes = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
                   <div style={{ height: '2px', background: 'var(--primary)', flex: 0.1 }}></div>
                   <h2 style={{ fontSize: '1.5rem', color: 'var(--text-main)', whiteSpace: 'nowrap' }}>
-                    {category}
+                    {category} ({catRecipes.length})
                   </h2>
                   <div style={{ height: '1px', background: 'var(--border)', flex: 1 }}></div>
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                   {catRecipes.map(recipe => (
-                    <motion.div 
-                      key={recipe.id} 
-                      layout
-                      className="card" 
-                      style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
-                    >
-                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '0' }}>
-                        
-                        {/* Image / Icon Side */}
-                        <div style={{ height: '100%', minHeight: '250px', background: 'var(--bg-deep)', position: 'relative' }}>
-                          {recipe.image ? (
-                            <img 
-                              src={recipe.image.startsWith('http') ? recipe.image : `${import.meta.env.BASE_URL}${recipe.image.startsWith('/') ? recipe.image.slice(1) : recipe.image}`} 
-                              alt={recipe.title} 
-                              style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }} 
-                            />
-                          ) : (
-                            <div style={{ display: 'flex', height: '100%', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                              <IconRenderer icon={recipe.icon} size={100} opacity={0.3} />
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Content Side */}
-                        <div style={{ padding: '2rem' }}>
-                          <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: 'var(--accent)' }}>{recipe.title}</h3>
-                          
-                          <div style={{ marginBottom: '1.5rem' }}>
-                            <h4 style={{ color: 'var(--text-dim)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Ingredientes</h4>
-                            <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem', color: 'var(--text-main)' }}>
-                              {recipe.ingredients}
-                            </div>
-                          </div>
-
-                          <div>
-                            <h4 style={{ color: 'var(--text-dim)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Paso a Paso</h4>
-                            <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.95rem', color: 'var(--text-main)' }}>
-                              {recipe.instructions}
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </motion.div>
+                    <RecipeCard key={recipe.id} recipe={recipe} />
                   ))}
                 </div>
               </motion.div>
