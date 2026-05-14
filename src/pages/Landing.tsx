@@ -20,7 +20,7 @@ const Landing = () => {
             Gastronomía & Limpieza Institucional
           </h1>
           <p style={{ fontSize: '1.25rem', color: 'var(--text-dim)', maxWidth: '700px', margin: '0 auto' }}>
-            {COURSE_INFO.description}
+            Formación profesional integral en bioseguridad institucional y manipulación de alimentos. Actualizado con el Manual ANMAT 2025 para garantizar los más altos estándares de salud pública.
           </p>
         </motion.div>
 

@@ -25,124 +25,124 @@ export interface ClassData {
 
 export const FOOD_COURSE_INFO = {
   title: "Curso de Manipulación de Alimentos",
-  instructor: "Maricel Gauna", // Or any instructor if not specified
+  instructor: "Maricel Gauna", 
   hours: "50 Horas Cátedra",
   institution: "Capacitación Profesional",
-  description: "Este curso brinda conocimientos sobre la higiene, trazabilidad y manipulación de alimentos para garantizar la salud pública y prevenir Enfermedades de Transmisión Alimentaria (ETA).",
+  description: "Este curso brinda conocimientos sobre la higiene, trazabilidad y manipulación de alimentos para garantizar la salud pública y prevenir Enfermedades de Transmisión Alimentaria (ETA). Actualizado con el manual ANMAT 2025.",
   manualUrl: "https://www.argentina.gob.ar/sites/default/files/anmat_manual_ma_2025_final.pdf"
 };
 
 const getQuestionsForFoodClass = (classId: number): Question[] => {
   const allClassQuestions: Record<number, Question[]> = {
     1: [
-      { id: 1, question: "¿Qué significa CAA?", options: ["Centro de Ayuda Alimentaria", "Código Alimentario Argentino", "Comité de Alimentos Actuales", "Control de Alimentos Argentinos"], correctAnswerIndex: 1 },
-      { id: 2, question: "El rol social del manipulador de alimentos es:", options: ["Vender más", "Garantizar la salud pública mediante prácticas seguras", "Cocinar platos gourmet", "Limpiar solo cuando se ensucia"], correctAnswerIndex: 1 },
-      { id: 3, question: "La Ley N° 13230 está relacionada con:", options: ["Tránsito vehicular", "Manipulación de alimentos y salud", "Construcción de cocinas", "Venta de envases"], correctAnswerIndex: 1 },
-      { id: 4, question: "El concepto de Trabajo Decente (OIT) en la manipulación de alimentos implica:", options: ["Trabajar gratis", "Condiciones de libertad, igualdad y seguridad", "Solo trabajar en restaurantes de lujo", "No tener horarios"], correctAnswerIndex: 1 },
-      { id: 5, question: "Un deber fundamental del manipulador es:", options: ["Evitar la contaminación de los alimentos", "Usar ropa de calle en la cocina", "Trabajar aunque esté enfermo", "Probar la comida con las manos"], correctAnswerIndex: 0 },
-      { id: 6, question: "La ética profesional del manipulador exige:", options: ["Ocultar alimentos vencidos", "Responsabilidad en el cumplimiento del CAA", "Usar ingredientes más baratos aunque sean riesgosos", "Vender comida en mal estado si nadie se da cuenta"], correctAnswerIndex: 1 },
-      { id: 7, question: "¿A quiénes protege principalmente el Código Alimentario Argentino?", options: ["Solo a los cocineros", "A los consumidores y la salud de la población", "A los dueños de los locales", "A los inspectores"], correctAnswerIndex: 1 },
-      { id: 8, question: "¿Qué pasa si un manipulador no cumple con las normativas?", options: ["No pasa nada", "Puede causar un brote de ETA y enfrentar sanciones legales", "Le pagan menos", "Lo cambian de turno"], correctAnswerIndex: 1 },
-      { id: 9, question: "¿Quién es considerado 'manipulador de alimentos'?", options: ["Solo el Chef", "Cualquier persona que esté en contacto con alimentos, superficies o equipos", "Solo el que transporta la comida", "El que la compra"], correctAnswerIndex: 1 },
-      { id: 10, question: "El derecho laboral de un manipulador incluye:", options: ["Recibir capacitación continua en BPM", "Trabajar sin luz", "Comprar sus propios guantes siempre", "Limpiar sin productos adecuados"], correctAnswerIndex: 0 },
-      { id: 11, question: "Si observas que un compañero no se lava las manos, ¿qué debes hacer éticamente?", options: ["Ignorarlo", "Advertirle y reportarlo si es necesario para evitar una ETA", "Hacer lo mismo", "Reírse"], correctAnswerIndex: 1 },
-      { id: 12, question: "El CAA establece normas para:", options: ["La música del local", "Producción, elaboración y circulación de alimentos", "El color del uniforme", "El precio de venta"], correctAnswerIndex: 1 },
-      { id: 13, question: "Un alimento seguro es aquel que:", options: ["Es muy rico", "No causará daño al consumidor", "Es barato", "Tiene mucho color"], correctAnswerIndex: 1 },
-      { id: 14, question: "El certificado de manipulador de alimentos es:", options: ["Opcional", "Obligatorio para todo el personal que manipule alimentos", "Solo para dueños", "Se saca una sola vez y no vence"], correctAnswerIndex: 1 },
-      { id: 15, question: "La responsabilidad civil ante un brote de ETA recae sobre:", options: ["Los clientes", "Los establecimientos y los manipuladores responsables", "El municipio", "Nadie"], correctAnswerIndex: 1 },
-      { id: 16, question: "Las autoridades sanitarias realizan auditorías para:", options: ["Molestar al personal", "Verificar el cumplimiento del CAA y las BPM", "Robar recetas", "Comer gratis"], correctAnswerIndex: 1 },
-      { id: 17, question: "El marco legal vigente protege:", options: ["Solo la economía", "La inocuidad de los alimentos desde el campo a la mesa", "Solo la estética del local", "Las marcas de los productos"], correctAnswerIndex: 1 },
-      { id: 18, question: "Un comportamiento ético incluye:", options: ["Informar si se padece una enfermedad transmitible por alimentos", "Callar si hay plagas", "No usar cofia si hace calor", "Masticar chicle cocinando"], correctAnswerIndex: 0 },
-      { id: 19, question: "El consumidor tiene derecho a:", options: ["Comida gratis", "Alimentos inocuos y genuinos", "Entrar a la cocina", "Cambiar la receta"], correctAnswerIndex: 1 },
-      { id: 20, question: "¿Qué significa que un alimento esté 'adulterado'?", options: ["Que tiene mucha sal", "Que se le ha quitado o añadido elementos para engañar sobre su calidad", "Que está muy caliente", "Que es para adultos"], correctAnswerIndex: 1 }
+      { id: 1, question: "¿Quién es considerado 'manipulador de alimentos' según ANMAT 2025?", options: ["Solo los que cocinan", "Toda persona que realice actividades en un establecimiento alimentario (compra, transporte, venta, limpieza, etc.)", "Solo los dueños de locales", "Solo los que tienen carnet"], correctAnswerIndex: 1 },
+      { id: 2, question: "El rol principal del manipulador es ser un agente de:", options: ["Ventas masivas", "Salud Pública", "Publicidad gastronómica", "Limpieza profunda únicamente"], correctAnswerIndex: 1 },
+      { id: 3, question: "La Ley de Etiquetado Frontal utiliza octógonos negros para advertir sobre:", options: ["El precio alto del producto", "El origen extranjero", "Excesos en azúcares, grasas, sodio y calorías", "La fecha de vencimiento"], correctAnswerIndex: 2 },
+      { id: 4, question: "Un alimento 'Genuino' es aquel que:", options: ["Es de marca conocida", "Responde a las especificaciones del Código Alimentario Argentino (CAA)", "Es de producción casera", "No tiene conservantes"], correctAnswerIndex: 1 },
+      { id: 5, question: "¿Cuál es una leyenda obligatoria para niños en productos con ciertos aditivos?", options: ["'Consumir con moderación'", "'Contiene edulcorantes/cafeína, no recomendable en niños/as'", "'Solo para mayores de 18'", "'Producto altamente nutritivo'"], correctAnswerIndex: 1 },
+      { id: 6, question: "La ética profesional del manipulador exige responsabilidad ante:", options: ["El jefe de cocina", "El consumidor y la comunidad", "Los proveedores de materia prima", "El municipio únicamente"], correctAnswerIndex: 1 },
+      { id: 7, question: "El Código Alimentario Argentino (CAA) es la ley fundamental que regula:", options: ["El sueldo de los mozos", "La producción, elaboración y circulación de alimentos en el país", "Los horarios de los restaurantes", "El transporte público"], correctAnswerIndex: 1 },
+      { id: 8, question: "¿Qué sucede ante un incumplimiento grave de las normativas del CAA?", options: ["Se recibe una felicitación", "Puede haber sanciones penales, civiles y clausuras", "Se descuenta el presentismo", "No pasa nada"], correctAnswerIndex: 1 },
+      { id: 9, question: "Un manipulador con síntomas de enfermedad transmisible debe:", options: ["Seguir trabajando con barbijo", "Informar inmediatamente a su superior y no manipular alimentos", "Tomar una aspirina y continuar", "Limpiar más seguido"], correctAnswerIndex: 1 },
+      { id: 10, question: "El carnet de manipulador de alimentos tiene validez nacional por:", options: ["1 año", "3 años", "10 años", "Es de por vida"], correctAnswerIndex: 1 },
+      { id: 11, question: "Un alimento 'Falsificado' es aquel que:", options: ["Tiene un sabor raro", "Tiene la apariencia de un producto legítimo pero no lo es", "Está vencido", "Es artesanal"], correctAnswerIndex: 1 },
+      { id: 12, question: "El objetivo de la Ley de Etiquetado Frontal es:", options: ["Prohibir la venta de golosinas", "Garantizar el derecho a la salud y a la información nutricional simple", "Hacer que los envases sean más lindos", "Subir los impuestos"], correctAnswerIndex: 1 },
+      { id: 13, question: "Un comportamiento ético incluye reportar:", options: ["Si el compañero llega tarde", "La presencia de plagas o desperfectos en la cadena de frío", "Los chismes del barrio", "El precio de la competencia"], correctAnswerIndex: 1 },
+      { id: 14, question: "La 'Soberanía Alimentaria' implica el derecho a:", options: ["Comprar cualquier marca", "Alimentos sanos, nutritivos y culturalmente adecuados", "Tener muchos supermercados", "Importar toda la comida"], correctAnswerIndex: 1 },
+      { id: 15, question: "El Trabajo Decente (OIT) en este sector garantiza:", options: ["Poder comer gratis en el trabajo", "Condiciones de libertad, igualdad y dignidad para el trabajador", "Que no haya inspecciones", "Trabajo sin horarios"], correctAnswerIndex: 1 },
+      { id: 16, question: "Un alimento 'Adulterado' es aquel al que se le ha:", options: ["Puesto mucha sal", "Añadido o quitado elementos para ocultar alteraciones o engañar", "Cambiado el envase", "Cambiado el precio"], correctAnswerIndex: 1 },
+      { id: 17, question: "La higiene personal es un deber porque:", options: ["Mejora la imagen del local", "Previene la transferencia de microorganismos al alimento", "Es una tradición", "Ahorra agua"], correctAnswerIndex: 1 },
+      { id: 18, question: "El manipulador es el 'primer eslabón' de la:", options: ["Cadena de ventas", "Inocuidad alimentaria", "Producción agrícola", "Economía local"], correctAnswerIndex: 1 },
+      { id: 19, question: "El derecho a la alimentación incluye que el alimento sea:", options: ["Barato y rico", "Inocuo y suficiente", "Rápido de cocinar", "De marca líder"], correctAnswerIndex: 1 },
+      { id: 20, question: "ANMAT es el organismo encargado de:", options: ["Controlar el tránsito", "Controlar la calidad de alimentos, medicamentos y productos médicos", "Establecer los sueldos", "Vender seguros"], correctAnswerIndex: 1 }
     ],
     2: [
-      { id: 1, question: "Según su origen, los alimentos se clasifican en:", options: ["Dulces y salados", "Animal, vegetal y mineral", "Grandes y chicos", "Ricos y feos"], correctAnswerIndex: 1 },
-      { id: 2, question: "¿Qué son los macronutrientes?", options: ["Vitaminas y minerales", "Proteínas, carbohidratos y grasas", "Agua y fibra", "Aditivos artificiales"], correctAnswerIndex: 1 },
-      { id: 3, question: "Un alimento 'Perecedero' es aquel que:", options: ["Se mantiene meses fuera de la heladera", "Se altera rápidamente y necesita frío", "No tiene fecha de vencimiento", "Es duro"], correctAnswerIndex: 1 },
-      { id: 4, question: "El agua en los alimentos influye en:", options: ["Su color", "El desarrollo de microorganismos (a mayor agua libre, más rápido se echan a perder)", "Su precio", "Nada"], correctAnswerIndex: 1 },
-      { id: 5, question: "¿Cuál de estos es un alimento NO perecedero?", options: ["Carne cruda", "Arroz blanco seco", "Leche fresca", "Pescado"], correctAnswerIndex: 1 },
-      { id: 6, question: "Las proteínas en los alimentos se encuentran principalmente en:", options: ["Carnes, huevos y lácteos", "Azúcar y caramelos", "Aceites y mantecas", "Agua mineral"], correctAnswerIndex: 0 },
-      { id: 7, question: "La 'Actividad Acuosa' (Aw) mide:", options: ["La cantidad de agua libre disponible para bacterias", "El nivel de mar", "Cuánta agua hay en la cocina", "El peso del alimento"], correctAnswerIndex: 0 },
-      { id: 8, question: "Los alimentos semi-perecederos incluyen:", options: ["Pescado crudo", "Papas, nueces y cebollas", "Leche larga vida abierta", "Carne picada"], correctAnswerIndex: 1 },
-      { id: 9, question: "Los carbohidratos aportan principalmente:", options: ["Estructura", "Energía", "Sabor", "Vitaminas"], correctAnswerIndex: 1 },
-      { id: 10, question: "Un alimento de 'Alto Riesgo' se caracteriza por:", options: ["Tener mucha azúcar", "Tener alta humedad y proteínas (ej: pollo crudo, salsas, cremas)", "Estar seco", "Ser muy ácido"], correctAnswerIndex: 1 },
-      { id: 11, question: "La leche es un alimento compuesto principalmente por:", options: ["Pura grasa", "Agua, proteínas, lactosa y grasa", "Solo vitaminas", "Fibras vegetales"], correctAnswerIndex: 1 },
-      { id: 12, question: "El pH de un alimento indica:", options: ["Su temperatura", "Su nivel de acidez o alcalinidad", "Su precio", "Su tamaño"], correctAnswerIndex: 1 },
-      { id: 13, question: "Las bacterias prefieren alimentos con un pH:", options: ["Muy ácido (ej. jugo de limón)", "Cercano a neutro (ej. pollo, leche, carne)", "Muy alcalino", "El pH no importa"], correctAnswerIndex: 1 },
-      { id: 14, question: "Los alimentos 'Alterados' son aquellos que:", options: ["Sufrieron cambios en su naturaleza o características, haciéndolos no aptos para el consumo", "Están mezclados", "Se vendieron caros", "Son saludables"], correctAnswerIndex: 0 },
-      { id: 15, question: "Un alimento 'Falsificado' es:", options: ["Aquel que se prepara en casa", "El que tiene apariencia de un producto legítimo y no lo es", "Un alimento procesado", "Un alimento importado"], correctAnswerIndex: 1 },
-      { id: 16, question: "La cadena agroalimentaria comprende:", options: ["Solo el campo", "Desde la producción primaria hasta el consumo final", "Solo el supermercado", "El transporte"], correctAnswerIndex: 1 },
-      { id: 17, question: "Los aditivos alimentarios se usan para:", options: ["Hacer daño", "Mejorar la conservación, textura, sabor o apariencia", "Reemplazar ingredientes reales por agua", "Aumentar el peso"], correctAnswerIndex: 1 },
-      { id: 18, question: "El azúcar actúa como conservante porque:", options: ["Mata a las bacterias por golpes", "Reduce el agua disponible (Aw) que necesitan los microorganismos", "Es venenosa para ellas", "Tiene pH ácido"], correctAnswerIndex: 1 },
-      { id: 19, question: "Los lípidos o grasas son importantes porque:", options: ["Son malos siempre", "Transportan vitaminas liposolubles y dan energía", "Tienen mucha agua", "No tienen calorías"], correctAnswerIndex: 1 },
-      { id: 20, question: "La trazabilidad permite:", options: ["Saber la historia, ubicación y trayectoria de un lote de alimento", "Adivinar la receta", "Saber cuántas personas lo comen", "Ocultar errores"], correctAnswerIndex: 0 }
+      { id: 1, question: "En la Gráfica de Alimentación Saludable (GAPA), ¿qué grupo ocupa la mitad del círculo?", options: ["Carnes y huevos", "Legumbres y cereales", "Frutas y verduras", "Lácteos"], correctAnswerIndex: 2 },
+      { id: 2, question: "¿Cuál es el componente central en el círculo de la GAPA?", options: ["Aceite", "Agua segura", "Azúcar", "Pan"], correctAnswerIndex: 1 },
+      { id: 3, question: "Los macronutrientes esenciales son:", options: ["Sodio, Potasio y Calcio", "Proteínas, Carbohidratos y Grasas", "Vitaminas y Agua", "Fibra y Minerales"], correctAnswerIndex: 1 },
+      { id: 4, question: "Un alimento 'Perecedero' se caracteriza por:", options: ["Estar seco", "Tener alta 'Actividad Acuosa' (Aw) y requerir frío", "Dudar muchos años", "Tener octógonos negros"], correctAnswerIndex: 1 },
+      { id: 5, question: "La 'Actividad Acuosa' (Aw) mide el agua:", options: ["Total del alimento", "Libre disponible para el crecimiento de microorganismos", "Que se agrega al cocinar", "Del grifo"], correctAnswerIndex: 1 },
+      { id: 6, question: "Las bacterias prefieren alimentos con un pH cercano a:", options: ["0 (Muy ácido)", "7 (Neutro)", "14 (Muy básico)", "4 (Ácido como vinagre)"], correctAnswerIndex: 1 },
+      { id: 7, question: "El grupo de 'Alimentos de Alto Riesgo' incluye:", options: ["Fideos secos y arroz", "Carnes crudas, lácteos, salsas y huevos", "Aceite y vinagre", "Frutas con cáscara"], correctAnswerIndex: 1 },
+      { id: 8, question: "La fibra alimentaria se encuentra principalmente en:", options: ["Carnes rojas", "Cáscara de frutas, verduras y cereales integrales", "Lácteos enteros", "Agua mineral"], correctAnswerIndex: 1 },
+      { id: 9, question: "Un alimento 'Alterado' es aquel que:", options: ["Tiene aditivos", "Sufrió cambios naturales por microorganismos o ambiente, no apto para consumo", "Es de marca blanca", "No tiene sal"], correctAnswerIndex: 1 },
+      { id: 10, question: "Los octógonos negros deben aparecer en:", options: ["Todos los alimentos", "Solo en alimentos procesados y ultraprocesados con excesos de nutrientes críticos", "Solo en el pan", "Solo en la carne"], correctAnswerIndex: 1 },
+      { id: 11, question: "La recomendación de GAPA respecto a la sal es:", options: ["Consumir más sal de mar", "Reducir el consumo de sal y evitar el salero en la mesa", "Usar solo sal fina", "No tiene recomendaciones de sal"], correctAnswerIndex: 1 },
+      { id: 12, question: "Las proteínas cumplen una función principalmente:", options: ["Energética rápida", "Estructural (formación de tejidos)", "De transporte de agua", "Informativa"], correctAnswerIndex: 1 },
+      { id: 13, question: "¿Qué nutriente aporta mayor energía por gramo?", options: ["Carbohidratos", "Proteínas", "Grasas (Lípidos)", "Vitaminas"], correctAnswerIndex: 2 },
+      { id: 14, question: "La trazabilidad de un alimento sirve para:", options: ["Ponerle el precio", "Seguir el rastro desde el origen hasta el consumidor final", "Que se vea más limpio", "Adivinar la receta"], correctAnswerIndex: 1 },
+      { id: 15, question: "Un ejemplo de alimento NO perecedero es:", options: ["Leche fresca", "Harina seca bien almacenada", "Pescado", "Yogurt"], correctAnswerIndex: 1 },
+      { id: 16, question: "Los ultraprocesados se caracterizan por tener:", options: ["Muchos ingredientes naturales", "Muchos aditivos, sal, grasas y azúcares", "Mucha fibra", "Pocas calorías"], correctAnswerIndex: 1 },
+      { id: 17, question: "El pH ácido (como el del limón) actúa como:", options: ["Un nutriente", "Una barrera que dificulta el crecimiento de bacterias", "Un veneno", "Un colorante"], correctAnswerIndex: 1 },
+      { id: 18, question: "La leche es considerada un alimento 'completo' porque tiene:", options: ["Solo calcio", "Agua, proteínas, hidratos, grasas y vitaminas", "Solo grasas", "Mucha fibra"], correctAnswerIndex: 1 },
+      { id: 19, question: "El objetivo de la rotulación nutricional es:", options: ["Confundir al cliente", "Permitir una elección informada de los alimentos", "Que el envase sea colorido", "Vender más"], correctAnswerIndex: 1 },
+      { id: 20, question: "Un alimento genuino debe estar:", options: ["Frío", "Autorizado por el CAA y elaborado en establecimientos registrados (RNE/RNPA)", "Envasado en plástico", "Comprado en feria"], correctAnswerIndex: 1 }
     ],
     3: [
-      { id: 1, question: "Las siglas ETA significan:", options: ["Estudio Técnico Analítico", "Enfermedades Transmitidas por Alimentos", "Envasado Termo-Aislante", "Energía Total Absorbida"], correctAnswerIndex: 1 },
-      { id: 2, question: "Un peligro FÍSICO en un alimento podría ser:", options: ["Una bacteria", "Un trozo de vidrio, metal o hueso", "Detergente", "Humedad"], correctAnswerIndex: 1 },
-      { id: 3, question: "Un peligro QUÍMICO incluye la presencia de:", options: ["Residuos de pesticidas o productos de limpieza en el alimento", "Trozos de plástico", "Virus", "Hongos"], correctAnswerIndex: 0 },
-      { id: 4, question: "La Salmonelosis se transmite frecuentemente por:", options: ["Agua mineral", "Huevos crudos, mayonesa casera y pollo mal cocido", "Frutas bien lavadas", "Pan lactal"], correctAnswerIndex: 1 },
-      { id: 5, question: "El Síndrome Urémico Hemolítico (SUH) es causado por:", options: ["Virus de la gripe", "Bacteria Escherichia coli (E. coli) productora de toxina Shiga", "Comer muy rápido", "Un hongo en el pan"], correctAnswerIndex: 1 },
-      { id: 6, question: "¿Cuál es el principal vehículo de contaminación en el SUH?", options: ["Carne picada mal cocida", "Manzanas", "Gaseosas", "Pan"], correctAnswerIndex: 0 },
-      { id: 7, question: "La 'Contaminación Cruzada' se produce cuando:", options: ["Se mezclan dos salsas", "Se transfieren microbios de alimentos crudos a alimentos cocidos/listos para consumir", "Se cruzan dos empleados", "Se cocina con agua de red"], correctAnswerIndex: 1 },
-      { id: 8, question: "Las bacterias necesitan para reproducirse (CHAT):", options: ["Comida, Humedad, Acidez, Temperatura", "Comida, Humedad, Aire, Tiempo", "Solo frío", "Solo luz solar"], correctAnswerIndex: 1 },
-      { id: 9, question: "La 'Zona de Peligro' de temperatura está entre:", options: ["-18°C y 0°C", "5°C y 60°C", "80°C y 100°C", "200°C y 300°C"], correctAnswerIndex: 1 },
-      { id: 10, question: "El Botulismo es una intoxicación grave que suele asociarse a:", options: ["Carnes frescas", "Conservas caseras mal esterilizadas (escabeches, mermeladas)", "Helados", "Pan fresco"], correctAnswerIndex: 1 },
-      { id: 11, question: "¿A qué temperatura deben cocinarse los alimentos para ser seguros (en el centro)?", options: ["40°C", "Por encima de los 71°C", "10°C", "Solo deben estar tibios"], correctAnswerIndex: 1 },
-      { id: 12, question: "La Trichinellosis se transmite por el consumo de:", options: ["Carne de cerdo mal cocida o chacinados sin control", "Pescado", "Lechuga", "Pollo"], correctAnswerIndex: 0 },
-      { id: 13, question: "Un síntoma común de una ETA es:", options: ["Dolor de muela", "Diarrea, vómitos, náuseas y fiebre", "Caída de cabello", "Visión perfecta"], correctAnswerIndex: 1 },
-      { id: 14, question: "Si la carne picada queda 'rosadita' en el centro, el alimento es:", options: ["Seguro, estilo gourmet", "Riesgoso, puede contener E. Coli y causar SUH", "Sin sabor", "Perfecto para niños"], correctAnswerIndex: 1 },
-      { id: 15, question: "La contaminación biológica está dada por:", options: ["Bacterias, virus, parásitos y hongos", "Trozos de madera", "Restos de lavandina", "Insecticidas"], correctAnswerIndex: 0 },
-      { id: 16, question: "Los grupos de riesgo más vulnerables a las ETA son:", options: ["Solo hombres", "Niños pequeños, ancianos, embarazadas e inmunodeprimidos", "Adolescentes sanos", "Solo mujeres"], correctAnswerIndex: 1 },
-      { id: 17, question: "El período de incubación de una ETA es:", options: ["El tiempo entre el consumo del alimento y la aparición de síntomas", "El tiempo que está en el horno", "El tiempo de compra", "Un año"], correctAnswerIndex: 0 },
-      { id: 18, question: "Una toxina es:", options: ["Un tipo de hongo", "Una sustancia venenosa producida por bacterias u hongos", "Un mineral", "Un síntoma"], correctAnswerIndex: 1 },
-      { id: 19, question: "¿Por qué no se debe cortar el pollo crudo y luego tomates para ensalada en la misma tabla sin lavarla?", options: ["Porque mezcla sabores", "Por riesgo alto de Contaminación Cruzada", "Para ahorrar tiempo", "No hay problema"], correctAnswerIndex: 1 },
-      { id: 20, question: "El frío de la heladera (0°C a 5°C):", options: ["Mata a todas las bacterias", "Detiene o hace muy lenta la multiplicación de bacterias", "Acelera el crecimiento bacteriano", "Cocina el alimento"], correctAnswerIndex: 1 }
+      { id: 1, question: "¿Cuál es la 'Zona de Peligro' para la reproducción de bacterias?", options: ["-18°C a 0°C", "5°C a 60°C", "70°C a 100°C", "40°C a 80°C"], correctAnswerIndex: 1 },
+      { id: 2, question: "El Síndrome Urémico Hemolítico (SUH) se previene principalmente:", options: ["Lavando la ropa", "Cocinando completamente la carne picada y evitando la leche cruda", "Comiendo solo vegetales", "Usando mucha sal"], correctAnswerIndex: 1 },
+      { id: 3, question: "¿A qué temperatura debe llegar el centro del alimento para ser seguro?", options: ["40°C", "71°C o más", "60°C", "100°C siempre"], correctAnswerIndex: 1 },
+      { id: 4, question: "La 'Contaminación Cruzada Indirecta' ocurre a través de:", options: ["Contacto directo de dos alimentos", "Manos, utensilios o tablas mal lavados entre alimentos", "El aire solamente", "El envase cerrado"], correctAnswerIndex: 1 },
+      { id: 5, question: "La bacteria Salmonella se asocia comúnmente con:", options: ["Pan seco", "Huevos crudos, pollo y mayonesa casera", "Agua mineral embotellada", "Fruta pelada"], correctAnswerIndex: 1 },
+      { id: 6, question: "El Botulismo es una intoxicación que se asocia a:", options: ["Frituras", "Conservas caseras (escabeches, mermeladas) mal esterilizadas", "Asado", "Ensalada fresca"], correctAnswerIndex: 1 },
+      { id: 7, question: "Las bacterias necesitan para crecer (CHAT):", options: ["Calor, Humedad, Alimento, Tiempo", "Comida, Heladera, Aire, Temperatura", "Solo luz y agua", "Solo azúcar"], correctAnswerIndex: 0 },
+      { id: 8, question: "¿Cuál es un peligro FÍSICO en el alimento?", options: ["Salmonella", "Trozo de vidrio o viruta de metal", "Detergente", "Insecticida"], correctAnswerIndex: 1 },
+      { id: 9, question: "La Triquinelosis se transmite por comer carne de:", options: ["Vaca mal cocida", "Cerdo o jabalí sin control sanitario (chacinados)", "Pollo", "Pescado de mar"], correctAnswerIndex: 1 },
+      { id: 10, question: "Un síntoma grave del SUH en niños es:", options: ["Dolor de muela", "Falla renal y anemia", "Pérdida de visión", "Caída del cabello"], correctAnswerIndex: 1 },
+      { id: 11, question: "Los alimentos listos para consumo NO deben estar a temp. ambiente más de:", options: ["10 minutos", "2 horas", "5 horas", "Toda la noche"], correctAnswerIndex: 1 },
+      { id: 12, question: "Un peligro QUÍMICO incluye restos de:", options: ["Uñas", "Pesticidas, productos de limpieza o desinfectantes", "Bacterias", "Pelos"], correctAnswerIndex: 1 },
+      { id: 13, question: "La Listeria es peligrosa porque puede crecer incluso en:", options: ["El horno", "La heladera (temperaturas bajas)", "Ambiente seco", "El freezer"], correctAnswerIndex: 1 },
+      { id: 14, question: "La 'contaminación biológica' es causada por:", options: ["Cloro", "Microorganismos (bacterias, virus, parásitos, hongos)", "Tierra", "Vidrios"], correctAnswerIndex: 1 },
+      { id: 15, question: "Para evitar el SUH, las frutas y verduras se deben:", options: ["Solo pelar", "Lavar cuidadosamente con agua segura (potable)", "Pasar por lavandina pura", "Cocinar siempre"], correctAnswerIndex: 1 },
+      { id: 16, question: "¿Por qué no se debe usar el mismo cuchillo para carne cruda y luego para pan?", options: ["Porque se desafila", "Por riesgo de Contaminación Cruzada", "Porque el pan se moja", "No hay problema"], correctAnswerIndex: 1 },
+      { id: 17, question: "El frío de la heladera:", options: ["Mata a todas las bacterias", "Retarda la multiplicación de las bacterias", "Las activa", "No influye"], correctAnswerIndex: 1 },
+      { id: 18, question: "Un portador sano es alguien que:", options: ["No tiene bacterias", "Tiene el patógeno y puede contagiar pero no muestra síntomas", "Es un médico", "Usa barbijo"], correctAnswerIndex: 1 },
+      { id: 19, question: "El recalentamiento de alimentos debe alcanzar los:", options: ["40°C", "74°C", "100°C", "Solo entibiar"], correctAnswerIndex: 1 },
+      { id: 20, question: "La inocuidad alimentaria significa que el alimento:", options: ["Es rico", "No causará daño al consumidor cuando se prepare y consuma", "Es de color verde", "Es gratis"], correctAnswerIndex: 1 }
     ],
     4: [
-      { id: 1, question: "Las siglas BPM significan:", options: ["Buenas Prácticas de Manufactura", "Buenos Productos en Mesa", "Barrido, Pulido y Mantenimiento", "Base de Preparaciones Mixtas"], correctAnswerIndex: 0 },
-      { id: 2, question: "Las BPM se aplican a:", options: ["Solo al personal", "Personal, procesos, materias primas, agua e infraestructura", "Solo a la infraestructura", "Solo al envasado"], correctAnswerIndex: 1 },
-      { id: 3, question: "El lavado correcto de manos dura aproximadamente:", options: ["5 segundos", "40 a 60 segundos", "10 minutos", "2 segundos"], correctAnswerIndex: 1 },
-      { id: 4, question: "La sigla POES significa:", options: ["Procedimientos Operativos Estandarizados de Saneamiento", "Plan de Organización Especial", "Programa Oficial de Enfermedades Sanitarias", "Prácticas Optimizadas de Especialidades Saladas"], correctAnswerIndex: 0 },
-      { id: 5, question: "Un POES incluye instrucciones escritas sobre:", options: ["Qué, cómo, cuándo y quién limpia y desinfecta", "Recetas de cocina", "Cómo vender", "Cómo cobrar"], correctAnswerIndex: 0 },
-      { id: 6, question: "En el almacenamiento en la heladera, los crudos (ej: carnes) deben ir:", options: ["En el estante superior", "En los estantes inferiores (abajo) para evitar que goteen sobre otros", "Junto a las tortas", "En la puerta"], correctAnswerIndex: 1 },
-      { id: 7, question: "El Manejo Integrado de Plagas (MIP) busca:", options: ["Solo usar venenos", "Prevenir el ingreso y anidación de plagas mediante barreras físicas y limpieza antes del control químico", "Criar mascotas", "Dejar comida para los ratones"], correctAnswerIndex: 1 },
-      { id: 8, question: "El agua utilizada en la elaboración de alimentos debe ser:", options: ["De lluvia", "Agua potable / segura", "Agua de río sin tratar", "Agua oxigenada"], correctAnswerIndex: 1 },
-      { id: 9, question: "La limpieza significa:", options: ["Remover la suciedad visible usando detergente y acción mecánica", "Eliminar todas las bacterias", "Echar perfume", "Pasar un trapo seco"], correctAnswerIndex: 0 },
-      { id: 10, question: "La desinfección consiste en:", options: ["Dejar todo brillante", "Reducir la cantidad de microorganismos a niveles seguros mediante químicos (ej: lavandina) o calor", "Barrer fuerte", "Usar desodorante de ambientes"], correctAnswerIndex: 1 },
-      { id: 11, question: "El orden correcto de saneamiento es:", options: ["Desinfectar y luego limpiar", "Limpiar, enjuagar, desinfectar y volver a enjuagar", "Solo mojar", "Desinfectar sin limpiar"], correctAnswerIndex: 1 },
-      { id: 12, question: "Los tachos de basura en la cocina deben:", options: ["Estar sin tapa", "Tener tapa a pedal y bolsa, y vaciarse frecuentemente", "Ser de cartón", "Tener agujeros"], correctAnswerIndex: 1 },
-      { id: 13, question: "La infraestructura (paredes y pisos) de un establecimiento debe ser:", options: ["De madera porosa", "Lisa, impermeable, lavable y de colores claros", "De alfombra", "Oscura para que no se vea la suciedad"], correctAnswerIndex: 1 },
-      { id: 14, question: "La regla PEPS para manejo de materias primas significa:", options: ["Primero en Entrar, Primero en Salir", "Poner el Envase Por Separado", "Pelar, Enjuagar, Picar, Servir", "Productos Especiales Para Sopas"], correctAnswerIndex: 0 },
-      { id: 15, question: "¿Por qué no se deben usar anillos o relojes al manipular alimentos?", options: ["Porque se pueden perder", "Porque acumulan bacterias y son un riesgo físico (pueden caer en la comida)", "Porque se estropean", "No hay problema en usarlos"], correctAnswerIndex: 1 },
-      { id: 16, question: "Las mosquiteras en ventanas son parte de:", options: ["El diseño estético", "Las barreras físicas del MIP para evitar vectores", "La ventilación", "Para frenar la luz"], correctAnswerIndex: 1 },
-      { id: 17, question: "Para secarse las manos luego del lavado, en la cocina se usa:", options: ["El repasador o delantal", "Toallas de papel descartables", "La ropa de calle", "Secado al aire libre solamente"], correctAnswerIndex: 1 },
-      { id: 18, question: "Un 'Punto Crítico de Control' (PCC) en la cocción de una hamburguesa es:", options: ["La temperatura interna que asegure la eliminación de E. Coli", "El color del pan", "La cantidad de mayonesa", "El precio"], correctAnswerIndex: 0 },
-      { id: 19, question: "Si un manipulador tiene una herida en la mano, debe:", options: ["Cocinar igual", "Cubrirla con un vendaje impermeable y un guante desechable", "No venir a trabajar por un mes", "Esconder la mano"], correctAnswerIndex: 1 },
-      { id: 20, question: "Las tablas de picar de madera:", options: ["Son las más seguras", "Están prohibidas por ser porosas y difíciles de desinfectar", "Solo sirven para cortar verduras", "Deben hervirse a diario"], correctAnswerIndex: 1 }
+      { id: 1, question: "El lavado de manos profesional debe durar entre:", options: ["5 y 10 segundos", "40 y 60 segundos", "2 y 5 minutos", "Solo lo que dure mojarlas"], correctAnswerIndex: 1 },
+      { id: 2, question: "En la heladera, ¿dónde deben ubicarse las carnes crudas?", options: ["En el estante superior", "En los estantes inferiores (para evitar goteos)", "En la puerta", "Junto a los postres"], correctAnswerIndex: 1 },
+      { id: 3, question: "El orden correcto de saneamiento es:", options: ["Desinfectar y luego limpiar", "Limpiar (remover suciedad) y luego Desinfectar (eliminar microbios)", "Solo mojar", "Limpiar con lavandina pura"], correctAnswerIndex: 1 },
+      { id: 4, question: "¿Qué se debe usar para cerrar el grifo después del lavado de manos?", options: ["La mano limpia", "La misma toalla de papel descartable usada para secarse", "El codo", "No se debe cerrar"], correctAnswerIndex: 1 },
+      { id: 5, question: "Las Buenas Prácticas de Manufactura (BPM) son:", options: ["Opcionales", "Obligatorias por el Código Alimentario Argentino", "Solo para grandes fábricas", "Solo para el Chef"], correctAnswerIndex: 1 },
+      { id: 6, question: "El uso de cofia es obligatorio para evitar:", options: ["El frío", "La caída de cabellos (peligro físico y biológico)", "Verse mal", "Que el pelo se engrase"], correctAnswerIndex: 1 },
+      { id: 7, question: "Las uñas del manipulador deben estar:", options: ["Largas y pintadas", "Cortas, limpias y sin esmalte", "Solo con esmalte transparente", "No importa"], correctAnswerIndex: 1 },
+      { id: 8, question: "¿Por qué no se permiten anillos o relojes en la cocina?", options: ["Se pueden rayar", "Acumulan suciedad, bacterias y pueden caer en la comida", "Distraen al personal", "Son caros"], correctAnswerIndex: 1 },
+      { id: 9, question: "El Manejo Integrado de Plagas (MIP) prioriza:", options: ["El uso de venenos fuertes", "La prevención (barreras físicas, limpieza, orden)", "Tener gatos en la cocina", "No hacer nada"], correctAnswerIndex: 1 },
+      { id: 10, question: "Los POES son procedimientos escritos sobre:", options: ["Recetas de cocina", "Cómo y cuándo realizar la limpieza y desinfección", "Cómo atender al cliente", "El sueldo"], correctAnswerIndex: 1 },
+      { id: 11, question: "Para desinfectar superficies con lavandina, esta debe aplicarse:", options: ["Sobre la suciedad directa", "Después de haber limpiado con agua y detergente", "Mezclada con detergente", "Pura siempre"], correctAnswerIndex: 1 },
+      { id: 12, question: "Un tacho de basura en cocina debe tener:", options: ["Sin tapa", "Tapa con pedal y bolsa", "Hecho de madera", "Estar en el centro del pasillo"], correctAnswerIndex: 1 },
+      { id: 13, question: "El agua segura es aquella que:", options: ["Es transparente", "Es apta para consumo humano y libre de patógenos", "Viene de un pozo", "Tiene sabor a cloro"], correctAnswerIndex: 1 },
+      { id: 14, question: "Las tablas de picar ideales son de:", options: ["Madera de pino", "Plástico de alta densidad o acrílico (no porosas)", "Vidrio", "Cartón prensado"], correctAnswerIndex: 1 },
+      { id: 15, question: "El secado de manos más higiénico es con:", options: ["Repasador de tela", "Toalla de papel descartable o aire caliente", "El delantal", "Sacudiendo las manos"], correctAnswerIndex: 1 },
+      { id: 16, question: "Si cae comida al suelo, se considera:", options: ["Comestible si se levanta rápido", "Contaminada y debe descartarse", "Limpia si el suelo se ve limpio", "Para el perro"], correctAnswerIndex: 1 },
+      { id: 17, question: "La infraestructura del local debe tener paredes:", options: ["De ladrillo visto", "Lisas, impermeables y lavables", "Con empapelado", "Negras"], correctAnswerIndex: 1 },
+      { id: 18, question: "El uniforme de trabajo debe ser:", options: ["Ropa de calle cómoda", "Exclusivo para la tarea, limpio y de colores claros", "Solo el delantal", "Pijama"], correctAnswerIndex: 1 },
+      { id: 19, question: "Las mosquiteras sirven para:", options: ["Adornar las ventanas", "Evitar el ingreso de moscas y otros insectos (vectores)", "Que no entre sol", "Que no entre aire"], correctAnswerIndex: 1 },
+      { id: 20, question: "Un manipulador debe lavarse las manos:", options: ["Solo al llegar", "Frecuentemente (antes de empezar, después de tocar basura, ir al baño, etc.)", "Cada 4 horas", "Solo si se ven sucias"], correctAnswerIndex: 1 }
     ],
     5: [
-      { id: 1, question: "Los métodos de conservación sirven para:", options: ["Cambiar el sabor", "Prolongar la vida útil del alimento impidiendo el desarrollo de microorganismos", "Hacer que pesen más", "Aumentar el precio"], correctAnswerIndex: 1 },
-      { id: 2, question: "La Pasteurización es un método de conservación basado en:", options: ["La adición de sal", "El uso de calor moderado para destruir patógenos sin alterar el alimento (ej: leche)", "El enfriamiento extremo", "La irradiación"], correctAnswerIndex: 1 },
-      { id: 3, question: "El método de 'Esterilización' (ej: UHT o latas) se diferencia de la pasteurización porque:", options: ["Es más frío", "Aplica temperaturas más altas (120°C+) eliminando todas las bacterias y esporas", "Usa químicos", "Solo sirve para verduras"], correctAnswerIndex: 1 },
-      { id: 4, question: "La refrigeración conserva los alimentos mediante:", options: ["La cocción", "Las bajas temperaturas (0 a 5°C) que frenan la multiplicación microbiana", "El secado", "La eliminación del oxígeno"], correctAnswerIndex: 1 },
-      { id: 5, question: "La congelación profunda (-18°C) debe hacerse de forma:", options: ["Lenta", "Rápida, para formar cristales de hielo pequeños que no rompan las fibras del alimento", "En etapas", "Con sal"], correctAnswerIndex: 1 },
-      { id: 6, question: "Para descongelar carne de forma segura, se debe:", options: ["Dejar sobre la mesada al sol", "Pasar del freezer a la heladera (con tiempo) o usar microondas", "Poner bajo agua caliente", "Dejar en el patio"], correctAnswerIndex: 1 },
-      { id: 7, question: "El método de 'Deshidratación' consiste en:", options: ["Agregar agua", "Extraer el agua libre del alimento, bajando su Aw y deteniendo bacterias", "Agregar azúcar", "Congelar"], correctAnswerIndex: 1 },
-      { id: 8, question: "La 'Salazón' conserva alimentos porque:", options: ["Mata por frío", "La sal absorbe la humedad, quitando el agua libre a las bacterias", "Le da color rojo", "Reduce el oxígeno"], correctAnswerIndex: 1 },
-      { id: 9, question: "Un envasado al vacío funciona:", options: ["Poniendo el alimento en un frasco con agua", "Extrayendo el oxígeno del envase, impidiendo el crecimiento de bacterias aerobias", "Congelando", "Añadiendo gas carbónico"], correctAnswerIndex: 1 },
-      { id: 10, question: "Los conservantes químicos (ej: benzoatos, sorbatos) deben:", options: ["Estar autorizados por el CAA y usarse en las dosis permitidas", "Usarse sin límite", "No sirven para nada", "Ser tóxicos"], correctAnswerIndex: 0 },
-      { id: 11, question: "El 'Escaldado' es un tratamiento térmico breve previo a:", options: ["Cocinar al horno", "La congelación de vegetales, para inactivar enzimas que causan deterioro", "Hacer helado", "Fritar carne"], correctAnswerIndex: 1 },
-      { id: 12, question: "Si un envase (lata) de tomate está abollado o hinchado, usted debe:", options: ["Usarlo inmediatamente", "Descartarlo, puede haber contaminación con Clostridium botulinum", "Pincharlo para sacarle el gas", "Venderlo más barato"], correctAnswerIndex: 1 },
-      { id: 13, question: "El ahumado conserva por:", options: ["Solo por el sabor", "Acción antimicrobiana del humo y desecación", "Añadir agua", "Enfriamiento"], correctAnswerIndex: 1 },
-      { id: 14, question: "Los envases primarios son aquellos que:", options: ["Están en el depósito", "Están en contacto directo con el alimento", "Son de cartón grande", "Transportan los pallets"], correctAnswerIndex: 1 },
-      { id: 15, question: "Un envase Tetra Brik es multicapa, lo que permite:", options: ["Que sea más caro", "Proteger al alimento esterilizado de la luz, el oxígeno y los microorganismos", "Que sea transparente", "Que se pueda mojar"], correctAnswerIndex: 1 },
-      { id: 16, question: "La fermentación (ej: yogurt, queso) conserva por:", options: ["Enfriamiento", "Aumento de la acidez (bajada de pH) gracias a bacterias beneficiosas (lácticas)", "Adición de sal", "Extracción de aire"], correctAnswerIndex: 1 },
-      { id: 17, question: "¿Puede volver a congelar un alimento crudo que ya fue descongelado?", options: ["Sí, sin problema", "No, salvo que primero se cocine", "Solo si es carne", "Sí, si se lava"], correctAnswerIndex: 1 },
-      { id: 18, question: "El agregado de azúcar (ej: mermeladas) es un método de:", options: ["Refrigeración", "Conservación química por disminución de actividad acuosa", "Pasteurización", "Liofilización"], correctAnswerIndex: 1 },
-      { id: 19, question: "El rotulado nutricional de un envase envasado es:", options: ["Opcional", "Obligatorio según el CAA", "Solo un consejo", "Para decorar"], correctAnswerIndex: 1 },
-      { id: 20, question: "Si se rompe la 'cadena de frío' de un alimento congelado:", options: ["Queda igual", "El alimento puede entrar en la zona de peligro y permitir el crecimiento de patógenos", "El alimento se cocina", "Se mejora el sabor"], correctAnswerIndex: 1 }
+      { id: 1, question: "El protocolo de enfriamiento rápido busca bajar de 60°C a 5°C en menos de:", options: ["1 hora", "4 horas (total)", "10 horas", "24 horas"], correctAnswerIndex: 1 },
+      { id: 2, question: "¿Cuál es el nuevo logo oficial para alimentos SIN TACC (Libres de Gluten)?", options: ["Un círculo rojo tachado", "Un logo con el símbolo de una espiga y la leyenda 'Sin TACC'", "Una letra G grande", "No tiene logo"], correctAnswerIndex: 1 },
+      { id: 3, question: "El método PEPS/FEFO asegura que:", options: ["Lo primero en vencer sea lo primero en salir", "Lo más rico se venda primero", "No se limpie el depósito", "Se tire la comida"], correctAnswerIndex: 0 },
+      { id: 4, question: "La Pasteurización elimina microorganismos mediante:", options: ["Congelación", "Calor moderado (sin hervir) para no alterar el alimento", "Químicos", "Rayos X"], correctAnswerIndex: 1 },
+      { id: 5, question: "Para descongelar de forma segura se recomienda usar:", options: ["La mesada de la cocina", "La heladera, el microondas o cocción directa", "El sol", "Agua caliente estancada"], correctAnswerIndex: 1 },
+      { id: 6, question: "¿Se puede recongelar un alimento crudo ya descongelado?", options: ["Sí, si se hace rápido", "No, salvo que primero se cocine completamente", "Sí, si es carne", "Solo si está envasado"], correctAnswerIndex: 1 },
+      { id: 7, question: "La Esterilización (UHT o latas) destruye:", options: ["Solo algunas bacterias", "Todos los microorganismos y sus esporas", "Solo los virus", "Nada, solo conserva"], correctAnswerIndex: 1 },
+      { id: 8, question: "Un envase abollado o hinchado es señal de:", options: ["Un golpe sin importancia", "Posible contaminación bacteriana peligrosa (ej: Botulismo)", "Que tiene más contenido", "Que el producto es viejo"], correctAnswerIndex: 1 },
+      { id: 9, question: "La Salazón y el Azucarado conservan porque:", options: ["Enfrían el alimento", "Reducen el agua libre (Aw) disponible para bacterias", "Matan por sabor", "Aumentan la acidez"], correctAnswerIndex: 1 },
+      { id: 10, question: "El envasado al vacío retira el:", options: ["Agua", "Oxígeno (impidiendo bacterias aerobias)", "Sabor", "Precio"], correctAnswerIndex: 1 },
+      { id: 11, question: "Un aditivo alimentario debe estar siempre:", options: ["Prohibido", "Autorizado por el CAA y declarado en el rótulo", "En gran cantidad", "Oculto"], correctAnswerIndex: 1 },
+12: { id: 12, question: "La congelación (-18°C) detiene:", options: ["Solo el color", "Toda actividad microbiana (pero no mata necesariamente)", "El sabor", "El peso"], correctAnswerIndex: 1 },
+      { id: 13, question: "Los conservantes químicos sirven para:", options: ["Mejorar la nutrición", "Retrasar el deterioro causado por microorganismos", "Hacer el alimento más barato", "Engañar al cliente"], correctAnswerIndex: 1 },
+      { id: 14, question: "Un alimento 'Liofilizado' es aquel que ha sido:", options: ["Frito", "Deshidratado por congelación y vacío", "Hervido", "Ahumado"], correctAnswerIndex: 1 },
+      { id: 15, question: "La fermentación (yogurt, chucrut) conserva por aumento de:", options: ["Azúcar", "Acidez (baja de pH)", "Grasas", "Agua"], correctAnswerIndex: 1 },
+      { id: 16, question: "Un envase primario es el que está en:", options: ["El camión", "Contacto directo con el alimento", "La caja grande", "El estante"], correctAnswerIndex: 1 },
+      { id: 17, question: "La deshidratación tradicional usa:", options: ["Solo frío", "Calor o aire para extraer la humedad", "Lavandina", "Sal solamente"], correctAnswerIndex: 1 },
+      { id: 18, question: "El ahumado tiene acción:", options: ["Solo decorativa", "Antimicrobiana y desecante", "Nutritiva", "Tóxica siempre"], correctAnswerIndex: 1 },
+      { id: 19, question: "La cadena de frío no debe romperse porque:", options: ["Se gasta luz", "Permite que las bacterias se activen y multipliquen", "El envase se moja", "No pasa nada"], correctAnswerIndex: 1 },
+      { id: 20, question: "El rótulo de un alimento debe incluir obligatoriamente:", options: ["La foto del dueño", "Fecha de vencimiento, lote y datos del fabricante", "El precio de costo", "Una receta"], correctAnswerIndex: 1 }
     ]
   };
 
@@ -153,141 +153,135 @@ const getQuestionsForFoodClass = (classId: number): Question[] => {
 export const FOOD_CLASSES: ClassData[] = [
   {
     id: 1,
-    title: "Marco Regulatorio y Ética",
-    description: "Rol social, derechos y deberes del manipulador, CAA.",
+    title: "Marco Regulatorio y Ética (ANMAT 2025)",
+    description: "Rol social, Ley de Etiquetado Frontal y ética del manipulador.",
     keyword: "ETICA",
     duration: "10h",
     icon: "gavel",
-    image: "/images/food_m1.png",
-    content: `MARCO REGULATORIO Y ÉTICA DEL MANIPULADOR
+    image: "/images/etiquetado_frontal_octogonos.png",
+    content: `MARCO REGULATORIO Y ÉTICA DEL MANIPULADOR (ACTUALIZADO 2025)
 
-1. ROL SOCIAL Y TRABAJO DECENTE:
-El manipulador de alimentos no solo cocina o procesa, sino que tiene una gran responsabilidad en la salud pública. 
-El trabajo decente (OIT) promueve condiciones seguras, libertad y respeto.
+1. NUEVA DEFINICIÓN DE MANIPULADOR:
+Según la actualización 2025 de ANMAT, manipulador es TODA persona que realice actividades en un establecimiento donde se elaboren, fraccionen, almacenen, transporten o comercialicen alimentos. Esto incluye personal de limpieza, administrativos de compras y transportistas.
 
-2. CÓDIGO ALIMENTARIO ARGENTINO (CAA):
-Es el cuerpo normativo que regula toda la actividad relacionada con los alimentos en el país. Define qué es un alimento genuino, adulterado o falsificado, y establece los requisitos higiénicos-sanitarios para su elaboración y venta.
+2. LEY DE ETIQUETADO FRONTAL (LEY 27.642):
+Implementación de octógonos negros que advierten sobre EXCESO en: Azúcares, Grasas Totales, Grasas Saturadas, Sodio y Calorías. 
+- Leyendas precautorias: "Contiene edulcorantes, no recomendable en niños/as" y "Contiene cafeína, evitar en niños/as".
+- Objetivo: Garantizar el derecho a la salud y a una alimentación informada.
 
-3. DERECHOS Y DEBERES:
-- Deberes: Higiene personal estricta, informar enfermedades transmisibles, aplicar Buenas Prácticas.
-- Derechos: Recibir capacitación, trabajar en ambientes seguros y con las herramientas necesarias.
+3. ROL SOCIAL:
+El manipulador es un agente de salud pública. Su honestidad y responsabilidad impactan directamente en la prevención de enfermedades en la comunidad.
 
-4. LA LEY Y LA RESPONSABILIDAD:
-El incumplimiento puede derivar en brotes de ETA (Enfermedades de Transmisión Alimentaria), con consecuencias penales y civiles. La responsabilidad ética implica proteger al consumidor.`,
+4. CÓDIGO ALIMENTARIO ARGENTINO (CAA):
+Es la ley suprema. Todo alimento debe ser GENUINO (cumplir con el CAA), estar rotulado correctamente y provenir de establecimientos habilitados (RNE y RNPA).`,
     questions: getQuestionsForFoodClass(1)
   },
   {
     id: 2,
-    title: "Fundamentos de los Alimentos",
-    description: "Definición, clasificación y composición nutricional.",
+    title: "Fundamentos Nutricionales y GAPA",
+    description: "Composición de alimentos y Gráfica de Alimentación Saludable.",
     keyword: "FUNDAMENTOS",
     duration: "10h",
     icon: "apple",
-    image: "/images/food_m2.png",
-    content: `FUNDAMENTOS DE LOS ALIMENTOS
+    image: "/images/grafica_alimentacion_saludable_gapa.png",
+    content: `FUNDAMENTOS DE LOS ALIMENTOS Y NUTRICIÓN
 
-1. DEFINICIÓN Y COMPOSICIÓN:
-Un alimento aporta nutrientes (proteínas, carbohidratos, lípidos, vitaminas, minerales y agua). 
-El agua disponible (Actividad Acuosa - Aw) y el pH (acidez) son los factores más determinantes para la vida útil de un alimento. 
+1. GRÁFICA DE LA ALIMENTACIÓN SALUDABLE (GAPA):
+Representación oficial argentina para una dieta equilibrada.
+- Mitad del plato: Frutas y verduras de estación.
+- Centro: Agua segura (8 vasos diarios).
+- Otros grupos: Legumbres, cereales, lácteos, carnes/huevos, aceites/frutos secos.
+- Alerta: Menos sal y menos azúcar (alimentos opcionales).
 
-2. CLASIFICACIÓN SEGÚN ALTERABILIDAD:
-- Perecederos: Carnes, lácteos, huevos. Requieren frío continuo. Tienen alta Aw.
-- Semi-perecederos: Papas, cebollas. Duran más pero en condiciones adecuadas.
-- No perecederos: Arroz seco, harinas, enlatados. Baja Aw o esterilizados.
+2. COMPOSICIÓN QUÍMICA:
+- Macronutrientes: Proteínas (estructurales), Glúcidos (energía), Lípidos (reserva y vitaminas).
+- Micronutrientes: Vitaminas y minerales esenciales.
+- Agua y Aw: La 'Actividad Acuosa' es el agua libre que las bacterias usan para vivir. A menor Aw (alimentos secos), más duradero es el alimento.
 
-3. ALIMENTOS ALTERADOS, ADULTERADOS Y FALSIFICADOS:
-- Alterados: Sufrieron daño por el paso del tiempo, clima o bacterias (ej: leche cortada).
-- Adulterados: Se les agregó o quitó algo engañando sobre su calidad (ej: leche aguada).
-- Falsificados: Se hacen pasar por marcas o tipos que no son.
-
-4. ALTO Y BAJO RIESGO EPIDEMIOLÓGICO:
-Los alimentos ricos en proteínas y humedad (carnes crudas, cremas) son los favoritos de las bacterias. Son de "Alto Riesgo".`,
+3. CLASIFICACIÓN POR RIESGO:
+- Alto Riesgo: Alimentos con mucha humedad y proteínas (carnes, huevos, lácteos, salsas). Son los que más cuidados requieren.`,
     questions: getQuestionsForFoodClass(2)
   },
   {
     id: 3,
-    title: "Riesgos y Microbiología (ETA)",
-    description: "Peligros, contaminación cruzada y microbiología.",
+    title: "Riesgos Microbiológicos y Zona de Peligro",
+    description: "Termometría, SUH, Salmonella y prevención de ETAs.",
     keyword: "RIESGOS",
     duration: "10h",
     icon: "microscope",
-    image: "/images/food_m3.png",
-    content: `MICROBIOLOGÍA Y RIESGOS ALIMENTARIOS
+    image: "/images/termometro_zona_peligro.png",
+    content: `MICROBIOLOGÍA Y PREVENCIÓN DE ETAs
 
-1. PELIGROS EN LOS ALIMENTOS:
-- Físicos: Vidrios, anillos, pelos, huesos.
-- Químicos: Restos de lavandina, pesticidas, metales pesados.
-- Biológicos: Bacterias, virus, parásitos, hongos.
+1. LA ZONA DE PELIGRO (5°C A 60°C):
+Es el rango de temperatura donde las bacterias se reproducen cada 20 minutos. 
+- < 5°C (Refrigeración): El crecimiento se frena.
+- > 70°C (Cocción): Las bacterias patógenas mueren.
+- Recalentamiento: Debe alcanzar 74°C en el centro.
 
-2. ENFERMEDADES DE TRANSMISIÓN ALIMENTARIA (ETA):
-Ocurren al ingerir alimentos o agua con patógenos. Ejemplos críticos:
-- SUH (Síndrome Urémico Hemolítico): E. Coli, en carne picada mal cocida. Afecta riñones, mortal en niños.
-- Salmonelosis: Salmonella en pollo y huevos mal cocidos o mayonesas caseras.
-- Botulismo: Toxina botulínica en conservas mal esterilizadas.
-- Trichinellosis: Parásito en cerdo mal cocido y chacinados clandestinos.
+2. ETAS CRÍTICAS EN ARGENTINA:
+- SUH (Síndrome Urémico Hemolítico): Causado por E. Coli. Principal causa de falla renal infantil. Se evita cocinando la carne picada hasta que no esté rosada y lavando bien los vegetales.
+- Salmonella: En huevos (nunca lavarlos antes de guardar, solo antes de usar) y pollo.
+- Botulismo: Toxina mortal en conservas caseras.
+- Listeria: Bacteria 'psicrótrofa' que puede crecer incluso dentro de la heladera.
 
-3. CONTAMINACIÓN CRUZADA:
-Paso de bacterias de zonas sucias a limpias. Directa (un pollo crudo gotea sobre una lechuga) o Indirecta (cortar carne con un cuchillo y usar el mismo cuchillo sin lavar para tomates).
-
-4. LA ZONA DE PELIGRO BACTERIANO:
-Las bacterias se multiplican rápidamente entre los 5°C y los 60°C. 
-- Frio (<5°C) adormece a las bacterias.
-- Calor (>71°C en el centro) las destruye.`,
+3. PELIGROS:
+- Físicos: Vidrios, metales, cabellos.
+- Químicos: Lavandina, pesticidas.
+- Biológicos: Bacterias, virus, parásitos.`,
     questions: getQuestionsForFoodClass(3)
   },
   {
     id: 4,
-    title: "Sistemas de Inocuidad",
-    description: "BPM, POES y manejo integrado de plagas.",
+    title: "Higiene y Saneamiento (L+D)",
+    description: "Lavado de manos, organización de heladera y procesos POES.",
     keyword: "SISTEMAS",
     duration: "10h",
     icon: "shield",
-    image: "/images/food_m4.png",
-    content: `SISTEMAS DE INOCUIDAD (BPM Y POES)
+    image: "/images/lavado_manos_profesional.png",
+    content: `SISTEMAS DE INOCUIDAD Y PRÁCTICAS HIGIÉNICAS
 
-1. BUENAS PRÁCTICAS DE MANUFACTURA (BPM):
-Normas básicas para producir alimentos seguros. Incluyen:
-- Higiene del personal: Lavado de manos frecuente (40 a 60 segundos), uñas cortas, cofia, uniforme limpio, prohibición de anillos/relojes.
-- Procesos: Respetar la cadena de frío, evitar contaminación cruzada, cocinar a más de 71°C.
-- Materias Primas: Comprar a proveedores autorizados, revisar rotulación (PEPS).
+1. LAVADO DE MANOS PROFESIONAL (40-60 SEG):
+Paso fundamental. Mojar, enjabonar, frotar (palmas, dorsos, entre dedos, uñas y MUÑECAS), enjuagar y secar con papel descartable. Usar el papel para cerrar el grifo.
 
-2. LIMPIEZA VS DESINFECCIÓN:
-- Limpieza: Remueve suciedad usando agua y detergente.
-- Desinfección: Elimina microorganismos usando químicos (lavandina) a niveles seguros. Nunca mezclarlos. El orden es Limpiar, Enjuagar, Desinfectar.
+2. LIMPIEZA VS DESINFECCIÓN (L+D):
+- Limpiar: Quitar suciedad visible con detergente.
+- Desinfectar: Eliminar microorganismos invisibles con desinfectante (ej. lavandina 1000ppm).
+*NUNCA mezclar detergente con lavandina (se anulan y liberan gases tóxicos).*
 
-3. POES (Procedimientos Operativos Estandarizados de Saneamiento):
-Documentos escritos que detallan los pasos para limpiar y desinfectar cada área de forma estandarizada.
+3. ORGANIZACIÓN DE LA HELADERA:
+Fundamental para evitar la CONTAMINACIÓN CRUZADA.
+- Estantes Superiores: Alimentos listos para consumir (cocidos, lácteos).
+- Estantes Inferiores: Carnes crudas en recipientes cerrados (evita goteos).
+- Cajones: Frutas y verduras lavadas.
 
-4. MANEJO INTEGRADO DE PLAGAS Y RESIDUOS:
-El MIP previene antes de fumigar. Barreras físicas (tejidos, zócalos, puertas cerradas) y gestión de basura (tachos cerrados con pedal, vaciado frecuente) para evitar que encuentren alimento o refugio.`,
+4. CONTROL DE PLAGAS (MIP):
+Eliminar 'el hotel y el restaurante' de las plagas (limpieza y orden).`,
     questions: getQuestionsForFoodClass(4)
   },
   {
     id: 5,
-    title: "Tecnologías de Conservación",
-    description: "Métodos físicos, químicos y envases.",
+    title: "Conservación y Tecnologías 2025",
+    description: "Protocolo de enfriamiento, logo Sin TACC y conservación.",
     keyword: "CONSERVACION",
     duration: "10h",
     icon: "flask",
-    image: "/images/food_m5.png",
-    content: `TECNOLOGÍAS DE CONSERVACIÓN Y ENVASES
+    image: "/images/organizacion_heladera_segura.png",
+    content: `TECNOLOGÍAS DE CONSERVACIÓN Y NUEVAS NORMAS
 
-1. OBJETIVO DE LA CONSERVACIÓN:
-Alargar la vida útil del alimento impidiendo o retrasando el crecimiento bacteriano, usando barreras térmicas o químicas.
+1. PROTOCOLO DE ENFRIAMIENTO RÁPIDO (REGLA 2-2-4):
+Bajar la temperatura de los alimentos cocidos rápidamente para evitar la zona de peligro.
+- De 60°C a 21°C en menos de 2 horas.
+- De 21°C a 5°C en menos de 2 horas.
+- Total: Máximo 4 horas para llegar a refrigeración segura.
 
-2. MÉTODOS POR FRÍO Y CALOR:
-- Refrigeración (0°C a 5°C): Frena el crecimiento bacteriano.
-- Congelación (<-18°C): Cristaliza el agua, deteniendo la actividad microbiana. No recongelar sin cocinar.
-- Pasteurización: Calor moderado que elimina patógenos sin hervir (ej. leche).
-- Esterilización comercial (UHT o latas): Alta temperatura que elimina todo patógeno y esporas.
+2. ALIMENTOS LIBRES DE GLUTEN (SIN TACC):
+ANMAT 2025 establece un nuevo logo oficial. La cocina debe evitar la contaminación cruzada por aire (harinas volátiles) o utensilios compartidos.
 
-3. MÉTODOS QUÍMICOS Y POR REDUCCIÓN DE AGUA:
-- Salazón / Azucarado: La sal o azúcar "chupan" el agua libre (bajan la Aw), impidiendo que las bacterias la usen (ej: charqui, mermeladas).
-- Acidificación / Fermentación: Bajar el pH. Las bacterias no crecen bien en medios ácidos (ej: escabeches controlados, yogur).
-- Conservantes artificiales: Aditivos autorizados por el CAA.
+3. GESTIÓN DE STOCK (PEPS / FEFO):
+'Primero en Entrar, Primero en Salir' o 'Lo Primero que Vence es lo Primero que Sale'. Reduce el desperdicio alimentario y garantiza frescura.
 
-4. ENVASES:
-El envase primario (contacto directo) protege al alimento. El envasado al vacío retira el oxígeno, frenando a las bacterias aerobias. Es vital revisar que los envases (como las latas) no estén abollados o hinchados.`,
+4. ENVASES Y ROTULACIÓN:
+Revisar siempre la integridad del envase. Las latas abolladas o hinchadas deben ser descartadas inmediatamente por riesgo de Botulismo.`,
     questions: getQuestionsForFoodClass(5)
   }
 ];
